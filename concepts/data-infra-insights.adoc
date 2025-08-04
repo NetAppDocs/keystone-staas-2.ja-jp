@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-infra-insights.html 
+keywords: add-on services, add-on, data infrastructure insights, DII, deployment of DII 
+summary: Data Infrastructure Insights は、パブリック クラウドとプライベート データ センターのストレージを監視、トラブルシューティング、最適化することで、 Keystone STaaS の効率を高めます。 
+---
+= Data Infrastructure Insightsについて学ぶ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Data Infrastructure Insights (DII、旧称Cloud Insights) は、 Keystone STaaS のアドオン サービスです。このサービスをKeystone STaaS と統合すると、パブリック クラウドとプライベート データ センター全体にわたる Keystone が提供するストレージ リソースの監視、トラブルシューティング、最適化の機能が強化されます。
+
+Data Infrastructure Insightsの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/data-infrastructure-insights/["Data Infrastructure Insightsのドキュメント"^] 。
+
+DII は新規サブスクリプションと既存サブスクリプションの両方でご利用いただけます。コミットされた容量のアドオンとしてKeystoneサブスクリプションに統合できます。 DII がKeystoneサブスクリプションに統合されると、サブスクリプション内の各基本パフォーマンス サービス レベルに対応するパフォーマンス サービス レベルが設定されます。たとえば、Extreme は DII Extreme にマップされ、Premium は DII Premium にマップされ、Performance は DII Performance にマップされます。これらのマッピングにより、DII パフォーマンス サービス レベルがKeystoneサブスクリプションの基本パフォーマンス サービス レベルと一致するようになります。
+
+Digital Advisorダッシュボードの * Keystoneサブスクリプション* ウィジェット内の DII パフォーマンス サービス レベルのビュー:
+
+image:keystone-widget-dii.png["DII サービス レベルを表示するKeystone Subscriptions ウィジェットのスクリーンショット"]
+
+
+
+== Keystone向けDIIの展開
+
+お客様は、 Keystone用の DII を 2 つの方法で統合できます。他の非 Keystone 環境を監視する既存のインスタンスの一部として統合するか、新しいインスタンスの一部として統合するかのいずれかです。 DII を設定するのはお客様の責任となります。複雑な環境でDIIを設定するためにサポートが必要な場合は、アカウントチームが対応します。link:https://www.netapp.com/services/["NetAppプロフェッショナルサービス"^] 。
+
+DIIを設定するには、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html["Data Infrastructure Insightsインサイトのオンボーディング"^] 。
+
+次の点に注意してください。
+
+* 顧客が新しいDIIインスタンスを開始する場合は、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html#starting-your-data-infrastructure-insights-free-trial["DII無料トライアル"^] 。この機能と必要な起動チェックリストの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["機能チュートリアル"^] 。
+* 各サイトには取得ユニットが必要です。取得ユニットをインストールするには、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html#install-an-acquisition-unit["取得ユニットをインストールする"^] 。顧客がすでに DII インスタンスと Acquisition Unit をセットアップしている場合は、データ コレクターの構成に進むことができます。
+* 導入されるストレージ ハードウェアごとに、顧客は取得ユニット上でデータ コレクターを構成する必要があります。データコレクターを構成するには、以下を参照してください。link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_configure_data_collectors.html["データコレクターを構成する"^] 。基盤となるハードウェアに基づいて、 Keystoneストレージに必要なデータ コレクターは次のとおりです。
++
+|===
+| ストレージハードウェア | データ収集者 
+
+
+| ONTAPシステム | NetApp ONTAPデータ管理ソフトウェア 
+
+
+| StorageGRID | NetAppStorageGRID 
+
+
+| Cloud Volumes ONTAP | NetAppCloud Volumes ONTAP 
+|===
++
+設定が完了すると、DII インスタンスはKeystoneの一部として導入されたNetAppストレージ リソースの監視を開始します。
+
+
+
+
+NOTE: DII は、導入されたハードウェアに対する広範な監視機能を提供しますが、サブスクリプションの使用状況やパフォーマンス サービス レベルの詳細など、 Keystoneサブスクリプションに関する分析情報は提供しません。サブスクリプションの詳細情報については、link:../integrations/keystone-aiq.html["Keystoneダッシュボードとレポート"] 。
+
+
+
+== 課金と計測
+
+DII アドオン サービスの課金および計測の詳細は次のとおりです。
+
+* このサービスは、メインのサブスクリプションと同じ方法で測定されます。たとえば、メイン サブスクリプションに 100 TiB の Extreme サービスと 100 TiB の Premium サービスが含まれており、どちらも論理使用量ベースで測定されている場合、アドオン サービスの DII Extreme 100 TiB と DII Premium 100 TiB も論理使用量ベースで測定されます。メインのサブスクリプションがプロビジョニングベースで測定される場合、アドオン サービスは同じ容量に対して同じ方法で測定されます。アドオン サービスは、メインのサブスクリプションと同じ測定方法に従います。
++
+image:current-consumption-dii.png["サービスレベルの計測を表示する現在の消費タブのスクリーンショット"]
+
+* このサービスは従量制で、 Keystoneサブスクリプションと同じ請求書で請求されます。  Keystoneサブスクリプションをアクティブ化する前にKeystoneの DII を構成すると、課金はKeystoneサブスクリプションのアクティブ化日、または既存のサブスクリプションの変更日から開始されます。
+* このサービスは、標準のKeystone請求書に加えて、DII パフォーマンス サービス レベルのコミット容量とバースト使用量の両方に基づいて計測され、請求されます。このアドオン サービスの計測は、基盤となるKeystoneサブスクリプション パフォーマンス サービス レベル (論理的、プロビジョニング済み、または物理的) と同じ方法論に従います。
+* このサービスは、リンクされているKeystoneサブスクリプションとともに終了します。更新時にアドオンサービスを更新するかどうかを選択できます。  Keystoneサブスクリプションを更新しない場合、監視対象のハードウェアは廃止され、アドオン サービスは自動的に終了します。
+
+
+
+
+== サポートとユーザーアクセス
+
+顧客が * NetAppにData Infrastructure Insights環境へのアクセスを許可する* オプションを有効にしている場合、承認されたNetAppサポート チーム メンバーは顧客の DII インスタンスにアクセスできます。これを行うには、*ヘルプ > サポート* に移動して、オプションを有効にします。
+
+image:dii-support-permission.png["顧客がオプションを有効にする方法を示すスクリーンショット"]
+
+顧客は*ユーザー管理*画面から内部または外部のユーザーにアクセスを許可することができます。image:dii-user-option.png["ユーザーボタン"]オプション。
+
+image:dii-user-access.png["ユーザーを追加するオプションを示すスクリーンショット"]

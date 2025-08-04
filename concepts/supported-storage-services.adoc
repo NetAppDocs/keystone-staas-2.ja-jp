@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-services.html 
+keywords: storage, service, service definition, keystone STaaS services, 
+summary: Keystone STaaS サービスは、 ONTAPとStorageGRID をサポートしています。 
+---
+= Keystoneでサポートされているストレージ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS サービスは、 ONTAPによるファイルおよびブロック ストレージ、 StorageGRIDによるオブジェクト ストレージ、およびCloud Volumes ONTAP をサポートします。
+
+Keystone STaaS は、ストレージ用の標準サービスとオプション サービスを提供します。
+
+* Keystone STaaS 標準サービス*: 標準サービスは基本サブスクリプションに含まれており、別途料金はかかりません。
+
+* Keystone STaaS アドオン サービス*: これらは、標準のKeystone STaaS サブスクリプション サービスに加えて追加のユーティリティと利点を提供するオプションの有料サービスです。
+
+Keystone STaaSサービスも同時にご利用いただけます。たとえば、クラウド ストレージ サブスクリプションには、ファイル、ブロック、およびオブジェクト ストレージ サブスクリプションと同じ期間を設定できます。クラウド サービスは、既存のストレージ サブスクリプションのサービス期間中のどの時点でも追加できます。ただし、既存のファイル、ブロック、およびオブジェクトのサブスクリプションを更新する予定がない場合は、サブスクリプションの最後の 90 日間にクラウド ストレージ サブスクリプションを追加することはできません。
+
+
+
+== ファイル、ブロック、オブジェクトストレージ向けサービス
+
+ONTAPファイルおよびブロック ストレージ、 StorageGRIDオブジェクト ストレージ用のKeystone STaaS サービスは、複数の機能とプロトコルをサポートしており、次の表で説明します。
+
+|===
+| ストレージ | プラットフォーム | プロトコル | サポートされる機能 
+
+
+ a| 
+ファイルストレージ
+ a| 
+ONTAP
+ a| 
+NFSとCIFS
+ a| 
+サポートされているONTAP機能:
+
+* FlexVol
+* FlexGroup
+* Snapshotコピー
+* SnapMirror （非同期）
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/クラウド階層化
+* SnapRestore
+* FlexClone
+* SnapCenter (ライセンスは含まれていますが、 Keystoneサービスの一部ではなく、管理は保証されません)
+* 自律型ランサムウェア防御^1^
+
+
+
+
+ a| 
+ブロックストレージ
+ a| 
+ONTAP
+ a| 
+FCとiSCSI
+ a| 
+サポートされているONTAP機能:
+
+* FlexVol
+* FlexGroup
+* Snapshotコピー
+* SnapMirror （非同期）
+* SnapVault
+* SnapLock Enterprise
+* FabricPool/クラウド階層化
+* SnapRestore
+* FlexClone
+* SnapCenter (ライセンスは含まれていますが、 Keystoneサービスの一部ではなく、管理は保証されません)
+
+
+
+
+ a| 
+オブジェクト ストレージ
+ a| 
+StorageGRID
+ a| 
+S3
+ a| 
+複数のサイトにわたる複数の情報ライフサイクル管理 (ILM) ポリシーをサポートします^2^
+
+|===
+
+NOTE: ^1^ ONTAPのランサムウェア保護の詳細については、 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^] 。  ^2^ サイトごとに個別のサブスクリプションが必要です。
+
+
+
+== クラウドストレージサービス
+
+Keystone STaaS はクラウド ストレージ サービスを提供します。  Keystone STaaS は、Amazon Web Services (AWS)、Microsoft Azure、Google Cloud Platform 上のCloud Volumes ONTAPデータ管理機能をサポートします。
+
+
+NOTE: Cloud Volumes ONTAPに必要なハイパースカラーベースのコンピューティング、ストレージ、およびネットワーク サービスは、 Keystone STaaS サブスクリプションの一部としてNetAppによって提供されません。これらのサブスクリプションは、ハイパースカラー クラウド サービス プロバイダーから直接調達する必要があります。

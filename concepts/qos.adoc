@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: concepts/qos.html 
+keywords: PSL and QoS, service level quality of service 
+summary: Keystone はストレージ QoS を使用して、アプリケーションが一貫した予測可能なパフォーマンスを実現できるようにします。 
+---
+= Keystoneのストレージ QoS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone はストレージのサービス品質 (QoS) を使用して、アプリケーションが一貫した予測可能なパフォーマンスを実現できるようにします。  QoS がないと、複数のシステムの起動などの特定のワークロードが一定期間にわたってリソースのほとんどまたはすべてを消費し、他のワークロードに影響を及ぼす可能性があります。
+
+QoSの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["QoSによるスループットの保証 - 概要"^] 。
+
+
+
+== 適応型QoS
+
+Keystoneサービスでは、アダプティブ QoS (AQoS) を使用して、ボリューム サイズに基づいて IOPS/TiB 比率を動的に維持します。  AQoSポリシーの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["アダプティブQoSについて"^] 。
+
+Keystone は、クラスターが本番環境に移行したら設定できる AQoS ポリシーを提供します。すべてのボリュームが、システムですでに作成され使用可能な正しい AQoS ポリシーに関連付けられていることを確認する必要があります。
+
+ONTAPボリュームは、AQoS ポリシーが適用されていない場合は非準拠となります。 QoS ポリシーのないボリュームは、システムが利用可能な入出力操作を提供するための優先順位リストの最後になります。ただし、入出力操作が利用可能な場合、ボリュームは利用可能なすべての IO を消費する可能性があります。
+
+
+NOTE: ボリュームに AQoS ポリシーを適用していない場合、それらのボリュームはサブスクリプションに応じて最高のサービス レベルで測定され、課金されます。これにより、意図しないバースト充電が発生する可能性があります。
+
+
+
+== 適応型QoS設定
+
+アダプティブ QoS (AQoS) 設定はサービス レベルによって異なります。
+
+|===
+
+
+| *ポリシー名* | *過激* | *プレミアム* | *パフォーマンス* | *標準* | *価値* 
+
+
+| *予想IOPS/TiB* | 6,144 | 2,048 | 1,024 | 256 | 64 
+
+
+| *予想されるIOPS割り当て* 5+| 割り当てられたスペース 
+
+
+| *ピークIOPS/TiB* | 12,288 | 4,096 | 2,048 | 512 | 128 
+
+
+| *ピークIOPS割り当て* 5+| 使用済みスペース 
+
+
+| *ブロックサイズ* 5+| 32K 
+|===
+
+
+== 適応型QoSポリシーグループの構成
+
+適応型 QoS (AQoS) ポリシーを構成して、スループットの上限または下限をボリューム サイズに合わせて自動的に調整できます。すべてのKeystoneサービス レベルがデフォルトのONTAP QoS ポリシーと一致しているわけではありません。これらに対してカスタム QoS ポリシーを作成できます。ポリシーを構成する場合は、次の点に注意する必要があります。
+
+* *ポリシー グループ名*: AQoS ポリシー グループの名前。例：  `Keystone_extreme` 。
+* *VServer*: VServer またはストレージ VM (ストレージ仮想マシン) の名前。
+* *期待される IOPS/TiB*: 十分なシステム IOPS が利用可能な場合にシステムが提供しようとする、ボリュームごとに割り当てられた TiB あたりの最小 IOPS 数。
+* *ピーク IOPS/TiB*: システムがレイテンシの注入によって IOPS を調整する前にボリュームが到達できる IOPS の最大数 (ボリュームあたりの使用済み TiB あたり)。
+* *予想される IOPS 割り当て*: このパラメータは、ボリュームで使用可能な予想される IOPS が、ボリュームの割り当て済みサイズまたは使用済みサイズに基づくかどうかを制御します。  Keystoneでは、これは割り当てられたスペースに基づいています。
+* *ピーク IOPS 割り当て*: このパラメータは、ボリュームで使用可能なピーク IOPS がボリュームの割り当てサイズまたは使用サイズに基づくかどうかを制御します。  Keystoneでは、これは使用されているスペースに基づいています。
+* *絶対最小 IOPS*: ボリューム サイズが非常に小さいために IOPS の数が許容できない値になる場合に、ボリュームに適用される予想 IOPS の最小数。この値はデフォルトで1,000になります。 `Extreme` 、500円 `Premium`、250は `Performance`、75は `Standard`そして `Value`サービスレベル。
++
+
+NOTE: これは IOPS 密度 (たとえば、75 IOPS/TiB) ではなく、絶対最小の IOPS 数です。
+
+
+
+IO密度の詳細については、link:../concepts/metrics.html["Keystone Servicesで使用される指標と定義"] 。  AQoSポリシーグループの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["アダプティブQoSポリシー グループの使用"^] 。
+
+
+
+== 適応型QoSポリシーの設定
+
+各サービス レベルのアダプティブ QoS (AQoS) ポリシーの設定については、次のセクションで説明します。ここで提供される各サービス レベルの最小および最大ボリューム サイズにより、ボリュームの IOPS とレイテンシ値が最適化されます。これらのガイドラインの範囲外でボリュームを過剰に作成すると、それらのボリュームのパフォーマンスに悪影響が及ぶ可能性があります。
+
+
+
+=== エクストリームサービスレベルの設定
+
+Extreme サービス レベルの設定とコマンド:
+
+* サンプルコマンド:
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
+....
+* 推奨最小ボリュームサイズ: 100GiB、0.1TiB
+* 推奨最大ボリュームサイズ: 10TiB
+
+
+
+
+=== プレミアムサービスレベルの設定
+
+プレミアム サービス レベルの設定とコマンド:
+
+* サンプルコマンド:
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
+....
+* 推奨最小ボリュームサイズ: 500GiB、0.5TiB
+* 推奨最大ボリュームサイズ: 50TiB
+
+
+
+
+=== パフォーマンスサービスレベルの設定
+
+パフォーマンス サービス レベルの設定とコマンド:
+
+* サンプルコマンド:
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
+....
+* 推奨最小ボリュームサイズ: 500GiB、0.5TiB
+* 推奨最大ボリュームサイズ: 80TiB
+
+
+
+
+=== 標準サービスレベルの設定
+
+標準サービス レベルの設定とコマンド:
+
+* サンプルコマンド:
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
+....
+* 推奨最小ボリュームサイズ: 1TiB
+* 推奨最大ボリュームサイズ: 100TiB
+
+
+
+
+=== バリューサービスレベルの設定
+
+値サービス レベルの設定とコマンド:
+
+* サンプルコマンド:
+
+
+....
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
+....
+* 推奨最小ボリュームサイズ: 1TiB
+* 推奨最大ボリュームサイズ: 100TiB
+
+
+
+
+== ブロックサイズの計算
+
+これらの設定を使用してブロック サイズを計算する前に、次の点に注意してください。
+
+* IOPS/TiB = MBps/TiB ÷ (ブロックサイズ * 1024)
+* ブロックサイズはKB/IO単位です
+* TiB = 1024GiB; GiB = 1024MiB; MiB = 1024KiB; KiB = 1024バイト;底2に従って
+* TB = 1000GB、GB = 1000MB、MB = 1000KB、KB = 1000バイト、10進数
+
+
+.ブロックサイズの計算例
+たとえば、サービスレベルのスループットを計算するには `Extreme`サービスレベル:
+
+* 最大IOPS: 12,288
+* I/Oあたりのブロックサイズ: 32KB
+* 最大スループット = (12288 * 32 * 1024) / (1024*1024) = 384MBps/TiB
+
+
+ボリュームに 700 GiB の論理使用データがある場合、利用可能なスループットは次のようになります。
+
+`Maximum throughput = 384 * 0.7 = 268.8MBps`

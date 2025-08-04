@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: integrations/dashboard-access.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
+summary: NetApp Keystone STaaS加入者は、 NetApp BlueXPまたはDigital Advisorを通じてKeystoneダッシュボードにアクセスできます。 
+---
+= Keystoneダッシュボードを使い始める
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystoneサービスに加入すると、 NetApp BlueXPまたはDigital Advisorを通じてKeystoneダッシュボードにアクセスできます。
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+BlueXPにログインするには、 NetAppサポート サイトの資格情報を使用するか、電子メールとパスワードを使用してBlueXPにサインアップすることができます。詳細はこちらlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["BlueXPにログインする"^] 。
+
+.手順
+. BlueXPにログインします。
+. BlueXP の左側のナビゲーション メニューから、*ストレージ > Keystone*を選択します。
++
+Keystoneダッシュボードが表示されます。
+
++
+image:discover-subscriptions-1.png["Keystoneダッシュボードページ"]
+
++
+
+NOTE: ログイン資格情報がKeystoneサブスクリプションにリンクされていない場合は、 NetApp Keystoneサポートにお問い合わせください。
+
+
+
+--
+.Digital Advisor
+--
+Digital Advisorダッシュボードでは、 Keystoneサブスクリプションの詳細を表示できます。  Digital Advisorにログインするには、 NetAppサポート サイトの資格情報を使用できます。
+
+.手順
+. ウェブブラウザを開いて、link:https://activeiq.netapp.com/?source=onlinedocs["Digital Advisor"^]ログインページ。
+. ユーザー名とパスワードを入力して、「*サインイン*」をクリックします。
++
+Digital Advisorダッシュボードの * Keystoneサブスクリプション* ウィジェットで、サブスクリプションと使用状況の詳細を表示したり、購入したKeystoneサービスに対する容量使用状況の概要を確認したりできます。  * Keystone Subscriptions*ウィジェットの詳細については、以下を参照してください。link:../integrations/keystone-aiq.html["Digital AdvisorのKeystoneダッシュボード"] 。
+
+
+
+--
+====
+*関連情報*
+
+* link:../integrations/keystone-bluexp.html["BlueXPのKeystoneダッシュボード"]
+* link:..//integrations/keystone-aiq.html["Digital AdvisorのKeystoneダッシュボード"]
+* link:../integrations/subscriptions-tab.html["サブスクリプションの詳細を表示する"]
+

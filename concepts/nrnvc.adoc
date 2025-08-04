@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: concepts/nrnvc.html 
+keywords: Non-returnable, non-volatile components, SnapLock compliance, add-on service 
+summary: NetApp Keystoneサブスクリプションの一部として、 NetApp はファイル、ブロック、およびオブジェクト サービス向けの NRNVC オファリングを拡張します。 
+---
+= 返品不可、不揮発性コンポーネント、およびSnapLock準拠
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystoneサブスクリプションの一部として、 NetApp はファイル、ブロック、およびオブジェクト サービス向けの返品不可の不揮発性コンポーネント (NRNVC) の提供を拡張します。
+
+NetApp は、サービス提供に使用されたすべての物理資産をNetApp が回復する場合でも、サービスの全期間中に使用された物理ストレージ メディアや、サービスの終了時に使用された物理ストレージ メディアを回復しません。
+
+このアドオン サービスは、 Keystoneサブスクリプションの一部としてサブスクライブできます。このサービスをご購入いただいた場合は、以下の点にご注意ください。
+
+* サービス期間の終了時、またはサービス期間中にドライブや不揮発性メモリが故障したり不良品が見つかった場合は、それらを返却する必要はありません。
+* ただし、ドライブや不揮発性メモリの破壊証明書を作成する必要があり、他の目的には使用できません。
+* NRNVC に関連する追加コストは、サブスクリプション サービス合計 (標準サービス、高度なデータ保護、データ階層化を含む) の月額料金の割合として請求されます。
+* このサービスは、ファイル、ブロック、およびオブジェクト サービスにのみ適用されます。
+
+
+標準サービスとクラウドサービスの詳細については、以下を参照してください。link:supported-storage-services.html["Keystone STaaSサービス"] 。
+
+パフォーマンスサービスレベルの詳細については、以下を参照してください。link:../concepts/service-levels.html["Keystoneのパフォーマンスサービスレベル"] 。
+
+
+
+== SnapLock Compliance
+
+SnapLockテクノロジーは、ボリュームに設定された有効期限が過ぎるとドライブを使用不可にすることで、NRNVC 機能を有効にします。ボリュームでSnapLockテクノロジーを使用するには、NRNVC に加入する必要があります。これはファイルおよびブロック サービスにのみ適用されます。
+
+SnapLockテクノロジーの詳細については、 https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["SnapLockとは"^] 。

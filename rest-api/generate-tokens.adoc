@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: rest-api/generate-tokens.html 
+keywords: Refresh token, Digital Advisor portal,access 
+summary: 新しいアクセス トークンを取得するには、リフレッシュ トークンを生成します。 API リクエストを認証し、1 週間または交換されるまで有効です。アクセス トークンは、コンソールまたは API 呼び出しを通じて取得できます。 
+---
+= リフレッシュトークンとアクセストークンを生成する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+リフレッシュ トークンは、プログラムによって新しいアクセス トークンのセットを取得するために使用され、1 週間、または新しいトークンのセットを取得するために使用されるまで有効です。
+
+Digital Advisorポータルを使用して更新トークンを生成する手順は次のとおりです。
+
+. ログイン https://aiq.netapp.com/api["Digital Advisorポータル"]NetApp資格情報を使用して、[*トークンの生成*] を選択します。
++
+image:rest-api-aiq-portal.png["Digital Advisorポータルを使用してリフレッシュトークンを生成する手順"]
+
++
+
+NOTE: 初めてのユーザーの場合、「トークンの生成」オプションが利用できない場合は、「登録」を選択して承認リクエストを送信してください。機能を有効にするには、登録フォームに記入してください。
+
+. システムはアクセス トークンとリフレッシュ トークンを生成します。更新トークンを信頼できるプラットフォームに保存します。
++
+
+NOTE: ポータルでは、セット内の 1 つまたは両方のトークンを保存する方法が複数提供されます。クリップボードにコピーしたり、テキスト ファイルとしてダウンロードしたり、プレーン テキストとして表示したりできます。
+
++
+image:rest-api-token-types.png["トークンの種類"]
+
+
+
+
+
+== Digital Advisor REST APIを使用してアクセストークンを生成する
+
+アクセス トークンは、 Digital Advisor API リクエストの認証に使用されます。リフレッシュ トークンと一緒にコンソールから直接生成することも、次の API 呼び出しを使用して生成することもできます。
+
+*リクエスト：*
+
+[cols="41%,59%"]
+|===
+
+
+| *方法* | POST 
+
+
+| *終点* | `https://api.activeiq.netapp.com/v1/tokens/accessToken` 
+
+
+| *ヘッダー*  a| 
+* 受け入れる: application/json
+* コンテンツタイプ: application/json
+
+
+
+
+| *リクエスト本文*  a| 
+{ "refresh_token": "<リフレッシュトークン>" }
+
+|===
+
+NOTE: このエンドポイントにアクセスするには、 Digital Advisorの管理者権限が必要です。
+
+*応答：*
+
+API は、アクセス トークンとリフレッシュ トークンを JSON 形式で応答として返します。
+
+[listing]
+----
+{
+"refresh_token": "string",
+"access_token": "string"
+}
+----
+*ステータスコード*: 200 – リクエスト成功
+
+*Curlの例*:
+
+[source, curl]
+----
+curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d ' { "refresh_token": "<refresh-token>" }'
+----
+
+
+== API呼び出しを実行する
+
+アクセス トークンが正常に生成されると、必要な情報を取得するために承認されたDigital Advisor API 呼び出しを実行できます。

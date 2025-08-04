@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
+summary: サブスクリプションの使用状況を把握するために、コミットされた容量、消費された容量、使用可能な容量などを表示できます。 
+---
+= Keystoneサブスクリプションの現在の消費量を表示します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+コミットされた容量、消費された容量、使用可能な容量などの詳細情報を表示することで、サブスクリプションの使用状況に関する分析情報を得ることができます。また、現在の消費状況がパフォーマンス サービス レベル別に表示されます。
+
+BlueXPまたはDigital Advisorを通じてサブスクリプションの現在の消費状況を表示するには、次の手順に従います。
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.手順
+. BlueXP の左側のナビゲーション メニューから、*ストレージ > Keystone > サブスクリプション* を選択します。
+. 現在の消費量を表示するには、表の*サブスクリプション番号*列でサブスクリプション番号を選択します。
++
+*電流消費*タブにリダイレクトされます。
+
++
+image:bxp-current-consumption-graph.png["グラフ形式での電流消費量の詳細"]
+
++
+選択したサブスクリプションについては、[表示形式] ドロップダウンの [表] または [グラフ] オプションを使用して、消費量の詳細を表形式またはグラフ形式で表示できます。グラフィカル ビューでは、使用済み容量、プロビジョニング済み容量、コミット済み容量制限、バースト容量制限など、パフォーマンス サービス レベルごとの現在の消費量を確認できます。
+
++
+テーブル ビューでは、消費された最大容量や有効期限までの残り日数などの詳細を確認できます。サブスクリプションの使用状況の監視の一環として、パフォーマンス サービス レベル名、消費ステータス、コミット済み容量と使用済み容量、プロビジョニング済み容量とバースト容量、使用可能な容量、ボリュームを表示できます。列セレクターを使用してテーブルをカスタマイズできますimage:column-selector.png["列セレクターアイコン"]アイコン。
+
++
+image:bxp-current-consumption-table.png["表形式での電流消費量の詳細"]
+
+
+
+--
+.Digital Advisor
+--
+.手順
+. Digital Advisor の左側のナビゲーション ペインから、*[全般] > [Keystoneサブスクリプション] > [現在の消費量]* に移動します。
+. *サブスクリプション*ドロップダウンリストから必要なサブスクリプション番号を選択または検索します。
++
+image:aiq-ks-dtls-4.png["電流消費タブ"]
+
++
+選択したサブスクリプションについて、サブスクリプションの開始日と終了日、月間や年間などの請求期間などの詳細を表示できます。サブスクリプションの使用状況の一部として、パフォーマンス サービス レベル名、コミット済み、消費済み、使用可能な容量、現在のバースト使用量と累積バースト使用量 (TiB 単位) を表示できます。より高い消費量を記録する特定のパフォーマンス サービス レベルが強調表示されます。ボリュームに対して生成された警告やアラートを表示することもできます。
+
++
+現在の消費量と合わせて、比較のために過去の使用状況データを表示するとよいでしょう。  *履歴データの表示* ボタンをクリックして *消費傾向* タブに移動し、同じサブスクリプションの履歴データを表示します。
+
+
+
+--
+====
+Keystoneストレージサービスと関連するパフォーマンスサービスレベルの詳細については、以下を参照してください。link:../concepts/service-levels.html["Keystoneのパフォーマンスサービスレベル"] 。
+
+*関連情報*
+
+* link:../integrations/dashboard-overview.html["Keystoneダッシュボードを理解する"]
+* link:../integrations/subscriptions-tab.html["サブスクリプションの詳細を表示する"]
+* link:../integrations/consumption-tab.html["消費動向を見る"]
+* link:../integrations/subscription-timeline.html["サブスクリプションのタイムラインを表示する"]
+* link:../integrations/assets-tab.html["Keystoneサブスクリプション資産を表示する"]
+* link:../integrations/assets.html["Keystoneサブスクリプション全体の資産を表示する"]
+* link:../integrations/volumes-objects-tab.html["ボリュームとオブジェクトの詳細を表示"]
+

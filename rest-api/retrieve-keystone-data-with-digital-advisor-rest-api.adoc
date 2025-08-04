@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html 
+keywords: Keystone, Active IQ, Digital Advisor, APIs, programmatic interface 
+summary: Digital Advisor API は、 Keystoneサービスの詳細とメトリックを取得するためのプログラム インターフェースを提供します。 
+---
+= Digital Advisor REST APIを使用してKeystoneデータを取得する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Digital Advisor REST API は、 Keystone のサブスクリプションと消費の詳細を取得するためのプログラム インターフェイスを提供します。
+
+大まかに言うと、 Digital Advisor REST API と対話するためのワークフローには次の手順が含まれます。
+
+. Digital Advisorアカウントを設定します。 Digital Advisorにログインするには、有効なNetAppサポート サイトの資格情報が必要です。詳細については、 https://docs.netapp.com/us-en/active-iq/task_login_activeiq.html["Digital Advisorにログインします。"]
+. 2 段階認証プロセスを理解します。
++
+.. *リフレッシュ トークンの生成*: リフレッシュ トークンは、 NetApp資格情報を使用してDigital Advisorコンソールから取得されます。このトークンは、繰り返しログインする必要なく継続的なアクセスを確保するために使用されます。
+.. *アクセス トークンの生成*: リフレッシュ トークンはアクセス トークンの生成に使用されます。  Keystoneサービスへの API 呼び出しを承認するにはアクセス トークンが必要であり、有効期間は 1 時間です。
+
+
+. API 呼び出しを実行して、必要なデータを取得します。顧客リスト、顧客サブスクリプション データ、顧客消費詳細をプログラムで取得できます。
+

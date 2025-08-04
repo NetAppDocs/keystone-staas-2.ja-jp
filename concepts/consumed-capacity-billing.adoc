@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: concepts/consumed-capacity-billing.html 
+keywords: consumed capacity billing, billing and consumed capacity 
+summary: 消費された容量は、サービス使用中にワークロードが実際に使用する容量です。 
+---
+= 消費容量に基づく計測
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS では、サービス使用中に消費された容量に基づいて計測が行われます。消費された容量は、ワークロードが実際に使用する容量です。
+
+Keystoneサービスの展開の一環として、 NetApp はサービスの消費量を継続的に監視および測定します。少なくとも 5 分ごとに 1 回、サブスクリプションの現在の消費容量の詳細を示す消費レコードがシステムによって生成されます。これらの記録は請求期間にわたって集計され、請求書と使用状況レポートが生成されます。
+
+Keystoneでサポートされているさまざまな容量の詳細については、以下を参照してください。link:../concepts/supported-storage-capacity.html["Keystoneでサポートされているストレージ容量"] 。

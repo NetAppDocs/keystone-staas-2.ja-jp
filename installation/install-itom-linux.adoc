@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: installation/install-itom-linux.html 
+keywords: Linux installation, ITOM Collector installation 
+summary: Linux ベースのシステムに ITOM Collector ソフトウェアをインストールします。 
+---
+= LinuxシステムにITOM Collectorをインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージ環境内のメトリック データを収集する ITOM Collector をインストールするには、いくつかの手順を実行します。要件に応じて、Windows システムまたは Linux システムにインストールできます。
+
+
+NOTE: Keystoneサポート チームは、ITOM Collector セットアップ ファイルをダウンロードするための動的リンクを提供しますが、このリンクは 2 時間で有効期限が切れます。
+
+WindowsシステムにITOM Collectorをインストールするには、link:../installation/install-itom-windows.html["WindowsシステムにITOM Collectorをインストールする"] 。
+
+Linux サーバーにソフトウェアをインストールするには、次の手順に従います。
+
+.開始する前に
+* Linux インストール スクリプトで Bourne シェルが使用できることを確認します。
+* インストール `vim-common`ITOM Collector セットアップ ファイルに必要な *xxd* バイナリを取得するパッケージ。
+* 確実に `sudo package`ITOM Collector を非ルート ユーザーとして実行する予定の場合はインストールされます。
+
+
+.手順
+. ITOM コレクターのセットアップ ファイルを Linux サーバーにダウンロードします。
+. サーバー上でターミナルを開き、次のコマンドを実行して権限を変更し、バイナリを実行可能にします。
+`# chmod +x <installer_file_name>.bin`
+. 次のコマンドを実行して、ITOM コレクターのセットアップ ファイルを起動します。
+`#./<installer_file_name>.bin`
+. セットアップ ファイルを実行すると、次のプロンプトが表示されます。
++
+.. エンドユーザー使用許諾契約 (EULA) に同意します。
+.. インストールのユーザー詳細を入力します。
+.. インストール親ディレクトリを指定します。
+.. コレクターのサイズを選択します。
+.. 該当する場合は、プロキシの詳細を入力します。
++
+各プロンプトに対して、デフォルトのオプションが表示されます。特別な要件がない限り、デフォルト オプションを選択することをお勧めします。デフォルトのオプションを選択するには、*Enter* キーを押してください。インストールが完了すると、ITOM Collector が正常にインストールされたことを確認するメッセージが表示されます。
+
+
+
+
+
+[NOTE]
+====
+* ITOMコレクターのセットアップファイルは、 `/etc/sudoers`サービスの再起動とメモリ ダンプを処理します。
+* Linux サーバーに ITOM Collector をインストールすると、ルート権限なしで ITOM Collector を実行するための *ITOM* というデフォルトのユーザーが作成されます。別のユーザーを選択したり、root として実行したりすることもできますが、Linux インストール スクリプトによって作成された ITOM ユーザーを使用することをお勧めします。
+
+
+====
+.次の手順
+インストールが成功したら、 Keystoneサポート チームに連絡して、ITOM サポート ポータルを通じて ITOM Collector のインストールが成功したことを確認してください。検証後、 Keystoneサポート チームは、デバイスの検出や監視の設定など、ITOM Collector をリモートで構成し、構成が完了したら確認を送信します。ご質問や追加情報については、keystone.services@netapp.com までお問い合わせください。

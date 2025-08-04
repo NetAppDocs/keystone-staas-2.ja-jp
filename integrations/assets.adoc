@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+summary: '[資産] タブを使用して、 Keystoneサブスクリプションによって管理されているONTAPクラスターとノード、およびStorageGRIDグリッド、サイト、ノードの詳細を表示します。' 
+---
+= 複数のKeystoneサブスクリプションにわたる資産を表示する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+BlueXPのKeystoneダッシュボードを使用すると、アクセス権限に応じて、複数のKeystoneサブスクリプションにわたるクラスター内のノード、プロビジョニングされたボリューム、 StorageGRIDノードに関する詳細情報を表示できます。このビューはDigital Advisorでは使用できません。
+
+[role="tabbed-block"]
+====
+.クラスター内のノード
+--
+.手順
+. BlueXP の左側のナビゲーション メニューから、*ストレージ > Keystone > 資産* を選択します。
++
+*アセット* タブには、*クラスター内のノード* サブタブが表示されます。
+
++
+image:bxp-nodes-clusters-multiple-subscription.png["複数のサブスクリプションのクラスター内のノードのスクリーンショット"]
+
++
+ノードのシリアル番号、ステータス、ストレージ効率設定、プラットフォームの種類、容量の詳細など、 Keystoneサブスクリプション全体のクラスター内のすべてのノードに関する詳細情報を表示できます。また、次の概要も表示されます:
+
++
+** サブスクリプションとONTAPノードの合計数。
+** ノード容量の消費量。クリック可能な *表示* ボタンを使用してテーブルをフィルターし、特定の基準 (消費量が 90% 超または 50% 未満) を満たすアセットを表示します。
+** ONTAPバージョンに基づいたノード。[表示] ボタンを使用して、最新の 3 バージョン以内のノードをフィルターします。
++
+
+TIP: 列セレクターを使用してテーブルをカスタマイズできますimage:column-selector.png["列セレクターアイコン"]アイコンをクリックし、上部の検索バーを使用して、列パラメータに基づいてKeystoneデータを検索およびフィルタリングします。
+
+
+
+
+
+--
+.クラスター内のボリューム
+--
+.手順
+. BlueXP の左側のナビゲーション メニューから、*ストレージ > Keystone > 資産* を選択します。
+. *クラスター内のボリューム*タブを選択します。
++
+image:bxp-volumes-clusters-multiple-sub.png["複数のサブスクリプションのクラスター内のボリュームのスクリーンショット"]
+
++
+ボリューム名、サブスクリプション番号、ノードのシリアル番号、QoS ポリシーへの準拠、クラスター名、ホスト名、パフォーマンス サービス レベルなど、 Keystoneサブスクリプション全体のクラスター内のすべてのボリュームに関する詳細情報が表示されます。プロビジョニングされた容量、論理的および物理的な使用率、コールド データを監視できます。また、次の概要も確認できます。
+
++
+** サブスクリプション、クラスター、ボリュームの合計数。
+** ボリュームのコンプライアンスと保護のステータス。*表示* ボタンを使用すると、テーブルをフィルター処理し、準拠、非準拠、保護されていないなどの基準に基づいて資産を表示できます。
++
+
+TIP: 列セレクターを使用してテーブルをカスタマイズできますimage:column-selector.png["列セレクターアイコン"]アイコンをクリックし、上部の検索バーを使用して、列パラメータに基づいてKeystoneデータを検索およびフィルタリングします。
+
++
+*サブスクリプション番号*列のサブスクリプション番号をクリックすると、*サブスクリプション*タブに移動し、サブスクリプションの消費の詳細、タイムライン、および関連する資産情報を表示できます。詳細については、link:../integrations/current-usage-tab.html["現在の消費量の詳細を表示する"] 。
+
+
+
+
+
+--
+.グリッド内のノード
+--
+.手順
+. BlueXP の左側のナビゲーション メニューから、*ストレージ > Keystone > 資産* を選択します。
+. *グリッド内のノード*タブを選択します。
++
+image:bxp-nodes-grids-multiple-sub.png["複数のサブスクリプションのグリッド内のノードのスクリーンショット"]
+
++
+ノード名、ノード ID、サブスクリプション番号、グリッド名、ノード タイプ、顧客など、 Keystoneサブスクリプション全体のグリッド内のすべてのノードに関する詳細情報を表示できます。消費済みおよび使用可能なデータ容量、CPU 使用率、使用可能なデータ容量を監視できます。
+
++
+
+TIP: 列セレクターを使用してテーブルをカスタマイズできますimage:column-selector.png["列セレクターアイコン"]アイコンをクリックし、上部の検索バーを使用して、列パラメータに基づいてKeystoneデータを検索およびフィルタリングします。
+
++
+*サブスクリプション番号*列のサブスクリプション番号をクリックすると、*サブスクリプション*タブに移動し、サブスクリプションの消費の詳細、タイムライン、および関連する資産情報を表示できます。詳細については、link:../integrations/current-usage-tab.html["現在の消費量の詳細を表示する"] 。
+
+
+
+--
+====
+*関連情報*
+
+* link:../integrations/dashboard-overview.html["Keystoneダッシュボードを理解する"]
+* link:../integrations/subscriptions-tab.html["サブスクリプションの詳細を表示する"]
+* link:../integrations/current-usage-tab.html["現在の消費量の詳細を表示する"]
+* link:../integrations/consumption-tab.html["消費動向を見る"]
+* link:../integrations/subscription-timeline.html["サブスクリプションのタイムラインを表示する"]
+* link:../integrations/assets-tab.html["Keystoneサブスクリプション資産を表示する"]
+* link:../integrations/volumes-objects-tab.html["ボリュームとオブジェクトの詳細を表示"]
+

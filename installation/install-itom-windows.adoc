@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: installation/install-itom-windows.html 
+keywords: Windows installation Keystone, ITOM Collector installation 
+summary: Windows ベースのシステムに ITOM Collector をインストールします。 
+---
+= WindowsシステムにITOM Collectorをインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+ITOM Collector セットアップ ファイルをダウンロードし、InstallShield ウィザードを実行して、必要な監視資格情報を入力して、Windows システムに ITOM Collector をインストールします。
+
+
+NOTE: Keystoneサポート チームは、ITOM Collector セットアップ ファイルをダウンロードするための動的リンクを提供しますが、このリンクは 2 時間で有効期限が切れます。
+
+要件に応じて Linux システムにインストールできます。  LinuxシステムにITOM Collectorをインストールするには、link:../installation/install-itom-linux.html["LinuxシステムにITOM Collectorをインストールする"] 。
+
+Windows サーバーに ITOM コレクター ソフトウェアをインストールするには、次の手順に従います。
+
+.開始する前に
+Windows サーバーのローカル セキュリティ ポリシー設定のローカル ポリシー/ユーザー権利の割り当てで、ITOM Collector サービスに *サービスとしてログオン* が許可されていることを確認します。
+
+.手順
+. ITOM コレクターのセットアップ ファイルを Windows サーバーにダウンロードします。
+. セットアップ ファイルを開いて、InstallShield ウィザードを起動します。
+. エンドユーザー使用許諾契約 (EULA) に同意します。  InstallShield ウィザードは必要なバイナリを抽出し、資格情報の入力を求めます。
+. ITOM Collector を実行するアカウントの資格情報を入力します。
++
+** ITOM Collector が他の Windows サーバーを監視していない場合は、ローカル システムを使用します。
+** ITOM Collector が同じドメイン内の他の Windows サーバーを監視している場合は、ローカル管理者権限を持つドメイン アカウントを使用します。
+** ITOM Collector が同じドメインに属さない他の Windows サーバーを監視している場合は、ローカル管理者アカウントを使用し、ローカル管理者の資格情報で各リソースに接続します。  ITOM Collector と監視対象リソース間の認証の問題を軽減するために、パスワードが期限切れにならないように設定することもできます。
+
+
+. コレクターのサイズを選択します。デフォルトはセットアップ ファイルに基づく推奨サイズです。特別な要件がない限り、推奨サイズで進めてください。
+. インストールを開始するには、[_次へ_] を選択します。既存のフォルダーを使用することも、別のフォルダーを選択することもできます。ステータス ボックスにインストールの進行状況が表示され、その後に [InstallShield ウィザードが完了しました] ダイアログ ボックスが表示されます。
+
+
+.次の手順
+インストールが成功したら、 Keystoneサポート チームに連絡して、ITOM サポート ポータルを通じて ITOM Collector のインストールが成功したことを確認してください。検証後、 Keystoneサポート チームは、デバイスの検出や監視の設定など、ITOM Collector をリモートで構成し、構成が完了したら確認を送信します。ご質問や追加情報については、keystone.services@netapp.com までお問い合わせください。

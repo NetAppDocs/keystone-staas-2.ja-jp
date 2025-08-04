@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/monitor.html 
+keywords: monitoring system health 
+summary: データが利用可能であることを確認するには、HTTP リクエストをサポートする任意の監視システムを使用して、 Keystone Collector の正常性を監視できます。 
+---
+= プライベートモードでKeystone Collectorの健全性を監視する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+HTTP リクエストをサポートする任意の監視システムを使用して、 Keystone Collector の健全性を監視できます。
+
+デフォルトでは、 Keystoneヘルス サービスは、localhost 以外の IP からの接続を受け入れません。Keystoneヘルスエンドポイントは `/uber/health`、 Keystone Collectorサーバーのすべてのインターフェースのポートでリッスンします `7777`。クエリを実行すると、エンドポイントから応答として、 Keystone Collector システムのステータスを示す JSON 出力を含む HTTP 要求ステータス コードが返されます。 JSON本体は、 `is_healthy`属性はブール値であり、コンポーネントごとの詳細なステータスリストは `component_details`属性。次に例を示します。
+
+[listing]
+----
+$ curl http://127.0.0.1:7777/uber/health
+{"is_healthy": true, "component_details": {"vicmet": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
+----
+次のステータス コードが返されます。
+
+* *200*: 監視対象のすべてのコンポーネントが正常であることを示します
+* *503*: 1つ以上のコンポーネントが正常でないことを示します
+* *403*: ヘルス ステータスを照会している HTTP クライアントが、許可されたネットワーク CIDR のリストである _allow_ リストに含まれていないことを示します。このステータスの場合、健康情報は返されません。
++
+_allow_ リストは、ネットワーク CIDR 方式を使用して、どのネットワーク デバイスがKeystoneヘルス システムを照会できるかを制御します。  403 エラーが発生した場合は、* Keystone Collector 管理 TUI > 構成 > ヘルス モニタリング* から監視システムを _allow_ リストに追加します。
+
++
+image:cidr-list.png["許可されたネットワークCIDR"]
+
+
+
+
+
+== サポートバンドルを生成して収集する
+
+Keystone Collector に関する問題をトラブルシューティングするには、 NetAppサポートに問い合わせて、_.tar_ ファイルの提供を依頼することができます。このファイルは、 Keystone Collector 管理 TUI ユーティリティを通じて生成できます。
+
+_.tar_ ファイルを生成するには、次の手順に従います。
+
+. *トラブルシューティング > サポート バンドルの生成* に移動します。
+. バンドルを保存する場所を選択し、「サポート バンドルの生成」をクリックします。
++
+image:dark-site-generate-support-bundle-1.png["Generate support bundle"]
+
++
+このプロセスにより、 `tar`上記の場所にあるパッケージは、問題のトラブルシューティングのためにNetAppと共有できます。
+
+. ファイルをダウンロードしたら、 Keystone ServiceNow サポート チケットに添付できます。チケットの発行については、以下を参照してください。link:../concepts/gssc.html["サービスリクエストの生成"] 。
+

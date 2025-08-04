@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-sustainability.html 
+keywords: sustainability, sla, service level agreement, slo, service level objectives 
+summary: 'Keystone は、Sustainability SLO を備えたONTAPフラッシュ ストレージ アレイに基づくストレージ サービスに対して、1 テビバイトあたりの実際のワット数 (W/TiB) の最大保証測定値を提供します。' 
+---
+= サステナビリティSLO
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone は、Sustainability SLO を備えたONTAPフラッシュ ストレージ アレイに基づくストレージ サービスに対して、1 テビバイトあたりの実際のワット数 (W/TiB) の最大保証測定を提供します。持続可能性 SLO は、対象となるパフォーマンス サービス レベルごとに W/TiB の最大消費量を定義し、組織が持続可能性目標を達成できるようにします。
+
+
+
+== メトリクス
+
+* *ワット*: コントローラーおよび接続されたディスク シェルフによる使用量を含む、毎日のAutoSupportから報告された電力消費量。
+* *テビバイト*: 最大値:
++
+** パフォーマンスサービスレベルに割り当てられたバースト容量 + コミット容量、または
+** 有効配備容量（貯蔵効率係数を仮定） `2:1` 。
+
+
++
+ストレージ効率比の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/active-iq/task_analyze_storage_efficiency.html["容量とストレージ効率の節約を分析する"^] 。
+
+
+
+
+
+== パフォーマンスサービスレベル
+
+持続可能性 SLO は、次の消費基準に基づいています。
+
+|===
+
+
+| *サービスレベル* | *SLO基準* | *最小コミット容量* | *プラットフォーム* 
+
+
+ a| 
+Extreme
+| <= 8 W/TiB | 200TiB | AFF A800およびAFF A900 
+
+
+ a| 
+Premium
+| <= 4 W/TiB | 300TiB | AFF A800およびAFF A900 
+
+
+ a| 
+パフォーマンス
+| <= 4 W/TiB | 300TiB | AFF A800およびAFF A900 
+|===
+詳細については、link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystoneのパフォーマンスサービスレベル"] 。
+
+
+
+== サービスクレジット
+
+
+NOTE: SLA と保証は指名ベースで利用可能です。
+
+請求期間中の W/TiB 消費量が SLA 基準を満たさない場合、 NetApp は次のようにサービス クレジットを発行します。
+
+|===
+| 請求期間中のSLA未達日数 | サービスクレジット 
+
+
+ a| 
+1～2
+ a| 
+3%
+
+
+
+ a| 
+3～7
+ a| 
+15%
+
+
+
+ a| 
+14
+ a| 
+50%
+
+|===
+
+
+=== サービスクレジットリクエスト
+
+SLA 違反が検出された場合は、 NetApp Keystoneサポートで優先度 3 (P3) のサポート チケットを開き、以下に示すように Excel シートに要求された詳細を入力します。
+
+image:sla-breach.png["Excelシートテンプレート"]
+
+[NOTE]
+====
+* サービス クレジット リクエストは、 NetApp Keystoneサポートが違反を検証してから 6 週間以内に開始する必要があります。すべてのサービス クレジットはNetAppによって確認および承認される必要があります。
+* サービス クレジットは将来の請求書に適用される場合があります。サービス クレジットは、期限切れのKeystoneサブスクリプションには適用されません。詳細については、link:../concepts/gssc.html["NetApp Keystoneサポート"] 。
+
+
+====

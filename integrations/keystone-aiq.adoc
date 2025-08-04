@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, dashboard overview, manage subscriptions, monitor 
+summary: NetApp Keystone STaaS サブスクライバーは、 Digital Advisorダッシュボードからサブスクリプションの概要を取得できます。 
+---
+= Digital AdvisorのKeystoneダッシュボード
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone STaaS サブスクライバーは、 Digital Advisorダッシュボードの * Keystoneサブスクリプション* ウィジェットでサブスクリプションの概要を取得できます。
+
+顧客名またはウォッチリスト名の最初の 3 文字、またはKeystoneサブスクリプション番号を入力すると、特定のKeystoneサブスクリプションを検索できます。  Keystone STaaSサブスクリプションをウォッチリストで検索する方法については、以下を参照してください。link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Keystoneウォッチリストを使用して検索する"] 。
+
+Digital Advisor は、*古い/新しいダッシュボードに切り替える* ボタンを通じて、さまざまなレベルのサブスクリプション データと使用状況情報に関する分析情報を提供する統合ダッシュボードを提供します。
+
+.デフォルト（古い）ダッシュボード
+顧客名とサブスクリプション番号、アカウント名、サブスクリプションの開始日と終了日、サブスクライブしたパフォーマンス サービス レベルに応じた容量使用率グラフを確認できます。消費データの収集タイムスタンプは UTC 時間で確認できます。
+
+image:old-db-3.png["古いダッシュボード"]
+
+.代替（新しい）ダッシュボード
+サブスクリプションごとに容量使用状況の内訳と、すぐに注意や対応が必要な警告やアラートを確認できます。情報は、サブスクリプションと使用状況に応じて選択的に表示されます。次の情報を表示できます:
+
+* *容量使用量*: 使用量なし、コミットされた容量の 80% を超える使用量、バースト使用量、バースト容量を超える使用量などの使用量データ。
+* *アラート*: さまざまなシナリオが該当する場合、アラートが表示されます。
++
+** *まもなく期限切れ*: サブスクリプションが 90 日以内に期限切れになる場合。
+** *QoS 警告*: AQoS ポリシーが割り当てられていないボリュームがあります。
++
+
+TIP: *サブスクリプション* リンクをクリックすると、*サブスクリプション* タブにフィルターされたサブスクリプションのリストが表示されます。
+
+
+
+
+
+image:new-db-4.png["新しいダッシュボード"]
+
+*すべてのサブスクリプションを表示*をクリックすると、* Keystoneサブスクリプション*ページでボリュームの使用状況の詳細とアラートを表示できます。
+
+サブスクリプションの詳細、各パフォーマンス サービス レベルの使用状況チャート、ボリュームの詳細は、* Keystoneサブスクリプション* 画面のさまざまなタブに表示されます。
+
+
+NOTE: Keystoneサブスクリプションの容量消費量はダッシュボードとレポートに TiB 単位で表示され、小数点以下 2 桁に切り捨てられます。使用量が 0.01 TiB 未満の場合、値は 0 または使用量なしとして表示されます。これらの画面のデータは UTC 時間 (サーバーのタイムゾーン) で表示されます。クエリの日付を入力すると、自動的に UTC 時間として扱われます。使用状況指標の詳細については、以下を参照してください。link:../concepts/metrics.html#metrics-measurement["メトリクス測定"] 。  Keystoneで使用されるさまざまな容量の詳細については、link:../concepts/supported-storage-capacity.html["サポートされているストレージ容量"] 。
+
+
+
+== Keystoneウォッチリストで検索
+
+ウォッチリストはDigital Advisorで利用できる機能です。詳細については、 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["ウォッチリストを理解する"^] 。ウォッチリストの作成方法については、以下を参照してください。 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["監視リストを作成"^] 。
+
+顧客またはサブスクリプション番号のウォッチリストを作成し、 Digital Advisor画面でサブスクリプション番号またはウォッチリスト名の最初の 3 文字を使用してKeystoneサブスクリプションを検索できます。ウォッチリスト名で検索すると、* Keystoneサブスクリプション* ウィジェットの *サブスクリプション* ドロップダウン リストで顧客とそのサブスクリプションを表示できます。
+
+
+NOTE: ウォッチリストによる検索では、古いダッシュボード上のサブスクリプションのリストが取得されます。ウォッチリストがサブスクリプション番号で構成されている場合、 Digital Advisorダッシュボードには * Keystoneサブスクリプション* ウィジェットのみが表示されます。
+
+image:watchlist.png["ウォッチリスト画面"]
+
+*関連情報*
+
+* link:../integrations/dashboard-access.html["Keystoneダッシュボードを使い始める"]
+* link:../integrations/keystone-bluexp.html["BlueXPのKeystoneダッシュボード"]
+* link:../integrations/subscriptions-tab.html["サブスクリプションの詳細を表示する"]
+* link:../integrations/current-usage-tab.html["現在の消費量の詳細を表示する"]
+* link:../integrations/consumption-tab.html["消費動向を見る"]
+

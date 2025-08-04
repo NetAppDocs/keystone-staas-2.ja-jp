@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: limitations, known limitations in Keystone STaaS 
+summary: 今回のリリースでサポートされていない、または今回のリリースでは正常に機能しないプラットフォーム、デバイス、機能が記載されています。これらの制限事項をよく確認してください。 
+---
+= Keystone STaaS の既知の制限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+既知の制限事項では、 Keystone STaaS サービスまたはコンポーネントでサポートされていない、または正しく相互運用されないプラットフォーム、デバイス、または機能が特定されます。これらの制限事項をよく確認してください。
+
+
+
+== Keystone Collector の制限
+
+
+
+=== StorageGRID SSO が有効になっている場合のKeystone Collector の認証失敗
+
+StorageGRIDシステムでシングル サインオン (SSO) が有効になっている場合、 Keystone Collector は計測をサポートしません。ログに次のエラー メッセージが表示されます。
+
+`panic: json: cannot unmarshal object into Go struct field AuthResponse.data of type string`
+
+ナレッジベースの記事を参照link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_authenticate_with_StorageGRID_in_SSO_Mode["Keystone Collector が SSO モードでStorageGRIDとの認証に失敗する"^]情報と解決策を得るために。
+
+
+
+=== Keystone Collector が vSphere 8.0 Update 1 で起動できない
+
+VMware vSphere バージョン 8.0 Update 1 を搭載したKeystone Collector 仮想マシン (VM) をオンにすることができず、次のエラー メッセージが表示されます。
+
+`Property 'Gateway' must be configured for the VM to power on.`
+
+ナレッジベースの記事を参照link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_start_on_vSphere_8.0_U1["vSphere 8.0 U1 でKeystone Collector が起動に失敗する"^]情報と解決策を得るために。
+
+
+
+=== サポートバンドルはKerberos経由では生成できません
+
+Keystone Collector ホーム ディレクトリが Kerberos を使用して NFSv4 経由でマウントされている場合、サポート バンドルは生成されず、次のエラー メッセージが表示されます。
+
+`subprocess.CalledProcessError: Command '['sosreport', '--batch', '-q', '--tmp-dir', '/home/<user>']' returned non-zero exit status 1.`
+
+ナレッジベースの記事を参照 https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_generate_support_bundle_on_Kerberized_home_directory["Keystone Collector が Kerberos 化されたホーム ディレクトリでサポート バンドルを生成できない"^]情報と解決策を得るために。
+
+
+
+=== Keystone Collector は特定のネットワーク範囲内のホストと通信できません
+
+Keystone Collectorは、10.88.0.0/16ネットワーク範囲内のデバイスと通信できません。 `ks-collector`サービスは実行中です。ナレッジベースの記事を参照link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Keystone Collector コンテナと顧客ネットワークの競合"^]情報と解決策を得るために。
+
+
+
+=== Keystone Collector は顧客のルート SSL CA 証明書を検証できません
+
+SSL/TLS トラフィックを検査する環境の境界ファイアウォールで SSL/TLS 検査が有効になっている場合、顧客のルート CA 証明書が信頼されていないため、 Keystone Collector は HTTPS 接続を確立できません。
+
+詳細情報と解決策については、link:..//installation/configuration.html#trust-a-custom-root-ca["カスタムルートCAを信頼する"^]またはナレッジベースの記事link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_cannot_verify_Customer_Root_SSL_CA_certificate["Keystone Collectorは顧客のルートSSL CA証明書を検証できません"^]。

@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-consumption-billing.html 
+keywords: burst consumption billing 
+summary: Keystone STaaS の課金は、サブスクリプションのコミット容量に加えてお客様が消費した容量であるバースト容量に基づいています。 
+---
+= バースト消費量に基づく課金
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS の課金は、サブスクリプションのコミット容量に加えてお客様が消費する容量であるバースト容量に基づいています。
+
+バースト制限はKeystone契約で決定され、指定されます。コミットされた容量を 20% 超えています。
+
+コミット容量は、サブスクリプションの購入時にコミットされる容量です。コミット容量とバースト容量は、パフォーマンス サービス レベルごとに測定されます。消費された容量は、ワークロードが実際に使用する容量です。
+
+消費された容量がパフォーマンス サービス レベルのコミットされた容量を超えると、バースト消費が記録され、それに応じて課金されます。通常、コミットされた容量の 20% 超になります。バースト容量を超える使用量は、「バースト制限超過」と表示されます。
+
+このプロセスは、生成された消費レコードごとに実行されます。したがって、バースト消費は、コミットされた容量に加えて、過剰に消費された容量の量と期間の両方を反映します。詳細については、link:../integrations/consumption-tab.html["Keystoneサブスクリプションの消費傾向を表示する"] 。
+
+Keystoneでサポートされているさまざまな容量の詳細については、以下を参照してください。link:../concepts/supported-storage-capacity.html["Keystoneでサポートされているストレージ容量"] 。

@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: 既知の問題では、 Keystoneサブスクリプション サービスを効果的に使用できない可能性がある問題が特定されます。 
+---
+= Keystone STaaS の既知の問題
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+既知の問題では、 Keystoneサブスクリプション サービスを効果的に使用できない可能性がある問題が特定されます。
+
+NetApp Keystone STaaS では次の既知の問題が報告されています。
+
+[cols="3*"]
+|===
+| 既知の問題 | 説明 | 回避策 
+
+
+ a| 
+データの不一致による請求書の誤り
+ a| 
+AutoSupportサブスクリプションの消費データが一致しないと、不正確な請求書が生成され、請求が不正確になります。
+ a| 
+なし
+
+
+
+ a| 
+QoSポリシータイプの表示が正しくありません
+ a| 
+*ボリュームの詳細*タブでは、QoS ポリシーが適用されていない場合、*QoS ポリシー タイプ*列に _QoS_ と表示され、準拠列に _未設定_ と表示されるため、表示される QoS ポリシーのステータスに不一致が生じます。
+ a| 
+なし
+
+
+
+ a| 
+プライマリサブスクリプションとリンクされたサブスクリプションのボリューム詳細は利用できません
+ a| 
+*ボリューム サマリー* タブには、ボリュームの合計数、QoS コンプライアンス ステータス、保護されたボリューム数、プライマリ サブスクリプションとリンクされたセカンダリ サブスクリプションの合計消費容量がゼロと表示されます。
+ a| 
+なし
+
+|===

@@ -1,0 +1,365 @@
+---
+sidebar: sidebar 
+permalink: installation/data-collection.html 
+keywords: type of data collected by Keystone collector 
+summary: Keystone は、 ONTAPおよびStorageGRIDサブスクリプションの構成、ステータス、および使用状況情報を収集します。  ONTAPパフォーマンス データも収集できます。 
+---
+= Keystoneが収集するユーザーデータの種類
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone は、 Keystone ONTAPおよびKeystone StorageGRIDサブスクリプションから構成、ステータス、使用状況情報、およびKeystone Collector をホストする仮想マシン (VM) からのテレメトリ データを収集します。  Keystone Collector でこのオプションが有効になっている場合、 ONTAPのパフォーマンス データのみを収集できます。
+
+
+
+== ONTAPデータ収集
+
+.<strong> ONTAPで収集される使用状況データ: 詳細はこちら</strong>
+[%collapsible]
+====
+次のリストは、 ONTAPで収集された容量消費データの代表的なサンプルです。
+
+* クラスタ
++
+** ClusterUUID
+** クラスタ名
+** シリアルナンバー
+** 場所（ ONTAPクラスタに入力された値に基づく）
+** 担当者
+** version
+
+
+* ノード
++
+** シリアルナンバー
+** ノード名
+
+
+* ボリューム
++
+** アグリゲート名
+** ボリューム名
+** ボリュームインスタンスUUID
+** IsCloneVolumeフラグ
+** IsFlexGroupConstituentフラグ
+** IsSpaceEnforcementLogicalフラグ
+** IsSpaceReportingLogicalフラグ
+** 論理スペース使用率
+** スナップショットスペースの割合
+** パフォーマンス層非アクティブユーザーデータ
+** パフォーマンス層非アクティブユーザーデータ率
+** QoSAdaptivePolicyGroup名
+** QoSポリシーグループ名
+** サイズ
+** 使用済み
+** 物理的使用
+** スナップショットで使用されるサイズ
+** タイプ
+** ボリュームスタイル拡張
+** SVM名
+** IsVsRootフラグ
+
+
+* Vサーバー
++
+** Vサーバー名
+** VserverUUID
+** サブタイプ
+
+
+* ストレージアグリゲート
++
+** ストレージタイプ
+** アグリゲート名
+** 集約UUID
+
+
+* 集約オブジェクトストア
++
+** オブジェクトストア名
+** オブジェクトストアUUID
+** プロバイダータイプ
+** アグリゲート名
+
+
+* クローン ボリューム
++
+** FlexClone
+** サイズ
+** 使用済み
+** Vサーバー
+** タイプ
+** 親ボリューム
+** 親Vサーバー
+** 構成要素
+** 分割見積
+** 州
+** FlexClone使用率
+
+
+* ストレージLUN
++
+** LUN UUID
+** LUN名
+** サイズ
+** 使用済み
+** IsReservedフラグ
+** IsRequestedフラグ
+** 論理ユニット名
+** QoSポリシーUUID
+** QoSポリシー名
+** ボリュームUUID
+** ボリューム名
+** SVMUUID
+** SVM 名
+
+
+* ストレージボリューム
++
+** ボリュームインスタンスUUID
+** ボリューム名
+** SVM名
+** SVMUUID
+** QoSポリシーUUID
+** QoSポリシー名
+** 容量層フットプリント
+** パフォーマンス層フットプリント
+** トータルフットプリント
+** 階層化ポリシー
+** IsProtectedフラグ
+** IsDestinationフラグ
+** 使用済み
+** 物理的使用
+** クローン親UUID
+** 論理スペース使用率
+
+
+* QoSポリシー グループ
++
+** ポリシーグループ
+** QoSポリシーUUID
+** 最大スループット
+** 最小スループット
+** 最大スループットIOPS
+** 最大スループットMBps
+** 最小スループットIOPS
+** 最小スループットMBps
+** IsSharedフラグ
+
+
+* ONTAPアダプティブQoSポリシーグループ
++
+** QoSポリシー名
+** QoSポリシーUUID
+** ピークIOPS
+** ピークIOPS割り当て
+** 絶対最小IOPS
+** 期待IOPS
+** 予想されるIOPS割り当て
+** ブロックサイズ
+
+
+* 足跡
++
+** Vサーバー
+** Volume
+** トータルフットプリント
+** ボリュームブロックフットプリントビン0
+** ボリュームブロックフットプリントビン1
+
+
+* MetroClusterクラスタ
++
+** ClusterUUID
+** クラスタ名
+** リモートクラスタUUID
+** リモートクラスタ名
+** ローカル構成状態
+** リモート構成状態
+** モード
+
+
+* コレクターの可観測性メトリクス
++
+** 収集時間
+** Active IQ Unified Manager APIエンドポイントのクエリ
+** 応答時間
+** レコード数
+** AIQUMインスタンスIP
+** コレクタインスタンスID
+
+
+
+
+====
+.<strong> ONTAPで収集されたパフォーマンス データ: 詳細はこちら</strong>
+[%collapsible]
+====
+次のリストは、 ONTAPで収集されたパフォーマンス データの代表的なサンプルです。
+
+* クラスター名
+* クラスタUUID
+* オブジェクトID
+* ボリューム名
+* ボリュームインスタンスUUID
+* Vサーバー
+* VserverUUID
+* ノードシリアル
+* ONTAPVersion
+* AIQUMバージョン
+* Aggregate
+* 集約UUID
+* リソースキー
+* タイムスタンプ
+* IOPS/テラバイト
+* レイテンシー
+* 読み取り遅延
+* 書き込みMBps
+* QoS最小スループットレイテンシー
+* QoSNBladeLatency
+* 中古ヘッドルーム
+* キャッシュミス率
+* その他の遅延
+* QoS 総計レイテンシ
+* IOPS
+* QoSネットワーク遅延
+* 利用可能なオペレーション
+* 書き込み遅延
+* QoSクラウドレイテンシー
+* QoSクラスタ相互接続レイテンシ
+* その他のMBps
+* QoSコプレーナレイテンシー
+* QoSDBladeLatency
+* 利用率
+* 読み取りIOPS
+* MBps
+* その他のIOPS
+* QoSポリシーグループレイテンシー
+* 読み取りMBps
+* QoS同期スナップミラーレイテンシー
+* 書き込みIOPS
+
+
+====
+.<strong>プライベートデータへのアクセス制限で削除された項目のリスト: 詳細はこちら</strong>
+[%collapsible]
+====
+Keystone Collector で *プライベート データの削除* オプションが有効になっている場合、 ONTAPの次の使用情報も削除されます。このオプションはデフォルトで有効になっています。
+
+* クラスター名
+* クラスターの場所
+* クラスターコンタクト
+* Node Name
+* アグリゲート名
+* ボリューム名
+* QoSAdaptivePolicyGroup名
+* QoSポリシーグループ名
+* SVM名
+* Storage LUN名
+* アグリゲート名
+* 論理ユニット名
+* SVM 名
+* AIQUMインスタンスIP
+* FlexClone
+* リモートクラスタ名
+
+
+====
+
+
+== StorageGRIDデータ収集
+
+.<strong> StorageGRIDで収集される使用状況データ: 詳細はこちら</strong>
+[%collapsible]
+====
+以下のリストは代表的な例です。 `Logical Data` StorageGRID用に収集されたもの：
+
+* StorageGRID ID
+* アカウント ID
+* アカウント名
+* アカウントクォータバイト
+* バケット名
+* バケットオブジェクト数
+* バケットデータバイト
+
+
+以下のリストは代表的な例です。 `Physical Data` StorageGRID用に収集されたもの：
+
+* StorageGRID ID
+* ノードID
+* サイト ID
+* サイト名
+* 実例
+* StorageGRIDストレージ使用率 バイト
+* StorageGRIDストレージ使用率メタデータ バイト
+
+
+====
+.<strong>プライベートデータへのアクセス制限で削除された項目のリスト: 詳細はこちら</strong>
+[%collapsible]
+====
+Keystone Collector で *プライベート データの削除* オプションが有効になっている場合、 StorageGRIDの次の使用状況情報が削除されます。このオプションはデフォルトで有効になっています。
+
+* アカウント名
+* バケット名
+* サイト名
+* インスタンス/ノード名
+
+
+====
+
+
+== テレメトリデータ収集
+
+.<strong> Keystone Collector VM から収集されたテレメトリ データ: 詳細はこちら</strong>
+[%collapsible]
+====
+次のリストは、 Keystoneシステムで収集されたテレメトリ データの代表的なサンプルです。
+
+* システム情報
++
+** オペレーティングシステム名
+** オペレーティング システムのバージョン
+** オペレーティング システム ID
+** システムホスト名
+** システムのデフォルトIPアドレス
+
+
+* システムリソースの使用状況
++
+** システム稼働時間
+** CPUコア数
+** システム負荷（1分、5分、15分）
+** 合計メモリ
+** 空きメモリ
+** 使用可能なメモリ
+** 共有メモリ
+** バッファメモリ
+** キャッシュメモリ
+** 合計スワップ
+** 無料交換
+** キャッシュされたスワップ
+** ディスクファイルシステム名
+** ディスク サイズ
+** 使用済みディスク
+** ディスク利用可能
+** ディスク使用率
+** ディスクマウントポイント
+
+
+* インストールされたパッケージ
+* コレクター構成
+* サービスログ
++
+** Keystoneサービスからのサービスログ
+
+
+
+
+====

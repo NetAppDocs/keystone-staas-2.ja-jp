@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: installation/linux-installation.html 
+keywords: Linux installation Keystone, Linux Collector installation 
+summary: YUM ソフトウェア リポジトリからKeystone Collector ソフトウェアをインストールします。 
+---
+= LinuxシステムにKeystone Collectorをインストールする
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+RPM または Debian パッケージを使用して、 Keystone Collector ソフトウェアを Linux サーバーにインストールできます。  Linux ディストリビューションに応じてインストール手順に従います。
+
+[role="tabbed-block"]
+====
+.RPMの使用
+--
+. Keystone CollectorサーバーにSSHで接続し、 `root`特権。
+. Keystone公開署名をインポートします。
+`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+. RPM データベースでKeystone Billing Platform のフィンガープリントをチェックして、正しい公開証明書がインポートされていることを確認します。
+`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint`正しい指紋は次のようになります。
+`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
+. ダウンロード `keystonerepo.rpm`ファイル：
+`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
+. ファイルの信頼性を確認します。
+`rpm --checksig -v keystonerepo.rpm`本物のファイルの署名は次のようになります。
+`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+. YUM ソフトウェア リポジトリ ファイルをインストールします。
+`# yum install keystonerepo.rpm`
+. Keystoneリポジトリがインストールされたら、YUM パッケージ マネージャーを使用して keystone-collector パッケージをインストールします。
++
+`# yum install keystone-collector`
+
++
+Red Hat Enterprise Linux 9 の場合は、次のコマンドを実行して keystone-collector パッケージをインストールします。
+`# yum install keystone-collector-rhel9`
+
+
+
+--
+.Debianの使用
+--
+. Keystone CollectorサーバーにSSHで接続し、 `root`特権。
+`sudo su`
+. ダウンロード `keystone-sw-repo.deb`ファイル：
+`curl -O https://keystone.netapp.com/downloads/keystone-sw-repo.deb`
+. Keystoneソフトウェア リポジトリ ファイルをインストールします。
+`# dpkg -i keystone-sw-repo.deb`
+. パッケージ リストを更新します。
+`# apt-get update`
+. Keystoneリポジトリがインストールされたら、keystone-collector パッケージをインストールします。
+`# apt-get install keystone-collector`
+
+
+--
+====
+
+NOTE: インストールが完了すると、 Keystone Collector 管理ターミナル ユーザー インターフェイス (TUI) ユーティリティを使用して、構成および監視アクティビティを実行できます。 Enter キーや矢印キーなどのさまざまなキーボード コントロールを使用して、オプションを選択し、この TUI 内を移動できます。見るlink:../installation/configuration.html["Keystone Collector を構成する"]そしてlink:../installation/monitor-health.html["システムの健全性を監視する"]情報については。

@@ -1,0 +1,244 @@
+---
+sidebar: sidebar 
+permalink: installation/linux-prereqs.html 
+keywords: prerequisites, Linux 
+summary: Keystone Collector をインストールする前に、必要なソフトウェアを使用して Linux システムを準備します。 
+---
+= Linuxシステム要件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+必要なソフトウェアを使用して Linux システムを準備すると、 Keystone Collector による正確なインストールとデータ収集が保証されます。
+
+Linux およびKeystone Collector サーバー VM にこれらの構成があることを確認します。
+
+.Linux サーバー:
+* オペレーティング システム: 次のいずれか:
++
+** Debian 12
+** Red Hat Enterprise Linux 8.6 以降の 8.x バージョン
+** CentOS 7 (既存環境のみ)
+
+
+* Chronydの時刻同期
+* 標準の Linux ソフトウェア リポジトリへのアクセス
+
+
+同じサーバーには、次のサードパーティ パッケージもインストールされている必要があります。
+
+* podman (POD マネージャー)
+* ソス
+* クロニー
+* Python 3 (3.6.8 から 3.9.13)
+
+
+.Keystone Collector サーバー VM:
+* コア: 2 CPU
+* RAM: 4GB RAM
+* ディスク容量: 50 GB vDisk
+
+
+
+
+== その他の要件
+
+次の一般的な要件が満たされていることを確認してください。
+
+
+
+=== ネットワーク要件
+
+Keystone Collector のネットワーク要件を次の表に示します。
+
+
+NOTE: Keystone Collector にはインターネット接続が必要です。デフォルト ゲートウェイ (NAT 経由) または HTTP プロキシ経由で直接ルーティングすることにより、インターネット接続を提供できます。ここでは両方のバリエーションについて説明します。
+
+|===
+
+
+| ソース | デスティネーション | サービス | プロトコルとポート | カテゴリ | 目的 
+
+
+ a| 
+Keystone Collector ( Keystone ONTAP用)
+ a| 
+Active IQ Unified Manager(統合マネージャー)
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+必須（ Keystone ONTAPを使用している場合）
+ a| 
+ONTAPのKeystone Collector 使用状況メトリクス収集
+
+
+
+ a| 
+Keystone Collector ( Keystone StorageGRID用)
+ a| 
+StorageGRID管理ノード
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+必須（ Keystone StorageGRIDを使用している場合）
+ a| 
+StorageGRIDのKeystone Collector 使用状況メトリクス収集
+
+
+
+ a| 
+Keystoneコレクター（ジェネリック）
+ a| 
+インターネット（後述の URL 要件に従う）
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+必須（インターネット接続）
+ a| 
+Keystone Collector ソフトウェア、OS アップデート、メトリックのアップロード
+
+
+
+ a| 
+Keystoneコレクター（ジェネリック）
+ a| 
+顧客のHTTPプロキシ
+ a| 
+HTTP プロキシ
+ a| 
+顧客プロキシポート
+ a| 
+必須（インターネット接続）
+ a| 
+Keystone Collector ソフトウェア、OS アップデート、メトリックのアップロード
+
+
+
+ a| 
+Keystoneコレクター（ジェネリック）
+ a| 
+顧客DNSサーバー
+ a| 
+DNS
+ a| 
+TCP/UDP 53
+ a| 
+必須
+ a| 
+DNS解決
+
+
+
+ a| 
+Keystoneコレクター（ジェネリック）
+ a| 
+顧客のNTPサーバー
+ a| 
+NTP
+ a| 
+UDP 123
+ a| 
+必須
+ a| 
+時間同期
+
+
+
+ a| 
+Keystone Collector ( Keystone ONTAP用)
+ a| 
+Unified Manager
+ a| 
+MYSQL
+ a| 
+TCP 3306
+ a| 
+オプション機能
+ a| 
+Keystone Collector のパフォーマンス メトリック収集
+
+
+
+ a| 
+Keystoneコレクター（ジェネリック）
+ a| 
+顧客監視システム
+ a| 
+HTTPS
+ a| 
+TCP 7777
+ a| 
+オプション機能
+ a| 
+Keystone Collector の健全性レポート
+
+
+
+ a| 
+顧客の運用ワークステーション
+ a| 
+Keystoneコレクター
+ a| 
+SSH
+ a| 
+TCP 22
+ a| 
+管理
+ a| 
+Keystone Collector管理へのアクセス
+
+
+
+ a| 
+NetApp ONTAPクラスタおよびノード管理アドレス
+ a| 
+Keystoneコレクター
+ a| 
+HTTP_8000、ピング
+ a| 
+TCP 8000、ICMPエコー要求/応答
+ a| 
+オプション機能
+ a| 
+ONTAPファームウェアアップデート用のWebサーバー
+
+|===
+
+NOTE: MySQL のデフォルト ポート 3306 は、Unified Manager の新規インストール時に localhost のみに制限されるため、 Keystone Collector のパフォーマンス メトリックの収集ができなくなります。詳細については、以下を参照してください。 link:addl-req.html["ONTAPの要件"] 。
+
+
+
+=== URLアクセス
+
+Keystone Collector は次のインターネット ホストにアクセスする必要があります。
+
+|===
+
+
+| アドレス | 理由 
+
+
+ a| 
+https://keystone.netapp.com[]
+ a| 
+Keystone Collector ソフトウェアの更新と使用状況レポート
+
+
+
+ a| 
+https://support.netapp.com[]
+ a| 
+請求情報とAutoSupport配信についてはNetApp HQにお問い合わせください
+
+|===

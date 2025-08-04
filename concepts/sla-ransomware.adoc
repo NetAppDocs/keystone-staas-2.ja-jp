@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/sla-ransomware.html 
+keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
+summary: NetAppは、ランサムウェア攻撃が発生した場合に、ランサムウェアリカバリ保証プログラムにより、SnapLock Complianceボリュームからのスナップショットデータのリカバリを保証します。 
+---
+= ランサムウェア リカバリ保証
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp は、ランサムウェア リカバリ保証プログラムにより、ランサムウェア攻撃が発生した場合にSnapLock Complianceボリュームからのスナップショット データのリカバリを保証します。ランサムウェア リカバリ保証プログラムをサポートするには、 NetAppランサムウェア リカバリ保証サービスが必要であり、関連するKeystone注文とは別に購入する必要があります。
+
+
+
+== サービスレベル
+
+該当するサブスクリプション期間中、 Keystoneサブスクリプションをサポートするすべてのハードウェアには、ランサムウェア回復保証サービスが必要です。
+
+
+
+== サービスクレジット
+
+
+NOTE: SLA と保証は指名ベースで利用可能です。
+
+SnapLock Compliance がベスト プラクティスに従って導入され、Ransomware Recovery Assurance Service の購入時にNetAppプロフェッショナル サービスがそれを設定または検証した場合、 SnapLockによって保護されているデータが回復できない場合、 NetApp はサービス クレジットを発行します。これらのクレジットの基準は次のとおりです。
+
+* サービス クレジットは将来の請求書に適用できます。クレジットはコミット契約額 (CCV) の 10% を上限とし、サブスクリプションごとに支払われます。
+* クレジットは、関連するKeystone注文の有効なサブスクリプション期間中に提供されます。
+* 月次請求のサブスクリプションの場合、クレジットは今後 12 か月間に分割され、サブスクリプション期間の終了まで将来のKeystone請求書に使用できます。サブスクリプションが 12 か月未満で終了する場合は、更新してクレジットを引き続き使用することも、クレジットを他のNetApp請求書に適用することもできます。
+* 年間サブスクリプションの場合、クレジットは、利用可能な場合、次のKeystone請求書に適用されます。今後Keystone請求書がない場合は、クレジットを他のNetApp請求書に適用できます。
+

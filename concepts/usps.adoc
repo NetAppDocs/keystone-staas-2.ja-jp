@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: United States Protected Support は、米国国内の米国民に継続的なKeystoneサービスの提供とサポートを提供するアドオン サービスです。 
+---
+= USPSの詳細
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+United States Protected Support (USPS) は、NetApp Keystoneサブスクリプションのアドオン サービスです。これにより、米国国内で米国民から継続的なKeystoneサービスの提供とサポートを受ける権利が付与されます。
+
+次のセクションを読んで、サブスクリプションのどの要素がこのアドオン サービスによって拘束され、 NetApp Keystone契約の条件に基づいて提供されるかを理解してください。脚注:免責事項 1[ここで説明するサービスとオファーは、完全に履行されたKeystone契約の対象となり、同契約によって制限および管理されます。]
+
+
+
+== NetApp USPS監視
+
+NetApp USPS Keystoneサポート チームは、お客様の製品とサブスクライブされたサービスの健全性を監視し、リモート サポートを提供し、 Keystone Success Manager と連携します。関連するKeystoneサブスクリプション注文に関連する製品を監視する担当者はすべて、米国国内で活動する米国市民です。
+
+
+
+== Keystoneサクセスマネージャー
+
+Keystone Success Manager (KSM) は、米国国内で活動する米国市民です。彼らの責任はNetApp Keystone契約に明記されています。
+
+
+
+== 展開活動
+
+可能な場合、オンサイトおよびリモートの展開およびインストール作業は、米国領土内で米国市民によって実施されます。脚注:免責事項[オンサイト作業に適切な人員が利用可能かどうかは、 Keystoneシステムが展開される地理的な場所によって異なります。]
+
+
+
+== サポート
+
+可能な場合、必要なオンサイトトラブルシューティングおよびサポート活動は、米国領土内で米国市民によって実施されます。脚注:免責事項[]

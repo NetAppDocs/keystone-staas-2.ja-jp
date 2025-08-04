@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-installation.html 
+keywords: install, VMware 
+summary: OVA テンプレートをダウンロードし、テンプレートを展開するなどして、 Keystone Collector を VMware vSphere システムに展開します。 
+---
+= VMware vSphere システムにKeystone Collector を導入する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere システムにKeystone Collector をデプロイするには、OVA テンプレートのダウンロード、*OVF テンプレートのデプロイ* ウィザードを使用したテンプレートのデプロイ、証明書の整合性の検証、および VM の準備状況の検証が含まれます。
+
+
+
+== OVAテンプレートのデプロイ
+
+次の手順を実行します。
+
+.手順
+. OVAファイルをダウンロードするには https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova["このリンク"^]VMware vSphere システムに保存します。
+. VMware vSphere システムで、*VM とテンプレート* ビューに移動します。
+. 仮想マシン (VM) の必要なフォルダー (VM フォルダーを使用していない場合はデータセンター) を右クリックし、*OVF テンプレートのデプロイ* を選択します。
+. *OVFテンプレートのデプロイ*ウィザードの_ステップ1_で、*OVFテンプレートの選択*をクリックしてダウンロードしたテンプレートを選択します。 `KeystoneCollector-latest.ova`ファイル。
+. _ステップ 2_ で、VM 名を指定し、VM フォルダーを選択します。
+. _ステップ 3_ で、VM を実行するために必要なコンピューティング リソースを指定します。
+. _ステップ 4: 詳細の確認_ で、OVA ファイルの正確性と信頼性を確認します。vCentre バージョン 7.0u2 より前では、コード署名証明書の信頼性を自動的に検証できません。vCentre 7.0u2 以降では検証を実行できますが、そのためには署名証明機関を vCentre に追加する必要があります。お使いの vCentre のバージョンに応じて、次の手順に従ってください。
++
+.vCentre 7.0u1以前: 詳細はこちら
+[%collapsible]
+====
+vCentre は、OVA ファイルの内容の整合性を検証し、OVA ファイルに含まれるファイルに有効なコード署名ダイジェストが提供されていることを確認します。ただし、コード署名証明書の信頼性は検証されません。整合性を検証するには、完全な署名ダイジェスト証明書をダウンロードし、 Keystoneによって発行された公開証明書と照合する必要があります。
+
+.. 完全な署名ダイジェスト証明書をダウンロードするには、「*発行者*」リンクをクリックします。
+.. _Keystone Billing_ 公開証明書を次の場所からダウンロードします。 https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem["このリンク"^] 。
+.. OpenSSL を使用して、OVA 署名証明書の信頼性を公開証明書と照合して検証します。
+`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
+
+
+====
++
+.vCentre 7.0u2以降: 詳細はこちら
+[%collapsible]
+====
+vCenter 7.0u2 以降のバージョンでは、有効なコード署名ダイジェストが提供されている場合、OVA ファイルの内容の整合性とコード署名証明書の信頼性を検証できます。  vCenter ルート信頼ストアには VMware 証明書のみが含まれます。  NetApp は証明機関として Entrust を使用しており、それらの証明書を vCenter 信頼ストアに追加する必要があります。
+
+.. Entrustからコード署名CA証明書をダウンロードする https://web.entrust.com/subca-certificates/OVCS2-CSBR1-crosscert.cer["ここをクリックしてください。"^]。
+.. 以下の手順に従ってください `Resolution`このナレッジベース (KB) 記事のセクション: https://kb.vmware.com/s/article/84240[] 。
+
+
+====
++
+Keystone Collector OVAの完全性と信頼性が検証されると、テキストが表示されます。 `(Trusted certificate)`出版社と。image:ova-deploy.png["検証済みの証明書を表示する OVA UI"]
+
+. *OVF テンプレートのデプロイ*ウィザードの _ステップ 5_ で、VM を保存する場所を指定します。
+. _ステップ 6_ で、VM が使用する宛先ネットワークを選択します。
+. _ステップ 7 テンプレートのカスタマイズ_ で、管理者ユーザー アカウントの初期ネットワーク アドレスとパスワードを指定します。
++
+
+NOTE: 管理者パスワードは、vCentre に可逆形式で保存され、VMware vSphere システムへの初期アクセスを取得するためのブートストラップ資格情報として使用する必要があります。ソフトウェアの初期構成時に、この管理者パスワードを変更する必要があります。 IPv4 アドレスのサブネット マスクは CIDR 表記で指定する必要があります。たとえば、サブネット マスク 255.255.255.0 の場合は値 24 を使用します。
+
+. *OVF テンプレートのデプロイ*ウィザードの_ステップ 8 完了準備_で、構成を確認し、OVA デプロイのパラメータが正しく設定されていることを確認します。
+
+
+VM がテンプレートからデプロイされ、電源がオンになったら、VM への SSH セッションを開き、一時的な管理者の資格情報を使用してログインし、VM の構成の準備ができていることを確認します。
+
+
+
+== 初期システム構成
+
+OVA を通じて展開されたKeystone Collector サーバーの初期構成を行うには、VMware vSphere システムで次の手順を実行します。
+
+
+NOTE: 導入が完了したら、 Keystone Collector 管理ターミナル ユーザー インターフェイス (TUI) ユーティリティを使用して、構成および監視アクティビティを実行できます。  Enter キーや矢印キーなどのさまざまなキーボード コントロールを使用して、オプションを選択し、この TUI 内を移動できます。
+
+. Keystone Collector サーバーへの SSH セッションを開きます。接続すると、管理者パスワードを更新するように求められます。必要に応じて管理者パスワードの更新を完了します。
+. TUI にアクセスするには、新しいパスワードを使用してログインします。ログインすると、TUI が表示されます。
++
+あるいは、以下のコマンドを実行して手動で起動することもできます。 `keystone-collector-tui` CLI コマンド。
+
+. 必要に応じて、TUI の *[構成] > [ネットワーク] セクション*でプロキシの詳細を設定します。
+. *構成 > システム* セクションで、システムのホスト名、場所、および NTP サーバーを構成します。
+. *メンテナンス > コレクターの更新* オプションを使用して、 Keystoneコレクターを更新します。更新後、 Keystone Collector 管理 TUI ユーティリティを再起動して変更を適用します。
+

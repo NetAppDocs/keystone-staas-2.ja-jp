@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: installation/validation.html 
+keywords: validate, validation 
+summary: Keystoneリポジトリは、 Keystoneソフトウェアの整合性を自動的に検証するように構成されています。 
+---
+= Keystoneソフトウェアの自動検証
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystoneリポジトリは、 Keystoneソフトウェアの整合性を自動的に検証するように構成されているため、有効で正規のソフトウェアのみがサイトにインストールされます。
+
+Keystone YUMリポジトリクライアント設定は、 `keystonerepo.rpm`強制GPGチェックを利用する(`gpgcheck=1`) がこのリポジトリを通じてダウンロードされたすべてのソフトウェアに適用されます。 Keystoneリポジトリからダウンロードした RPM のうち、署名検証に失敗したものはインストールされません。この機能は、 Keystone Collector のスケジュールされた自動更新機能で使用され、有効で正規のソフトウェアのみがサイトにインストールされるようになります。

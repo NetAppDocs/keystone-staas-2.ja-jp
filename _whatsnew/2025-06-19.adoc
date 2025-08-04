@@ -1,0 +1,18 @@
+= BlueXPのKeystoneダッシュボード
+:allow-uri-read: 
+
+
+
+
+=== BlueXPのKeystoneダッシュボード
+
+BlueXPから直接Keystoneダッシュボードにアクセスできるようになりました。この統合により、すべてのKeystoneサブスクリプションとその他のNetAppサービスを 1 か所で監視、管理、追跡できるようになります。
+
+BlueXPのKeystoneダッシュボードを使用すると、次のことが可能になります。
+
+* すべてのサブスクリプションの詳細、容量の使用状況、資産を 1 か所で表示します。
+* サブスクリプションを簡単に管理し、ニーズの変化に応じて変更をリクエストできます。
+* ストレージ環境の最新情報を常に把握してください。
+
+
+開始するには、 BlueXP の左側のナビゲーション メニューで *ストレージ > Keystone * に移動します。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Keystoneダッシュボードの概要"] 。

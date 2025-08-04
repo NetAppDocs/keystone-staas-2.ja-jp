@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: dark-sites/requirements.html 
+keywords: installation, private mode, requirement, vmware vsphere, linux, networking,disk, space 
+summary: 'インターネットにアクセスできない環境 (_ダーク サイト_ または _プライベート モード_ とも呼ばれます) にKeystone Collector をインストールする前に、システムに必要なソフトウェアが用意されており、必要な前提条件をすべて満たしていることを確認してください。' 
+---
+= プライベートモードでのインストールの準備
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+インターネットにアクセスできない環境 (_ダーク サイト_ または _プライベート モード_ とも呼ばれます) にKeystone Collector をインストールする前に、システムに必要なソフトウェアが用意されており、必要な前提条件をすべて満たしていることを確認してください。
+
+
+
+== VMware vSphere の要件
+
+* オペレーティング システム: VMware vCenter Server および ESXi 6.7 以降
+* コア: 1 CPU
+* メモリ: 2 GB
+* ディスク容量: 20 GB vDisk
+
+
+
+
+== Linuxの要件
+
+* オペレーティング システム: Debian 12、Red Hat Enterprise Linux (RHEL) 8.6、または RHEL 8.x シリーズ以降のバージョン
+* コア: 2 CPU
+* メモリ: 4 GB
+* ディスク容量: 50 GB vDisk
++
+** 少なくとも2GBの空き容量 `/var/lib/`
+** 少なくとも48GBの空き容量 `/opt/netapp`
+
+
+
+
+同じサーバーに次のサードパーティ パッケージもインストールされている必要があります。リポジトリから利用可能な場合、これらのパッケージは前提条件として自動的にインストールされます。
+
+* RHEL8
++
+** Python3 >=v3.6.8、Python3 \<=v3.9.13
+** ポッドマン
+** ソス
+** yum-utils
+** python3-dnf-プラグインのバージョンロック
+
+
+* Debian v12
++
+** python3 >= v3.9.0、python3 \<= v3.12.0
+** ポッドマン
+** SOSレポート
+
+
+
+
+
+
+== ネットワーク要件
+
+Keystone Collector のネットワーク要件は次のとおりです。
+
+* API ゲートウェイ機能が有効になっているサーバー上に構成された、 Active IQ Unified Manager (Unified Manager) 9.10 以降。
+* Unified Manager サーバーは、ポート 443 (HTTPS) 上のKeystone Collector サーバーからアクセスできる必要があります。
+* Unified Manager サーバー上のKeystone Collector に対して、アプリケーション ユーザー権限を持つサービス アカウントを設定する必要があります。
+* 外部インターネット接続は必要ありません。
+* 毎月、 Keystone Collector からファイルをエクスポートし、 NetAppサポート チームに電子メールで送信します。サポートチームへの連絡方法の詳細については、link:../concepts/gssc.html["Keystoneのサポートを受ける"] 。
+

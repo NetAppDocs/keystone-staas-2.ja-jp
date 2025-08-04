@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: installation/configuration.html 
+keywords: configuration keystone collector 
+summary: Keystone Collector がストレージ環境の使用状況データを収集できるように構成を完了します。 
+---
+= Keystone Collector を構成する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone Collector がストレージ環境の使用状況データを収集できるようにするには、いくつかの構成タスクを完了する必要があります。これは、必要なコンポーネントをアクティブ化し、ストレージ環境に関連付ける 1 回限りのアクティビティです。
+
+[NOTE]
+====
+* Keystone Collector には、構成および監視アクティビティを実行するためのKeystone Collector 管理ターミナル ユーザー インターフェイス (TUI) ユーティリティが用意されています。  Enter キーや矢印キーなどのさまざまなキーボード コントロールを使用して、オプションを選択し、この TUI 内を移動できます。
+* Keystone Collector は、インターネットにアクセスできない組織向けに構成できます。これは、_ダーク サイト_ または _プライベート モード_ とも呼ばれます。詳細については、以下を参照してください。link:../dark-sites/overview.html["プライベートモードのKeystone"] 。
+
+
+====
+.手順
+. Keystone Collector 管理 TUI ユーティリティを起動します。
+`$ keystone-collector-tui`
+. **[構成] > [KS-Collector]** に移動してKeystone Collector 構成画面を開き、更新に使用できるオプションを表示します。
+. 必要なオプションを更新します。
++
+.<strong> ONTAPの場合</strong>
+[%collapsible]
+====
+** * ONTAP の使用状況の収集*: このオプションにより、 ONTAPの使用状況データの収集が有効になります。  Active IQ Unified Manager (Unified Manager) サーバーとサービス アカウントの詳細を追加します。
+** * ONTAPパフォーマンス データの収集*: このオプションにより、 ONTAPのパフォーマンス データの収集が有効になります。これはデフォルトでは無効になっています。  SLA の目的で環境でパフォーマンス監視が必要な場合は、このオプションを有効にします。 Unified Manager データベース ユーザー アカウントの詳細を入力します。データベースユーザーの作成については、以下を参照してください。link:../installation/addl-req.html["Unified Managerユーザーを作成する"] 。
+** *個人データの削除*: このオプションは顧客の特定の個人データを削除し、デフォルトで有効になっています。このオプションが有効になっている場合にメトリックから除外されるデータの詳細については、以下を参照してください。link:../installation/configuration.html#limit-collection-of-private-data["個人データの収集を制限する"] 。
+
+
+====
++
+.<strong> StorageGRIDの場合</strong>
+[%collapsible]
+====
+** * StorageGRID の使用状況の収集*: このオプションにより、ノードの使用状況の詳細の収集が有効になります。  StorageGRIDノード アドレスとユーザーの詳細を追加します。
+** *個人データの削除*: このオプションは顧客の特定の個人データを削除し、デフォルトで有効になっています。このオプションが有効になっている場合にメトリックから除外されるデータの詳細については、以下を参照してください。link:../installation/configuration.html#limit-collection-of-private-data["個人データの収集を制限する"] 。
+
+
+====
+. **システムで KS-Collector を起動** フィールドを切り替えます。
+. **[保存]**をクリックします。image:tui-1.png["トゥイスクリーン"]
+. TUI のメイン画面に戻り、**サービス ステータス** 情報を確認して、 Keystone Collector が正常な状態であることを確認します。システムでは、サービスが **全体: 正常** 状態にあることが示されるはずです。image:tui-2.png["トゥイスクリーン"]
+. ホーム画面で [**Exit to Shell**] オプションを選択して、 Keystone Collector 管理 TUI を終了します。
+
+
+
+
+== Keystone Collector で HTTP プロキシを構成する
+
+コレクター ソフトウェアは、インターネットとの通信に HTTP プロキシの使用をサポートしています。これは TUI で設定できます。
+
+.手順
+. すでに閉じられている場合は、 Keystone Collector 管理 TUI ユーティリティを再起動します。
+`$ keystone-collector-tui`
+. **HTTP プロキシ** フィールドをオンにして、認証が必要な場合は、HTTP プロキシ サーバー、ポート、および資格情報の詳細を追加します。
+. **[保存]**をクリックします。image:tui-3.png["トゥイスクリーン"]
+
+
+
+
+== 個人データの収集を制限する
+
+Keystone Collector は、サブスクリプション計測を実行するために必要な限定された構成、ステータス、およびパフォーマンス情報を収集します。アップロードされたコンテンツから機密情報をマスクすることで、収集される情報をさらに制限するオプションがあります。これは請求額の計算には影響しません。ただし、情報を制限すると、ボリューム名などユーザーが簡単に識別できる一部の要素が UUID に置き換えられるため、レポート情報の使いやすさに影響する可能性があります。
+
+特定の顧客データの収集を制限することは、 Keystone Collector TUI 画面で構成可能なオプションです。このオプション「*プライベート データの削除*」は、デフォルトで有効になっています。
+
+image:tui-4.png["トゥイスクリーン"]
+
+ONTAPとStorageGRIDの両方でプライベートデータアクセスを制限する際に削除された項目については、以下を参照してください。link:../installation/data-collection.html["個人データへのアクセス制限により削除された項目のリスト"] 。
+
+
+
+== カスタムルートCAを信頼する
+
+公開ルート証明機関 (CA) に対する証明書の検証は、 Keystone Collector のセキュリティ機能の一部です。ただし、必要に応じて、カスタム ルート CA を信頼するようにKeystone Collector を構成することもできます。
+
+システム ファイアウォールで SSL/TLS 検査を使用すると、インターネット ベースのトラフィックがカスタム CA 証明書で再暗号化されます。ルート証明書を受け入れて接続を許可する前に、ソースを信頼できる CA として検証するための設定を構成する必要があります。次の手順を実行します。
+
+.手順
+. CA 証明書を準備します。  _base64 エンコード X.509_ ファイル形式である必要があります。
++
+
+NOTE: サポートされているファイル拡張子は `.pem`、 `.crt` 、 `.cert` 。証明書がこれらの形式のいずれかであることを確認してください。
+
+. 証明書をKeystone Collector サーバーにコピーします。ファイルがコピーされる場所をメモしておきます。
+. サーバー上でターミナルを開き、管理 TUI ユーティリティを実行します。
+`$ keystone-collector-tui`
+. *[構成] > [詳細設定]*に移動します。
+. *カスタム ルート証明書を有効にする* オプションを有効にします。
+. *カスタムルート証明書のパスを選択:*で、 `- Unset -`
+. Enterキーを押します。証明書パスを選択するためのダイアログ ボックスが表示されます。
+. ファイル システム ブラウザからルート証明書を選択するか、正確なパスを入力します。
+. Enterキーを押します。*詳細*画面に戻ります。
+. *保存*を選択します。設定が適用されます。
+
+
+image:kc-custom-ca.png["CAカスタマイズ用のTUI画面"]
+
+
+
+== パフォーマンスサービスレベルの作成
+
+Keystone Collector 管理 TUI ユーティリティを使用して、パフォーマンス サービス レベル (PSL) を作成できます。  TUI を使用して PSL を作成すると、各サービス レベルに設定されているデフォルト値が自動的に選択されるため、 Active IQ Unified Managerを使用して PSL を作成する際にこれらの値を手動で設定した場合に発生する可能性のあるエラーの可能性が軽減されます。
+
+PSLの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html["パフォーマンスサービスレベル"^] 。
+
+サービスレベルの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystoneのサービスレベル"^] 。
+
+.手順
+. Keystone Collector 管理 TUI ユーティリティを起動します。
+`$ keystone-collector-tui`
+. AIQUM 画面を開くには、「*Configure>AIQUM*」に移動します。
+. *AIQUM パフォーマンス プロファイルの作成* オプションを有効にします。
+. Active IQ Unified Managerサーバーとユーザー アカウントの詳細を入力します。これらの詳細は PSL の作成に必要であり、保存されません。
++
+image:qos-account-details-1.png["AIQUM サーバーとサービス アカウントの詳細を入力するための TUI 画面"]
+
+. * Keystoneバージョンを選択*の場合は、 `-unset-` 。
+. Enterキーを押します。Keystone のバージョンを選択するためのダイアログ ボックスが表示されます。
+. *STaaS* を強調表示してKeystone STaaS のKeystoneバージョンを指定し、Enter キーを押します。
++
+image:qos-STaaS-selection-2.png["Keystoneのバージョンを指定するためのTUI画面"]
+
++
+
+NOTE: Keystoneサブスクリプション サービス バージョン 1 の *KFS* オプションを強調表示できます。 Keystoneサブスクリプション サービスは、構成するサービス レベル、サービス提供、課金原則においてKeystone STaaS とは異なります。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Keystoneサブスクリプション サービス | バージョン 1"^] 。
+
+. 指定されたKeystoneバージョンの * Keystoneサービス レベルの選択* オプション内に、サポートされているすべてのKeystoneサービス レベルが表示されます。リストから必要なサービス レベルを有効にします。
++
+image:qos-STaaS-selection-3.png["サポートされているすべてのKeystoneサービスレベルを表示するTUI画面"]
+
++
+
+NOTE: 複数のサービス レベルを同時に選択して PSL を作成できます。
+
+. *保存*を選択し、Enterを押します。パフォーマンス サービス レベルが作成されます。
++
+STaaS の場合は Premium-KS-STaaS、KFS の場合は Extreme KFS など、作成された PSL は、 Active IQ Unified Managerの *パフォーマンス サービス レベル* ページで確認できます。作成された PSL が要件を満たしていない場合は、ニーズを満たすように PSL を変更できます。詳細については、link:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/task_create_and_edit_psls.html["パフォーマンス サービス レベルの作成と編集"^] 。
+
++
+image:qos-performance-sl.png["作成された AQoS ポリシーを表示する UI スクリーンショット"]
+
+
+
+
+TIP: 選択したサービス レベルの PSL が、指定されたActive IQ Unified Manger サーバーにすでに存在する場合は、再度作成することはできません。そうしようとすると、エラー メッセージが表示されます。image:qos-failed-policy-1.png["ポリシー作成のエラーメッセージを表示するTUI画面"]

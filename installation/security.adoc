@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: installation/security.html 
+keywords: VMware, security, hardening, Keystone Collector 
+summary: Keystone Collector には、 Keystoneシステムのパフォーマンスと使用状況メトリックを監視するセキュリティ機能が含まれており、セキュリティが強化された構成を使用するように構成されています。 
+---
+= Keystone Collectorのセキュリティ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone Collector には、顧客データのセキュリティを危険にさらすことなく、 Keystoneシステムのパフォーマンスと使用状況メトリックを監視するセキュリティ機能が含まれています。
+
+Keystone Collector の機能は、次のセキュリティ原則に基づいています。
+
+* *プライバシー設計* - Keystone Collector は、使用状況の計測とパフォーマンスの監視を実行するために最小限のデータのみを収集します。詳細については、以下を参照してください。 link:data-collection.html["請求のために収集されたデータ"^] 。そのlink:configuration.html#limit-collection-of-private-data["個人データの削除"]オプションはデフォルトで有効になっており、機密情報をマスクして保護します。
+* *最小権限アクセス* - Keystone Collector では、ストレージ システムを監視するために最小限の権限しか必要としません。これにより、セキュリティ リスクが最小限に抑えられ、データへの意図しない変更が防止されます。このアプローチは最小権限の原則に沿っており、監視対象環境の全体的なセキュリティ体制を強化します。
+* *安全なソフトウェア開発フレームワーク* - Keystone は開発サイクル全体にわたって安全なソフトウェア開発フレームワークを使用しており、リスクを軽減し、脆弱性を減らし、システムを潜在的な脅威から保護します。
+
+
+
+
+== セキュリティ強化
+
+デフォルトでは、 Keystone Collector はセキュリティが強化された構成を使用するように設定されています。推奨されるセキュリティ構成は次のとおりです。
+
+* Keystone Collector 仮想マシンのオペレーティング システム:
++
+** CIS Debian Linux 12 ベンチマーク標準に準拠しています。 Keystone Collector 管理ソフトウェアの外部で OS 構成に変更を加えると、システムのセキュリティが低下する可能性があります。詳細については、以下を参照してください。 link:https://learn.cisecurity.org/benchmarks["CISベンチマークガイド"^] 。
+** 自動更新機能を通じて、 Keystone Collector によって検証されたセキュリティ パッチを自動的に受信してインストールします。この機能を無効にすると、パッチが適用されていない脆弱なソフトウェアが発生する可能性があります。
+** Keystone Collector から受信した更新を認証します。  APT リポジトリ検証を無効にすると、不正なパッチが自動的にインストールされ、脆弱性が生じる可能性があります。
+
+
+* Keystone Collector は、接続のセキュリティを確保するために HTTPS 証明書を自動的に検証します。この機能を無効にすると、外部エンドポイントのなりすましや使用状況データの漏洩につながる可能性があります。
+* Keystone Collectorはサポートしていますlink:configuration.html#trust-a-custom-root-ca["カスタム信頼CA"]認証。デフォルトでは、link:https://wiki.mozilla.org/CA["Mozilla CA 証明書プログラム"^] 。追加の信頼できる CA を有効にすることで、 Keystone Collector はこれらの証明書を提示するエンドポイントへの接続に対して HTTPS 証明書の検証を有効にします。
+* Keystoneコレクターは、機密情報をマスクして保護する *プライベート データの削除* オプションをデフォルトで有効にします。詳細については、以下を参照してください。 link:configuration.html#limit-collection-of-private-data["個人データの収集を制限する"^] 。このオプションを無効にすると、追加のデータがKeystoneシステムに通信されることになります。たとえば、ボリューム名など、機密情報と見なされる可能性のあるユーザーが入力した情報が含まれる場合があります。
+
+
+*関連情報*
+
+* link:installation-overview.html["Keystone Collector の概要"]
+* link:vapp-prereqs.html["仮想インフラストラクチャの要件"]
+* link:configuration.html["Keystone Collector を構成する"]
+

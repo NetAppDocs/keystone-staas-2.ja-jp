@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: installation/asup-config.html 
+keywords: ASUP, AutoSupport configuration 
+summary: ONTAPクラスタから送信される毎日のサポート バンドルにKeystoneデータを組み込むようにAutoSupportを設定します。 
+---
+= KeystoneのAutoSupportを構成する
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AutoSupportテレメトリ メカニズムを使用する場合、 Keystone はAutoSupportテレメトリ データに基づいて使用状況を計算します。必要な粒度レベルを実現するには、 ONTAPクラスタから送信される毎日のサポート バンドルにKeystoneデータを組み込むようにAutoSupportを設定する必要があります。
+
+.タスク概要
+Keystoneデータを含めるようにAutoSupportを設定する前に、次の点に注意してください。
+
+* AutoSupportテレメトリ オプションは、 ONTAP CLI を使用して編集します。  AutoSupportサービスとシステム（クラスタ）管理者ロールの管理については、以下を参照してください。 https://docs.netapp.com/us-en/ontap/system-admin/manage-autosupport-concept.html["AutoSupportの管理 - 概要"^]そして https://docs.netapp.com/us-en/ontap/system-admin/cluster-svm-administrators-concept.html["クラスタ管理者とSVM管理者"^]。
+* Keystoneの正確なデータ収集を確実に行うには、サブシステムを毎日および毎週のAutoSupportバンドルに含めます。  AutoSupportサブシステムの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/ontap/system-admin/autosupport-subsystem-collection-reference.html["AutoSupportサブシステムとは"^] 。
+
+
+.手順
+. システム管理者ユーザーとして、SSH を使用してKeystone ONTAPクラスターにログインします。詳細については、 https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["SSHを使用したクラスタへのアクセス"^] 。
+. ログの内容を変更します。
++
+** 日次ログの内容を変更するには、次のコマンドを実行します。
++
+[source]
+----
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+----
+** 週次ログの内容を変更するには、次のコマンドを実行します。
++
+[source]
+----
+autosupport trigger modify -autosupport-message weekly -troubleshooting-additional wafl -node *
+----
++
+このコマンドの詳細については、 https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-trigger-modify.html["system node autosupport trigger modify"^] 。
+
+
+
+

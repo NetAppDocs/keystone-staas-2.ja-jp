@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: subscription-services-v1.html 
+keywords: Keystone Flex Subscriptions, kfs v1, keystone legacy, Keystone subscription services version 1 
+summary: Keystone Flexサブスクリプションサービス経由のKeystone STaaS 
+---
+= Keystoneサブスクリプション サービス | バージョン 1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Keystone STaaS の前には、 Keystoneサブスクリプション サービス (以前はKeystone Flex サブスクリプション サービスと呼ばれていました) がありました。
+
+2つのサービスのナビゲーションは、link:./integrations/keystone-bluexp.html["Keystoneダッシュボード"^] Keystoneサブスクリプション サービスは、構成パフォーマンス サービス レベル、サービス提供、課金原則においてKeystone STaaS とは異なります。 2024 年 4 月現在、 NetApp はKeystone STaaS のみのドキュメントを維持および公開しています。引き続きKeystoneサブスクリプション サービスを使用している場合は、 Keystone STaaS への移行のサポートについて KSM にお問い合わせください。必要に応じて、 Keystoneサブスクリプション サービスのドキュメントの PDF バージョンにここからアクセスできます。
+
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["英語"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["日本語"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ko-kr.pdf["韓国語"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-cn.pdf["中国語（簡体字）"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-tw.pdf["中国語（繁体字）"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-de-de.pdf["ドイツ語"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-es-es.pdf["スペイン語"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-fr-fr.pdf["フランス語"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-it-it.pdf["イタリア語"^]
+

@@ -1,0 +1,203 @@
+---
+settings:
+  name: Keystone
+  downlevel: true
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - version-number: '2.0'
+    url: "/keystone-staas-2"
+  - version-number: '3.0'
+    url: "/keystone-staas"
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: Keystoneドキュメント
+    url: "/index.html"
+  - title: リリース ノート
+    entries:
+    - title: Keystone STaaSの新機能
+      url: "/whats-new.html"
+    - title: 解決済みの問題
+      url: "/release-notes/fixed-issues.html"
+    - title: 既知の問題
+      url: "/release-notes/known-issues.html"
+    - title: 既知の制限事項
+      url: "/release-notes/known-limitations.html"
+  - title: 始めましょう
+    entries:
+    - title: Keystone STaaSについて学ぶ
+      url: "/concepts/overview.html"
+    - title: Keystoneインフラストラクチャ
+      url: "/concepts/infra.html"
+    - title: Keystoneコレクター
+      url: "/installation/installation-overview.html"
+    - title: コンポーネント
+      url: "/concepts/components.html"
+    - title: データフロー
+      url: "/concepts/data-flow.html"
+    - title: 運用モデル
+      url: "/concepts/operational-models.html"
+  - title: Keystoneのセットアップと構成
+    entries:
+    - title: 要件
+      entries:
+      - title: 仮想インフラ
+        url: "/installation/vapp-prereqs.html"
+      - title: Linux
+        url: "/installation/linux-prereqs.html"
+      - title: ONTAPとStorageGRID
+        url: "/installation/addl-req.html"
+    - title: Keystone Collectorをインストールする
+      entries:
+      - title: VMware vSphere にデプロイ
+        url: "/installation/vapp-installation.html"
+      - title: Linuxにインストールする
+        url: "/installation/linux-installation.html"
+      - title: Keystoneソフトウェアの自動検証
+        url: "/installation/validation.html"
+    - title: Keystone Collector を構成する
+      url: "/installation/configuration.html"
+    - title: ITOMコレクターをインストールする
+      entries:
+      - title: 設置を準備
+        url: "/installation/itom-prereqs.html"
+      - title: Linuxにインストールする
+        url: "/installation/install-itom-linux.html"
+      - title: Windowsにインストール
+        url: "/installation/install-itom-windows.html"
+    - title: AutoSupportを構成する
+      url: "/installation/asup-config.html"
+    - title: 監視とアップグレード
+      entries:
+      - title: Keystone Collector の健全性を監視する
+        url: "/installation/monitor-health.html"
+      - title: Keystoneコレクターのアップグレード
+        url: "/installation/upgrade.html"
+    - title: Keystone Collectorのセキュリティ
+      url: "/installation/security.html"
+    - title: 請求のために収集されたデータ
+      url: "/installation/data-collection.html"
+    - title: プライベートモードのKeystone
+      entries:
+      - title: 概要
+        url: "/dark-sites/overview.html"
+      - title: 設置を準備
+        url: "/dark-sites/requirements.html"
+      - title: Keystone Collectorをインストールする
+        url: "/dark-sites/install-collector.html"
+      - title: Keystone Collector を構成する
+        url: "/dark-sites/configure-collector.html"
+      - title: Keystone Collector の健全性を監視する
+        url: "/dark-sites/monitor.html"
+  - title: Keystoneサブスクリプションの管理と監視
+    entries:
+    - title: Keystoneダッシュボードを理解する
+      entries:
+      - title: Keystoneダッシュボードについて学ぶ
+        url: "/integrations/dashboard-overview.html"
+      - title: Keystoneダッシュボードを使い始める
+        url: "/integrations/dashboard-access.html"
+      - title: BlueXPのKeystoneダッシュボード
+        url: "/integrations/keystone-bluexp.html"
+      - title: Digital AdvisorのKeystoneダッシュボード
+        url: "/integrations/keystone-aiq.html"
+      - title: データを検索し、レポートを生成し、アラートを表示します
+        url: "/integrations/options.html"
+    - title: サブスクリプションの分析情報を表示
+      entries:
+      - title: サブスクリプションの詳細を表示する
+        url: "/integrations/subscriptions-tab.html"
+      - title: 現在の消費量の詳細を表示する
+        url: "/integrations/current-usage-tab.html"
+      - title: 消費動向を見る
+        url: "/integrations/consumption-tab.html"
+      - title: サブスクリプションのタイムラインを表示する
+        url: "/integrations/subscription-timeline.html"
+    - title: アセットを表示
+      entries:
+      - title: サブスクリプションに関連付けられたアセットを表示する
+        url: "/integrations/assets-tab.html"
+      - title: 複数のサブスクリプションにわたる資産を表示する
+        url: "/integrations/assets.html"
+    - title: サブスクリプションを変更する
+      url: "/integrations/modify-subscription.html"
+    - title: サービスリクエストを表示
+      url: "/integrations/administration-tab.html"
+    - title: ボリュームとオブジェクトストレージの詳細を表示する
+      url: "/integrations/volumes-objects-tab.html"
+    - title: パフォーマンス指標を表示する
+      url: "/integrations/performance-tab.html"
+  - title: 概念
+    entries:
+    - title: Keystone STaaSサービス
+      entries:
+      - title: 指標と定義
+        url: "/concepts/metrics.html"
+      - title: ストレージサービス品質
+        url: "/concepts/qos.html"
+      - title: サポートされているストレージ
+        url: "/concepts/supported-storage-services.html"
+      - title: サポートされる容量
+        url: "/concepts/supported-storage-capacity.html"
+      - title: パフォーマンスサービスレベル
+        url: "/concepts/service-levels.html"
+      - title: パフォーマンスサービスレベルの容量要件
+        url: "/concepts/capacity-requirements.html"
+    - title: アドオンサービス
+      entries:
+      - title: 高度なデータ保護
+        url: "/concepts/adp.html"
+      - title: Data Infrastructure Insights
+        url: "/concepts/data-infra-insights.html"
+      - title: データ階層化
+        url: "/concepts/data-tiering.html"
+      - title: 返品不可、不揮発性コンポーネント、およびSnapLock準拠
+        url: "/concepts/nrnvc.html"
+      - title: USプロテクテッドサポート（USPS）
+        url: "/concepts/usps.html"
+    - title: KeystoneSTaaS SLO
+      entries:
+      - title: 可用性
+        url: "/concepts/sla-availability.html"
+      - title: パフォーマンス
+        url: "/concepts/sla-performance.html"
+      - title: 持続可能性
+        url: "/concepts/sla-sustainability.html"
+      - title: ランサムウェア リカバリ保証
+        url: "/concepts/sla-ransomware.html"
+    - title: 請求する
+      entries:
+      - title: Keystone価格
+        url: "/concepts/pricing.html"
+      - title: コミットされた容量に基づく課金
+        url: "/concepts/committed-capacity-billing.html"
+      - title: 消費容量に基づく計測
+        url: "/concepts/consumed-capacity-billing.html"
+      - title: バースト消費量に基づく課金
+        url: "/concepts/burst-consumption-billing.html"
+      - title: Keystone請求のさまざまなシナリオ
+        url: "/concepts/misc-volume-billing.html"
+      - title: 請求スケジュール
+        url: "/concepts/billing-schedules.html"
+  - title: Digital Advisor REST API からKeystoneにアクセスする
+    entries:
+    - title: Digital Advisor REST APIを使用してKeystoneデータを取得する
+      url: "/rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html"
+    - title: リフレッシュトークンとアクセストークンを生成する
+      url: "/rest-api/generate-tokens.html"
+    - title: Digital Advisor REST API を使用してすべての顧客のリストを取得します
+      url: "/rest-api/get-customer-list.html"
+    - title: Digital Advisor REST API を使用して顧客のサブスクリプションを取得する
+      url: "/rest-api/get-customer-subscriptions.html"
+    - title: Digital Advisor REST API を使用して顧客の消費詳細を取得します
+      url: "/rest-api/get-customer-consumption.html"
+  - title: Keystoneサブスクリプション サービス バージョン 1
+    url: "/subscription-services-v1.html"
+  - title: Keystoneのサポートを受ける
+    url: "/concepts/gssc.html"
+  - title: 法律上の表示
+    url: "/legal-notices.html"

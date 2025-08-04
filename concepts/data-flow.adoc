@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-flow.html 
+keywords: data flow 
+summary: Keystone STaaS システムのデータは、 Keystone Collector と、関連する監視システムである AIOPs ソリューション ツールを経由して流れます。 
+---
+= Keystoneデータフロー
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Keystone STaaS システムのデータは、 Keystone Collector と、関連する監視システムである ITOM 監視ソリューションを経由して流れます。
+
+
+
+== Keystone Collector のデータフロー
+
+Keystone Collector は、次のフロー図に示すように、ストレージ コントローラへの REST API 呼び出しを開始し、コントローラの使用状況の詳細を定期的に取得します。
+
+image:data-collector-flow.png["コレクターコンポーネント内のデータフローを示します"]
+
+.凡例
+. NetApp Keystone Collector はKeystoneクラウドへの接続を開始します。
+. お客様が運用するファイアウォールにより接続が許可されます。
+. Keystone Collector は、ストレージ コントローラの管理接続に直接 REST API 接続を確立するか、 Active IQ Unified Managerを介してトンネルして使用状況とパフォーマンスのデータを収集します。
+. このデータは、HTTPS を介してKeystoneクラウド コンポーネントに安全に送信されます。
+
+
+
+
+== データフローの監視
+
+ストレージ インフラストラクチャの健全性を継続的に監視することは、 Keystoneサービスの最も重要な機能の 1 つです。監視とレポートのために、 Keystone はITOM 監視ソリューションを使用します。次の図は、ITOM 監視ソリューションによって顧客の場所へのリモート アクセスがどのように保護されるかを示しています。お客様はリモート セッション機能を有効にすることを選択できます。これにより、 Keystoneサポート チームは監視対象のデバイスに接続してトラブルシューティングを行うことができます。
+
+image:monitoring-flow-2.png["データフロー"]
+
+.凡例
+. ITOM 監視ソリューション ゲートウェイは、クラウド ポータルへの TLS セッションを開始します。
+. お客様が運用するファイアウォールにより接続が許可されます。
+. クラウド内の ITOM 監視ソリューション サーバーが接続を受け入れます。
+. クラウド ポータルとローカル ゲートウェイの間で TLS セッションが確立されます。
+. NetAppコントローラは、SNMP/Syslog プロトコルを使用してアラートを送信したり、ローカル ゲートウェイへの API 要求に応答したりします。
+. ローカル ゲートウェイは、以前に確立された TLS セッションを使用して、これらのアラートをクラウド ポータルに送信します。
+
+
+
+
+== コンプライアンス基準
+
+Keystone ITOM 監視ソリューションは、欧州連合一般データ保護規則 (GDPR) およびカリフォルニア州消費者プライバシー法 (CCPA) に準拠しています。また、link:https://www.logicmonitor.com/legal/data-processing-addendum["データ保護補足条項（DPA）"^]これらのコミットメントを文書化します。  ITOM 監視ソリューションは、個人データを収集または保存しません。
