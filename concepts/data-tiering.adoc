@@ -18,7 +18,8 @@ summary: データ階層化アドオン サービスは、あまり使用され�
 
 標準サービスと追加サービスの詳細については、以下を参照してください。link:../concepts/supported-storage-services.html["Keystone STaaSサービス"] 。パフォーマンスサービスレベルの詳細については、以下を参照してください。link:../concepts/service-levels.html["Keystoneのパフォーマンスサービスレベル"] 。
 
-階層化アドオン サービスは、Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP)、その他のKeystone STaaS 対応、S3 互換、サードパーティ オブジェクト ストレージなど、 NetApp以外のストレージにデータを階層化する場合にのみ必要です。
+
+NOTE: 階層化アドオン サービスは、Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP)、その他のKeystone STaaS 対応、S3 互換、サードパーティ オブジェクト ストレージなど、 NetApp以外のストレージにデータを階層化する場合にのみ必要です。
 
 階層化機能は、オンプレミスおよびオフプレミスのオブジェクト ストレージ階層への、アクセス頻度の低いデータの自動階層化を可能にするNetApp FabricPoolテクノロジーを活用します。
 
@@ -26,14 +27,14 @@ summary: データ階層化アドオン サービスは、あまり使用され�
 
 たとえば、コールド ストレージ層のターゲットが次の場合:
 
-* Keystone STaaS Value 層、 Keystone STaaS StorageGRID Object 層、または既存の SGWS グリッド (顧客所有) - 追加料金はかかりません。これは標準サービスの一部です。
+* Keystone STaaS Value 層、 Keystone STaaS StorageGRID Object 層、または既存のStorageGRID Webscale (SGWS) グリッド (顧客所有) - 追加料金はかかりません。これは標準サービスの一部です。
 * パブリック クラウド (AWS、Azure、Google) またはKeystone STaaS 対応のサード パーティ オブジェクト ストレージ - コールド ストレージ ターゲットに階層化されたデータ容量には追加料金がかかります。
 
 
 アドオン階層化サービスの料金は、サブスクリプション期間全体を通じて適用されます。
 
 
-NOTE: Cloud Volumes ONTAPに必要なハイパースカラーベースのコンピューティング、ストレージ、およびネットワーク サービスは、 Keystone STaaS サブスクリプションの一部としてNetAppによって提供されません。これらのサービスは、ハイパースカラー クラウド サービス プロバイダーから直接調達する必要があります。
+NOTE: Cloud Volumes ONTAPに必要なハイパースケーラーベースのコンピューティング、ストレージ、およびネットワーク サービスは、 Keystone STaaS サブスクリプションの一部としてNetAppによって提供されません。これらのサービスは、ハイパースケーラー クラウド サービス プロバイダーから直接調達する必要があります。
 
 *関連情報*
 
