@@ -1074,7 +1074,6 @@
   <block id="0615b5bfa7b669de144331b512440192" category="inline-link">SSHを使用したクラスタへのアクセス</block>
   <block id="75637cd8fe530b3ca0a91d01f7a154b3" category="list-text">システム管理者ユーザーとして、SSH を使用してKeystone ONTAPクラスターにログインします。詳細については、<block ref="72c78e462556b03d46e2f3029d4a0613" category="inline-link-rx"></block> 。</block>
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">ログの内容を変更します。</block>
-  <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">日次ログの内容を変更するには、次のコマンドを実行します。</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">週次ログの内容を変更するには、次のコマンドを実行します。</block>
   <block id="20c41bcd9366cdbd961d6554489ea863" category="inline-link">system node autosupport trigger modify</block>
   <block id="5f6d98c1ed4256fab45f6c20e637744e" category="paragraph">このコマンドの詳細については、<block ref="700e80291e0b2dbcd3452a610925a1ef" category="inline-link-rx"></block> 。</block>
@@ -2037,7 +2036,6 @@
   <block id="4d14bebdede2f7719e5f532aa0038aae" category="list-text">Digital Advisor の左側のナビゲーション ペインから、*[全般] &gt; [Keystoneサブスクリプション] &gt; [ボリューム] &gt; [ボリュームの詳細]* に移動します。</block>
   <block id="12405cc60d2ee8aa60f147c5c605b8f2" category="paragraph">容量使用量、ボリューム タイプ、クラスター、アグリゲート、割り当てられたKeystoneパフォーマンス サービス レベルなどのボリュームの表形式のリストを表示できます。列見出しの横にある情報アイコンにマウスを合わせると、列をスクロールして詳細情報を確認できます。列で並べ替えたり、リストをフィルタリングして特定の情報を表示したりできます。</block>
   <block id="288b4e42b32faccce4a2d55e94593bd9" category="admonition">QoS ポリシーはKeystoneバージョン 3 では適用されません。</block>
-  <block id="1cedef25ccb6885eb8bfdc7660435962" category="paragraph">*列の非表示/表示*を使用して、テーブルに表示される列を追加または削除できます。デフォルトでは、*Department*列を除くすべての列が選択されています。  *Department* 列を含む任意の列を選択または選択解除することができ、設定は後で使用するために保存されます。  CSV レポートをダウンロードする場合、*Department* 列の詳細が選択されている場合はそれが含まれ、他の列はテーブル内の選択状態に関係なく表示されます。</block>
   <block id="af16b731bd6e35896b00c75d9acfb1d5" category="admonition">高度なデータ保護アドオン サービスの場合、ボリュームがMetroCluster構成内のプライマリ ボリュームであるかミラー ボリュームであるかを示す追加の列が表示されます。  *ノードシリアル番号のコピー* ボタンをクリックすると、個々のノードシリアル番号をコピーできます。</block>
   <block id="6c419bfae17b57a1883f78150d7fbdce" category="inline-image-macro">ボリュームの詳細タブ</block>
   <block id="56e2246e0f7e12674e62ac0311a5600a" category="paragraph"><block ref="56e2246e0f7e12674e62ac0311a5600a" category="inline-image-macro-rx" type="image"></block></block>
@@ -2442,4 +2440,15 @@
   <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">サイト A とサイト B はMetroCluster構成でセットアップされています。ユーザーがサイト A に 10 TB のボリュームを作成すると、サイト B にも同一の 10 TB のボリュームが作成されます。Keystoneは各サイトで 10 TB の消費量を識別し、合計で 20 TB の増加となります。System Manager と Unified Manager は、サイト A に 10 TB のボリュームが作成されたことを報告しますが、サイト B に 10 TB のボリュームが作成されたことを報告しません。</block>
   <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">表示される消費量 94.21 TiB は、プライマリ サブスクリプションの使用量を表します。高度なデータ保護により、消費量が個別のサブスクリプションを持つパートナー サイト間で分割されるため、このグラフにはプライマリ サイトの使用状況のみが表示されます。高度なデータ保護アドオンサービスの価格については、以下を参照してください。<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block> 。</block>
   <block id="eb80e5c63a486d3698858f87d747e461" category="paragraph">Keystoneバージョン 3 (v3) をサブスクライブするには、 Keystoneサポート チームにお問い合わせください。詳細については、<block ref="ba5860e7066469b734064f44e703aa5c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7e8fe67b005603b496012796735f2d36" category="doc">新しい列による論理使用状況の追跡の強化</block>
+  <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">FabricPoolボリュームのKeystone消費量追跡を強化するために、新しい列「合計フットプリント」が追加されました。</block>
+  <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXPのKeystoneダッシュボード *: *Assets* タブ内の *Volumes in clusters* タブに *Total footnotes* 列が表示されます。</block>
+  <block id="61f4e69294ec080e5cb7bce32f2f8b99" category="list-text">*Digital Advisor*: * ボリュームとオブジェクト * タブ内の * ボリュームの詳細 * タブに * 合計フットプリント * 列が表示されます。</block>
+  <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">この列には、パフォーマンス層とコールド層の両方のデータを含む、 FabricPool階層化を使用したボリュームの合計論理フットプリントが表示されるため、 Keystone の消費量を正確に計算できます。</block>
+  <block id="bff820430728f0b409c26641dc8ddd41" category="list-text">ONTAP 9.16.1 以降では、次のコマンドを実行して日次ログの内容を変更します。</block>
+  <block id="63af57ffe551ed93c0576ba741b36e47" category="list-text">以前のONTAPバージョンの場合は、次のコマンドを実行して日次ログの内容を変更します。</block>
+  <block id="8e65b1fa60d467c8850acfb3f1d1b8b9" category="paragraph">*列の非表示/表示*を使用して、テーブルに表示される列を追加または削除できます。デフォルトでは、以前に保存した列の設定がテーブルに表示されます。 *Department* 列や *Total Footprint* 列などの新しく追加された列はデフォルトでは非表示になっており、テーブルに表示するには手動で選択する必要があります。任意の列を選択または選択解除することができ、設定は後で使用するために保存されます。  CSV レポートをダウンロードする場合、表示設定に関係なく、使用可能なすべての列がエクスポートに含まれます。</block>
+  <block id="56a9fe5a3d171069cb125956f6186c86" category="paragraph">Digital AdvisorダッシュボードのMetroCluster構成で構成されたサブスクリプションの消費傾向チャートからバーストしきい値ラインが欠落しており、誤った *バースト制限超過* ステータスが表示されます。</block>
+  <block id="8d317448388884cae15b07e53f9c9fbc" category="paragraph">2025/08/28</block>
+  <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">2025年8月28日</block>
 </blocks>
