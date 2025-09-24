@@ -2445,9 +2445,7 @@
   <block id="d540a0a7aa0f09414e542ffabc6300c6" category="list-text">容量使用状況とサブスクリプションの有効期限に関するシステム生成アラートとユーザー定義アラートの両方を含むアクティブなアラートを表示して解決します。</block>
   <block id="64d4cc394badd0b54b5b74f5080233c6" category="list-text">容量使用状況とサブスクリプション有効期限イベントを追跡するためのアラート モニターを作成します。</block>
   <block id="fad96b4b3d3badf81c42f03f5e3e79f9" category="inline-link-macro">アラートとモニターの表示と管理</block>
-  <block id="cdd57c5e351290faba63a64f9aeaaa00" category="paragraph">詳細については、<block ref="54a7920301641a95eb19ac46b9860916" category="inline-link-macro-rx"></block> 。</block>
   <block id="bcf269fdba28fb16246a22e167483e0c" category="section-title">合理化されたパフォーマンス サービス レベルの表示</block>
-  <block id="d5361f65bad1a0cefb26442a03e3f1a3" category="paragraph">パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、<block ref="c9175061cd37da451a004ee428397f08" category="inline-link-macro-rx"></block> 。</block>
   <block id="1c560ebcd3a4417c966fc32410160aad" category="list-text"><block ref="1c560ebcd3a4417c966fc32410160aad" category="inline-link-macro-rx"></block></block>
   <block id="f1725014f45852c6d29865ed1732954a" category="paragraph">各パフォーマンス サービス レベルの消費履歴データは、選択した時間範囲に基づいて折れ線グラフで表示されます。Keystoneサブスクリプションが変更または更新された場合、開始日を以前の日付に設定して過去の消費データを表示できます。</block>
   <block id="59bf2678f53f6a44de56bb54540c62f2" category="summary">「監視」タブを使用して、 Keystoneサブスクリプションのアラート モニターを表示および作成します。</block>
@@ -2524,4 +2522,6 @@
   <block id="18d49dfd26fc514adaab2c9799dd5201" category="paragraph">容量の使用状況、サブスクリプションの有効期限ステータス、未解決のアラートなどの主要なメトリックが表示されます。表から次の詳細を確認できます。</block>
   <block id="49ee8cd124ac86a74b0e8df79ea84356" category="admonition">*有効期限*列の横にある下矢印をクリックすると、各サブスクリプションのパフォーマンス サービス レベル情報を表示できます。これには、現在の使用量、コミットされた容量、プロビジョニングされた容量、バースト容量、使用可能な容量などの詳細な容量情報が表示されます。</block>
   <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">2025年9月22日</block>
+  <block id="6ec83b09ce0b5d8f0d9c7b17070806de" category="paragraph">詳細については、<block ref="93800fd762d6a0a51a66ae4ac582dd31" category="inline-link-macro-rx"></block> 。</block>
+  <block id="93399fd7eb4f5bbac36222146d63b57a" category="paragraph">パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、<block ref="98b73336a034e0a595056d3614a31660" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

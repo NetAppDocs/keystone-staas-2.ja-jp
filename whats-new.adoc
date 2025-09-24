@@ -30,13 +30,13 @@ BlueXPのKeystoneダッシュボードには、サブスクリプション全体
 * 容量使用状況とサブスクリプション有効期限イベントを追跡するためのアラート モニターを作成します。
 
 
-詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["アラートとモニターの表示と管理"] 。
+詳細については、link:https://docs.netapp.com/us-en/keystone-staas-2/integrations/monitoring-alerts.html["アラートとモニターの表示と管理"] 。
 
 
 
 === 合理化されたパフォーマンス サービス レベルの表示
 
-パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"] 。
+パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、link:https://docs.netapp.com/us-en/keystone-staas-2/integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"] 。
 
 
 
