@@ -16,7 +16,7 @@ summary: Keystone Flexサブスクリプションサービス経由のKeystone S
 [role="lead"]
 Keystone STaaS の前には、 Keystoneサブスクリプション サービス (以前はKeystone Flex サブスクリプション サービスと呼ばれていました) がありました。
 
-2つのサービスのナビゲーションは、link:./integrations/keystone-bluexp.html["Keystoneダッシュボード"^] Keystoneサブスクリプション サービスは、構成パフォーマンス サービス レベル、サービス提供、課金原則においてKeystone STaaS とは異なります。 2024 年 4 月現在、 NetApp はKeystone STaaS のみのドキュメントを維持および公開しています。引き続きKeystoneサブスクリプション サービスを使用している場合は、 Keystone STaaS への移行のサポートについて KSM にお問い合わせください。必要に応じて、 Keystoneサブスクリプション サービスのドキュメントの PDF バージョンにここからアクセスできます。
+2つのサービスのナビゲーションは、link:./integrations/keystone-console.html["Keystoneダッシュボード"^] Keystoneサブスクリプション サービスは、構成パフォーマンス サービス レベル、サービス提供、課金原則においてKeystone STaaS とは異なります。2024 年 4 月現在、 NetApp はKeystone STaaS のみのドキュメントを維持および公開しています。引き続きKeystoneサブスクリプション サービスを使用している場合は、 Keystone STaaS への移行のサポートについて KSM にお問い合わせください。必要に応じて、 Keystoneサブスクリプション サービスのドキュメントの PDF バージョンにここからアクセスできます。
 
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["英語"^]
 * https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["日本語"^]

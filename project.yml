@@ -101,8 +101,8 @@ sidebar:
         url: "/integrations/dashboard-overview.html"
       - title: Keystoneダッシュボードを使い始める
         url: "/integrations/dashboard-access.html"
-      - title: BlueXPのKeystoneダッシュボード
-        url: "/integrations/keystone-bluexp.html"
+      - title: NetAppコンソールのKeystoneダッシュボード
+        url: "/integrations/keystone-console.html"
       - title: Digital AdvisorのKeystoneダッシュボード
         url: "/integrations/keystone-aiq.html"
       - title: データを検索し、レポートを生成し、アラートを表示します

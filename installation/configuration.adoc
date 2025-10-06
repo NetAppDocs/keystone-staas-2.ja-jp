@@ -110,7 +110,7 @@ image:kc-custom-ca.png["CAカスタマイズ用のTUI画面"]
 
 == パフォーマンスサービスレベルの作成
 
-Keystone Collector 管理 TUI ユーティリティを使用して、パフォーマンス サービス レベル (PSL) を作成できます。  TUI を使用して PSL を作成すると、各サービス レベルに設定されているデフォルト値が自動的に選択されるため、 Active IQ Unified Managerを使用して PSL を作成する際にこれらの値を手動で設定した場合に発生する可能性のあるエラーの可能性が軽減されます。
+Keystone Collector 管理 TUI ユーティリティを使用して、パフォーマンス サービス レベル (PSL) を作成できます。TUI を使用して PSL を作成すると、各パフォーマンス サービス レベルに設定されているデフォルト値が自動的に選択されるため、 Active IQ Unified Managerを使用して PSL を作成する際にこれらの値を手動で設定した場合に発生する可能性のあるエラーの可能性が軽減されます。
 
 PSLの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html["パフォーマンスサービスレベル"^] 。
 
@@ -133,15 +133,15 @@ image:qos-STaaS-selection-2.png["Keystoneのバージョンを指定するため
 
 +
 
-NOTE: Keystoneサブスクリプション サービス バージョン 1 の *KFS* オプションを強調表示できます。 Keystoneサブスクリプション サービスは、構成するサービス レベル、サービス提供、課金原則においてKeystone STaaS とは異なります。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Keystoneサブスクリプション サービス | バージョン 1"^] 。
+NOTE: Keystoneサブスクリプション サービス バージョン 1 の *KFS* オプションを強調表示できます。Keystoneサブスクリプション サービスは、構成パフォーマンス サービス レベル、サービス提供、課金原則においてKeystone STaaS とは異なります。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Keystoneサブスクリプション サービス | バージョン 1"^] 。
 
-. 指定されたKeystoneバージョンの * Keystoneサービス レベルの選択* オプション内に、サポートされているすべてのKeystoneサービス レベルが表示されます。リストから必要なサービス レベルを有効にします。
+. 指定されたKeystoneバージョンの * Keystoneサービス レベルの選択* オプション内に、サポートされているすべてのKeystoneパフォーマンス サービス レベルが表示されます。リストから必要なパフォーマンス サービス レベルを有効にします。
 +
 image:qos-STaaS-selection-3.png["サポートされているすべてのKeystoneサービスレベルを表示するTUI画面"]
 
 +
 
-NOTE: 複数のサービス レベルを同時に選択して PSL を作成できます。
+NOTE: 複数のパフォーマンス サービス レベルを同時に選択して PSL を作成できます。
 
 . *保存*を選択し、Enterを押します。パフォーマンス サービス レベルが作成されます。
 +
@@ -153,4 +153,4 @@ image:qos-performance-sl.png["作成された AQoS ポリシーを表示する U
 
 
 
-TIP: 選択したサービス レベルの PSL が、指定されたActive IQ Unified Manger サーバーにすでに存在する場合は、再度作成することはできません。そうしようとすると、エラー メッセージが表示されます。image:qos-failed-policy-1.png["ポリシー作成のエラーメッセージを表示するTUI画面"]
+TIP: 選択したパフォーマンス サービス レベルの PSL が、指定されたActive IQ Unified Manger サーバーにすでに存在する場合は、再度作成することはできません。そうしようとすると、エラー メッセージが表示されます。image:qos-failed-policy-1.png["ポリシー作成のエラーメッセージを表示するTUI画面"]

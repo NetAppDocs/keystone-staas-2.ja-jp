@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/subscriptions-tab.html 
-keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp, NetApp Console, Console 
 summary: Keystoneサブスクリプションの詳細については、「サブスクリプション」タブからすべてのサブスクリプションのリストを表示できます。 
 ---
 = Keystoneサブスクリプションの詳細を表示する
@@ -14,21 +14,24 @@ summary: Keystoneサブスクリプションの詳細については、「サブ
 
 
 [role="lead"]
-BlueXPとDigital Advisor の両方の *サブスクリプション* タブから、すべてのサブスクリプションのリストを表示できます。このタブには、サブスクリプションのステータスと使用状況に基づいたわかりやすい分析情報が表示されるため、常に情報を入手し、必要に応じて対応することができます。
+NetAppコンソールおよびDigital Advisorの *サブスクリプション* からすべてのサブスクリプションのリストを表示できます。このビューでは、サブスクリプションのステータスと使用状況に基づいたわかりやすい分析情報が提供され、常に情報を入手し、必要に応じて対応することができます。
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.NetAppコンソール
 --
 サブスクリプションの詳細情報を表示するには、次の手順に従います。
 
 .手順
-. BlueXP の左側のナビゲーション メニューから、*ストレージ > Keystone > サブスクリプション* に移動します。
+. コンソールの左側のナビゲーション メニューから、*ストレージ > Keystone > サブスクリプション*を選択します。
 +
-image:bxp-subscription-list-2.png["サブスクリプションタブの詳細を表示する"]
+image:bxp-subscription-list-3.png["サブスクリプションタブの詳細を表示する"]
 
 +
-容量の使用状況、サブスクリプションの有効期限ステータス、未解決のアラートなどの主要なメトリックが表示されます。表から次の詳細を確認できます。
+容量の使用状況、サブスクリプションの有効期限ステータス、未解決のアラートなどの主要なメトリックが表示されます。
+
++
+表から次の詳細を確認できます。
 
 +
 ** *サブスクリプション番号*: NetAppによって割り当てられたKeystoneサブスクリプションのサブスクリプション番号。
