@@ -78,6 +78,10 @@ Keystone は、 Keystone ONTAPおよびKeystone StorageGRIDサブスクリプシ
 ** ストレージタイプ
 ** アグリゲート名
 ** 集約UUID
+** 物理使用
+** 使用可能なサイズ
+** サイズ
+** 使用済みサイズ
 
 
 * 集約オブジェクトストア
@@ -174,6 +178,17 @@ Keystone は、 Keystone ONTAPおよびKeystone StorageGRIDサブスクリプシ
 ** ボリュームブロックフットプリントビン1
 
 
+* MetroCluster
++
+** ノード
+** Aggregate
+** LIF
+** 設定のレプリケーション
+** 接続
+** クラスタ
+** ボリューム
+
+
 * MetroClusterクラスタ
 +
 ** ClusterUUID
@@ -182,6 +197,36 @@ Keystone は、 Keystone ONTAPおよびKeystone StorageGRIDサブスクリプシ
 ** リモートクラスタ名
 ** ローカル構成状態
 ** リモート構成状態
+
+
+* MetroClusterノード
++
+** DRミラーリング状態
+** クラスタ間LIF
+** ノードの到達可能性
+** DRパートナーノード
+** DR補助パートナーノード
+** DR、DR Aux、HAノードの対称関係
+** 計画外の自動切り替え
+
+
+* MetroCluster構成レプリケーション
++
+** リモートハートビート
+** 最後に送信されたハートビート
+** 最後に受信したハートビート
+** Vserver ストリーム
+** クラスターストリーム
+** ストレージ
+** 使用中のストレージ容量
+
+
+* MetroClusterメディエーター
++
+** 調停人の住所
+** メディエーターポート
+** メディエーターが構成されました
+** 仲介者に到達可能
 ** モード
 
 
@@ -243,6 +288,13 @@ Keystone は、 Keystone ONTAPおよびKeystone StorageGRIDサブスクリプシ
 * QoSポリシーグループレイテンシー
 * 読み取りMBps
 * QoS同期スナップミラーレイテンシー
+* システムレベルのデータ
++
+** 書き込み/読み取り/その他/合計IOPS
+** 書き込み/読み取り/その他/合計スループット
+** 書き込み/読み取り/その他/合計レイテンシ
+
+
 * 書き込みIOPS
 
 
@@ -298,6 +350,11 @@ Keystone Collector で *プライベート データの削除* オプション�
 * 実例
 * StorageGRIDストレージ使用率 バイト
 * StorageGRIDストレージ使用率メタデータ バイト
+
+
+以下のリストは代表的な例です。 `Availability/Uptime Data` StorageGRID用に収集されたもの：
+
+* SLA 稼働率
 
 
 ====
