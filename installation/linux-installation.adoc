@@ -22,15 +22,15 @@ RPM または Debian パッケージを使用して、 Keystone Collector ソフ
 --
 . Keystone CollectorサーバーにSSHで接続し、 `root`特権。
 . Keystone公開署名をインポートします。
-`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+`# rpm --import https://keystone.netapp.com/repo1/RPM-GPG-NetApp-Keystone-20251020`
 . RPM データベースでKeystone Billing Platform のフィンガープリントをチェックして、正しい公開証明書がインポートされていることを確認します。
-`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint`正しい指紋は次のようになります。
-`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
-. ダウンロード `keystonerepo.rpm`ファイル：
-`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
+`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` 正しい指紋は次のようになります。
+`9297 0DB6 0867 22E7 7646 E400 4493 5CBB C9E9 FEDC`
+. ダウンロード `keystonerepo.rpm` ファイル：
+`curl -O https://keystone.netapp.com/repo1/keystonerepo.rpm`
 . ファイルの信頼性を確認します。
-`rpm --checksig -v keystonerepo.rpm`本物のファイルの署名は次のようになります。
-`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+`rpm --checksig -v keystonerepo.rpm` 本物のファイルの署名は次のようになります。
+`Header V4 RSA/SHA512 Signature, key ID c9e9fedc: OK`
 . YUM ソフトウェア リポジトリ ファイルをインストールします。
 `# yum install keystonerepo.rpm`
 . Keystoneリポジトリがインストールされたら、YUM パッケージ マネージャーを使用して keystone-collector パッケージをインストールします。
