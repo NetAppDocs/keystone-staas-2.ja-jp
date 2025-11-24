@@ -40,7 +40,7 @@ NetApp Keystone STaaS サービスは、いくつかの種類のストレージ�
 
 * コミットされた容量は、特定の条件に基づいて削減される可能性があります。詳細については、link:../concepts/capacity-requirements.html["容量の縮小"] 。
 * サブスクリプションがさらに 12 か月間更新されない限り、サブスクリプションの有効期限の 90 日前にはコミットされた容量を増やすことはできません。
-* コミットされた容量の変更は、コンソールまたはKeystone Success Manager (KSM) からリクエストできます。変更のリクエストについては、以下を参照してください。link:../concepts/gssc.html["NetApp Keystoneサポート"] 。
+* コミットされた容量の変更は、コンソールまたはKeystone Success Manager (KSM) からリクエストできます。変更のリクエストについては、以下を参照してください。 link:../concepts/support-services.html["NetApp Keystoneサポート"]。
 
 
 

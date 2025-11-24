@@ -17,10 +17,19 @@ summary: ITOM Collector をインストールするには、システムがい�
 ITOM Collector をインストールする前に、システムに必要なソフトウェアが準備されており、必要な前提条件をすべて満たしていることを確認してください。
 
 .ITOM コレクター サーバー VM の前提条件:
-* サポートされているオペレーティング システム: Debian 12、Windows Server 2016、Ubuntu 20.04 LTS、Red Hat Enterprise Linux (RHEL) 8.x、Amazon Linux 2023、またはこれらのオペレーティング システムの新しいバージョン。
+* サポートされているオペレーティング システム:
++
+** Debian 12以降
+** Windows Server 2016以降
+** Ubuntu 20.04 LTS以降
+** Red Hat Enterprise Linux（RHEL）8.x
+** Red Hat Enterprise Linux 9.0 以降
+** Amazon Linux 2023以降
 +
 
 NOTE: 推奨されるオペレーティング システムは、Debian 12、Windows Server 2016、またはそれ以降のバージョンです。
+
+
 
 * リソース要件: 監視対象のNetAppノードの数に基づく VM リソース要件は次のとおりです。
 +

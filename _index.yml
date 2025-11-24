@@ -57,7 +57,7 @@ indexpage:
   - title: Keystoneのサービスでさらに活用しましょう
     links:
     - title: サポートチームについて知る
-      url: "/concepts/gssc.html"
+      url: "/concepts/support-services.html"
     - title: 未使用データやあまり使用されていないデータで何ができるでしょうか?
       url: "/concepts/data-tiering.html"
     - title: Keystoneデータを保護するにはどうすればよいですか?

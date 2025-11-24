@@ -23,6 +23,7 @@ Linux およびKeystone Collector サーバー VM にこれらの構成がある
 +
 ** Debian 12
 ** Red Hat Enterprise Linux 8.6 以降の 8.x バージョン
+** Red Hat Enterprise Linux 9.0 以降のバージョン
 ** CentOS 7 (既存環境のみ)
 
 
