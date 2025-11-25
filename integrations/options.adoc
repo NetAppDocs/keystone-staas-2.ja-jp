@@ -57,4 +57,4 @@ image:alert-aiq-3.png["警告"]
 
 AQoSポリシーの詳細については、以下を参照してください。link:../concepts/qos.html["適応型QoS"] 。
 
-これらのメッセージの詳細については、 NetApp Keystoneサポートにお問い合わせください。サービスリクエストの提出については、以下を参照してください。link:../concepts/gssc.html#generating-service-requests["サービスリクエストの生成"] 。
+これらのメッセージの詳細については、 NetApp Keystoneサポートにお問い合わせください。サービスリクエストの提出については、以下を参照してください。 link:../concepts/support-services.html#generating-service-requests["サービスリクエストの生成"]。
