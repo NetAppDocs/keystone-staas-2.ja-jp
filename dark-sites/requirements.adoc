@@ -20,7 +20,7 @@ summary: 'インターネットにアクセスできない環境 (_ダーク サ
 
 == VMware vSphere の要件
 
-* オペレーティング システム: VMware vCenter Server および ESXi 6.7 以降
+* オペレーティング システム: VMware vCenter Server および ESXi 8.0 以降
 * コア: 1 CPU
 * メモリ: 2 GB
 * ディスク容量: 20 GB vDisk
