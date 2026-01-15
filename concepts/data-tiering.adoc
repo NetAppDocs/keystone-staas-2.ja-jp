@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: データ階層化アドオン サービスは、あまり使用されないデータを識別し、サポートされているストレージに階層化します。 
 ---
-= データ階層化について学ぶ
+= Keystoneのデータ階層化アドオンサービス
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concepts/misc-volume-billing.html
 keywords: Billing and miscellaneous scenarios 
 summary: クローンボリューム、高度なデータ保護など、特定の構成に対するKeystone の課金について説明します。 
 ---
-= Keystone請求のさまざまなシナリオ
+= 特定のボリューム構成におけるKeystoneの課金について学ぶ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

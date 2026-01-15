@@ -4,7 +4,7 @@ permalink: concepts/pricing.html
 keywords: pricing, billing introduction, Keystone billing 
 summary: Keystone は、柔軟で拡張可能な消費ニーズに合わせて、成長に応じた支払いモデルを提供します。 
 ---
-= Keystone価格
+= Keystoneの価格について
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: concepts/billing-schedules.html
 keywords: billing schedules, schedule for payment 
 summary: Keystone STaaS サブスクリプションは月単位および年単位で請求されます。 
 ---
-= 請求スケジュール
+= Keystoneの請求スケジュールについて学ぶ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

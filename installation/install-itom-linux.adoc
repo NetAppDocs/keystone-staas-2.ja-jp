@@ -4,7 +4,7 @@ permalink: installation/install-itom-linux.html
 keywords: Linux installation, ITOM Collector installation 
 summary: Linux ベースのシステムに ITOM Collector ソフトウェアをインストールします。 
 ---
-= LinuxシステムにITOM Collectorをインストールする
+= LinuxシステムにKeystone ITOM Collectorをインストールする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

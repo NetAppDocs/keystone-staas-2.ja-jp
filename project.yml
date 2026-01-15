@@ -153,7 +153,7 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: パフォーマンスサービスレベルの容量要件
         url: "/concepts/capacity-requirements.html"
-    - title: アドオンサービス
+    - title: アドオンサービスについて学ぶ
       entries:
       - title: 高度なデータ保護
         url: "/concepts/adp.html"
@@ -165,7 +165,7 @@ sidebar:
         url: "/concepts/nrnvc.html"
       - title: USプロテクテッドサポート（USPS）
         url: "/concepts/usps.html"
-    - title: KeystoneSTaaS SLO
+    - title: Keystone STaaS SLO について学ぶ
       entries:
       - title: 可用性
         url: "/concepts/sla-availability.html"
@@ -175,7 +175,7 @@ sidebar:
         url: "/concepts/sla-sustainability.html"
       - title: ランサムウェア リカバリ保証
         url: "/concepts/sla-ransomware.html"
-    - title: 請求する
+    - title: 請求について理解する
       entries:
       - title: Keystone価格
         url: "/concepts/pricing.html"
@@ -185,7 +185,7 @@ sidebar:
         url: "/concepts/consumed-capacity-billing.html"
       - title: バースト消費量に基づく課金
         url: "/concepts/burst-consumption-billing.html"
-      - title: Keystone請求のさまざまなシナリオ
+      - title: 特定のボリューム構成に対する課金
         url: "/concepts/misc-volume-billing.html"
       - title: 請求スケジュール
         url: "/concepts/billing-schedules.html"

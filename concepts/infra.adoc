@@ -4,7 +4,7 @@ permalink: concepts/infra.html
 keywords: keystone infrastructure, infra 
 summary: Keystoneインフラストラクチャ、設計、テクノロジの選択、およびコンポーネント製品は、 NetAppのみが所有します。 
 ---
-= Keystoneインフラストラクチャ
+= Keystoneインフラストラクチャを理解する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

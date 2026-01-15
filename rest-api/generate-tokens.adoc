@@ -4,7 +4,7 @@ permalink: rest-api/generate-tokens.html
 keywords: Refresh token, Digital Advisor portal,access 
 summary: 新しいアクセス トークンを取得するには、リフレッシュ トークンを生成します。 API リクエストを認証し、1 週間または交換されるまで有効です。アクセス トークンは、コンソールまたは API 呼び出しを通じて取得できます。 
 ---
-= リフレッシュトークンとアクセストークンを生成する
+= Keystoneのリフレッシュトークンとアクセストークンを生成する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
