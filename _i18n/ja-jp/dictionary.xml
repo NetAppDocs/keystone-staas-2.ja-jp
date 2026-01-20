@@ -2638,4 +2638,11 @@
   <block id="1c0706b323b25df07171d935dadca63d" category="sidebar">Keystone STaaS SLO について学ぶ</block>
   <block id="4996475aff4a957b37439e45da70e7da" category="sidebar">請求について理解する</block>
   <block id="d7343c0d20dd2babfa5f38e0b87a6939" category="sidebar">特定のボリューム構成に対する課金</block>
+  <block id="0fa78e8d7c7b076da1f9e1d3fa517845" category="doc">サブスクリプションを変更できません</block>
+  <block id="6c8dd41ea59e163d8fa923e1f93882e6" category="paragraph">NetApp ConsoleのKeystoneダッシュボードの更新:</block>
+  <block id="ccaf34b2cf2472652ed113639a7f687c" category="paragraph">Keystoneサブスクリプションのコミット容量を変更するオプションは現在利用できません。この機能は将来のリリースで再導入される予定です。</block>
+  <block id="252561ea020b2dfb8598526a78a88036" category="inline-link-macro">NetApp ConsoleのKeystoneアクセス ロール</block>
+  <block id="99a171058669ac189901e0c53c44ed13" category="admonition">アラート モニターを作成および管理するには、* Keystone admin* ロールが割り当てられている必要があります。詳細については、 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
+  <block id="53a22728b83fc16fec4e96baf9b85af7" category="admonition">アラートを編集するには、* Keystone admin* ロールが必要です。* Keystone閲覧者* ロールでは、アラートの詳細のみを表示できます。詳細については、 <block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>。</block>
+  <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
 </blocks>
