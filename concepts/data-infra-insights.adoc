@@ -30,11 +30,11 @@ image:keystone-widget-dii.png["DII サービス レベルを表示するKeystone
 
 お客様は、 Keystone用の DII を 2 つの方法で統合できます。他の非 Keystone 環境を監視する既存のインスタンスの一部として統合するか、新しいインスタンスの一部として統合するかのいずれかです。 DII を設定するのはお客様の責任となります。複雑な環境でDIIを設定するためにサポートが必要な場合は、アカウントチームが対応します。link:https://www.netapp.com/services/["NetAppプロフェッショナルサービス"^] 。
 
-DIIを設定するには、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html["Data Infrastructure Insightsインサイトのオンボーディング"^] 。
+DIIを設定するには、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html["Data Infrastructure Insightsインサイトのオンボーディング"^]を参照してください。
 
 次の点に注意してください。
 
-* 顧客が新しいDIIインスタンスを開始する場合は、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_cloud_insights_onboarding_1.html#starting-your-data-infrastructure-insights-free-trial["DII無料トライアル"^] 。この機能と必要な起動チェックリストの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["機能チュートリアル"^] 。
+* 顧客が新しいDIIインスタンスを開始する場合は、link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_subscribing_to_cloud_insights.html#trial-edition["DII無料トライアル"^]から始めることをお勧めします。この機能と必要な起動チェックリストについては、link:https://docs.netapp.com/us-en/data-infrastructure-insights/concept_feature_tutorials.html["機能チュートリアル"^]を参照してください。
 * 各サイトには取得ユニットが必要です。取得ユニットをインストールするには、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_getting_started_with_cloud_insights.html#install-an-acquisition-unit["取得ユニットをインストールする"^] 。顧客がすでに DII インスタンスと Acquisition Unit をセットアップしている場合は、データ コレクターの構成に進むことができます。
 * 導入されるストレージ ハードウェアごとに、顧客は取得ユニット上でデータ コレクターを構成する必要があります。データコレクターを構成するには、以下を参照してください。link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_configure_data_collectors.html["データコレクターを構成する"^] 。基盤となるハードウェアに基づいて、 Keystoneストレージに必要なデータ コレクターは次のとおりです。
 +
