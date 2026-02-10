@@ -78,21 +78,12 @@
   <block id="10d5879ffcf41a017554a80a63e4b46e" category="inline-link-macro">Keystoneサブスクリプションの消費量を表示する</block>
   <block id="d2c70766af411fb0e8a745645e1d2b86" category="paragraph">BlueXPのKeystoneダッシュボードを通じて、各パフォーマンス サービス レベル インスタンスの現在の消費量と履歴データを表示できます。この機能は、 Keystoneバージョン 3 (v3) サブスクリプションをお持ちの場合、複数のインスタンスのパフォーマンス サービス レベルで利用できます。詳細については、<block ref="500828148463e083954a63124cb9a7bb" category="inline-link-macro-rx"></block> 。</block>
   <block id="3173b2ec37a82d2973529cd167d6287e" category="summary">高度なデータ保護アドオン サービスを使用して、ミッション クリティカルなワークロードの効率的なデータ保護を実現します。</block>
-  <block id="279160650841dbd8f0f6b25bf0ff9e80" category="paragraph">Keystone STaaS サブスクリプションで、高度なデータ保護アドオン サービスに加入できます。このアドオン サービスは、 NetApp MetroClusterテクノロジーを使用して、リカバリ ポイント目標 (RPO) 0 でミッション クリティカルなワークロードの効率的なデータ保護を保証します。</block>
-  <block id="cfcbbd8a31fba3f531d652505099a6e6" category="admonition">ファイルおよびブロック ストレージ用のKeystone STaaS 標準サービスは、 SnapMirror、 SnapVault 、Snapshot などのNetAppテクノロジーを使用して、デフォルトのデータ保護サービスを提供します。</block>
   <block id="702bdcf3d6f1e35319059ac6ab7ba5c9" category="inline-link-macro">Keystone STaaSサービス</block>
-  <block id="4a313a9affe19522ce794cef41abbe6f" category="paragraph">標準およびクラウドサービスの詳細については、以下を参照してください。<block ref="32999c765ee523f7718a7908120f4502" category="inline-link-macro-rx"></block> 。</block>
   <block id="1749d12df3df2319d3eee218a277ff83" category="inline-link-macro">MetroCluster</block>
-  <block id="05640e646447c2361b1c4a86e40bde67" category="paragraph">Keystone の高度なデータ保護サービスは、データをセカンダリ サイトに同期的にミラーリングできます。プライマリ サイトで災害が発生した場合、データを失うことなくセカンダリ サイトが引き継ぐことができます。この機能は、<block ref="e34027f10b07a4258180f071293183bf" category="inline-link-macro-rx"></block>データ保護を有効にするための 2 つのサイト間の構成。高度なデータ保護アドオン サービスは、ファイルおよびブロック ストレージ サービスに対してのみ使用できます。この追加サービスの一環として、<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block>パフォーマンス サービス レベルがサブスクリプションに割り当てられます。</block>
-  <block id="ad18d1cc4c02be72a25ef833b2c8c734" category="inline-link-macro">高度なデータ保護のための参照チャート</block>
-  <block id="fae22dda3b161bc9a9e770f8b7e7a634" category="paragraph">MetroCluster構成での消費量を表示する方法については、以下を参照してください。<block ref="0e74b0f4cd2655beb5f463b480ef4016" category="inline-link-macro-rx"></block> 。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="07a4905cb08550d85832c59c39e6d61c" category="list-text">サービスは、関連付けられたストレージ上のコミット容量の 100% をコミット容量として使用します。</block>
   <block id="35837aec92cf4ad38b86eaea542a0d30" category="list-text">料金は、ソース クラスターと宛先クラスターの両方を対象に、プライマリ サイトとセカンダリ サイトの両方に適用されます。</block>
   <block id="02ebdf7c9de6e8483fc7db75a00034e7" category="list-text">料金はファイルおよびブロック ストレージ サービスに対してのみ適用されます。</block>
-  <block id="3505917ad3d0afd6896fab28f67d309e" category="paragraph">次のMetroClusterシナリオがサポートされています。</block>
-  <block id="707341c09d7ffe7d139516dd4be5dcc7" category="inline-image-macro">KeystoneでサポートされるMetroCluster構成</block>
-  <block id="4f0030fed4ccf33a3b0fcc1a67c07354" category="paragraph"><block ref="4f0030fed4ccf33a3b0fcc1a67c07354" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e18765eb2b8dddd29b66918ffb976fcc" category="summary">Keystone STaaS サブスクリプションは月単位および年単位で請求されます。</block>
   <block id="dfd0252d57910ac70c5c31013436bba6" category="doc">請求スケジュール</block>
   <block id="ff6fc0e4f583c0e2e97b816c5f3e5a36" category="paragraph">Keystone STaaS サブスクリプションは、月単位または年単位で請求されます。</block>
@@ -1665,31 +1656,10 @@
   <block id="515f3b344653c49257ced259fb9261bd" category="inline-image-macro">バースト使用状況データを折れ線グラフ形式で表示するスクリーンショット</block>
   <block id="d84ae5b6becc67f38fe4f478e713f236" category="paragraph"><block ref="d84ae5b6becc67f38fe4f478e713f236" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c349aee97f052361891132091b4ab93a" category="paragraph">グラフの右上隅にある *表* オプションをクリックすると、表ビューに切り替えることができます。テーブル ビューには、パフォーマンス サービス レベル、タイムスタンプ、コミットされた容量、消費された容量、課金対象のプロビジョニングされた容量など、詳細な毎日の使用量メトリックが表示されます。将来使用したり比較したりするために、これらの詳細のレポートを CSV 形式で生成することもできます。</block>
-  <block id="bd743c791b4d6ca2e7a1d3c5f2d40a95" category="section-title">MetroClusterの高度なデータ保護に関する参照チャート</block>
-  <block id="6f7b7898d7600a4f58a896cb2693e0dc" category="paragraph">高度なデータ保護アドオン サービスに加入している場合は、 Digital Advisorの *Consumption Trend* タブでMetroClusterパートナー サイトの消費データの内訳を表示できます。</block>
   <block id="3f20b3134627198be1e0ff879a88cd8f" category="inline-link-macro">高度なデータ保護</block>
-  <block id="31983c33f891876ff7bcaee65805fde0" category="paragraph">高度なデータ保護アドオンサービスの詳細については、以下を参照してください。<block ref="a91680a6ffe7d115054b2a3a29590c88" category="inline-link-macro-rx"></block> 。</block>
   <block id="6d2267f5875d98e045ec56c36925fe8c" category="paragraph">ONTAPストレージ環境内のクラスタがMetroClusterセットアップで構成されている場合、 Keystoneサブスクリプションの消費データが同じ履歴データ チャートに分割され、基本パフォーマンス サービス レベルのプライマリ サイトとミラー サイトでの消費量が表示されます。</block>
   <block id="9fb2ff331e9a4f6de17ec429db9059a4" category="admonition">消費棒グラフは、基本パフォーマンス サービス レベルのみに分割されます。高度なデータ保護アドオン サービス (_Advanced Data-Protect_ パフォーマンス サービス レベル) の場合、この区別は表示されません。</block>
-  <block id="2fae3d33272e10a8e0d8a4f54d7ccf59" category="paragraph-title">高度なデータ保護パフォーマンスサービスレベル</block>
-  <block id="c95ef05952568a698dfcd18bf24d8d1c" category="paragraph">_Advanced Data-Protect_ パフォーマンス サービス レベルでは、総消費量はパートナー サイト間で分割され、各パートナー サイトでの使用量は個別のサブスクリプションに反映され、課金されます。1 つのサブスクリプションはプライマリ サイト用、もう 1 つはミラー サイト用です。そのため、[消費傾向] タブでプライマリ サイトのサブスクリプション番号を選択すると、高度なデータ保護アドオン サービスの消費チャートにプライマリ サイトのみの個別の消費詳細が表示されます。  MetroCluster構成内の各パートナー サイトはソースとミラーの両方の役割を果たすため、各サイトの合計消費量には、そのサイトで作成されたソース ボリュームとミラー ボリュームが含まれます。</block>
   <block id="75e0534d6922c86860faff1d9500a18b" category="admonition">*現在の消費量* タブのサブスクリプションの追跡 ID の横にあるツールヒントは、 MetroClusterセットアップでパートナー サブスクリプションを識別するのに役立ちます。</block>
-  <block id="af2f02359b7fb9ee4bbd8da82f9a739e" category="paragraph-title">基本パフォーマンスサービスレベル</block>
-  <block id="8d3774c17da465a501ec67ba1b699194" category="paragraph">基本パフォーマンス サービス レベルでは、各ボリュームはプライマリ サイトとミラー サイトでプロビジョニングされたとおりに課金されるため、同じ棒グラフがプライマリ サイトとミラー サイトでの消費量に応じて分割されます。</block>
-  <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">プライマリサブスクリプションで確認できる内容</block>
-  <block id="5cbf7afdbba419e822b2a2c7c22abe12" category="paragraph">次の画像は、_パフォーマンス_ パフォーマンス サービス レベル (基本パフォーマンス サービス レベル) とプライマリ サブスクリプション番号のグラフを示しています。同じ履歴データ チャートには、プライマリ サイトに使用されているのと同じカラー コードの明るい色調で、ミラー サイトの消費量も表示されます。マウスをホバーするとツールヒントに、プライマリ サイトとミラー サイトの消費量の内訳 (TiB 単位) がそれぞれ 95.04 TiB と 93.38 TiB と表示されます。</block>
-  <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">MCCプライマリ</block>
-  <block id="b148b095b9eb2b66c9d82b9f31f5f48a" category="paragraph"><block ref="b148b095b9eb2b66c9d82b9f31f5f48a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7135fcdca46b388bc764c032e659042" category="paragraph">_Advanced Data-Protect_ パフォーマンス サービス レベルの場合、グラフは次のようになります。</block>
-  <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">MCCプライマリベース</block>
-  <block id="f4badb1f4371f9080a169022107c32a4" category="paragraph"><block ref="f4badb1f4371f9080a169022107c32a4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">セカンダリ（ミラーサイト）サブスクリプションで確認できる内容</block>
-  <block id="d6b495a36fba7e607ca30d818319762f" category="paragraph">セカンダリ サブスクリプションを確認すると、パートナー サイトと同じデータ収集ポイントの _Performance_ パフォーマンス サービス レベル (基本パフォーマンス サービス レベル) の棒グラフが反転され、プライマリ サイトとミラー サイトでの消費量の内訳がそれぞれ 93.38 TiB と 95.04 TiB であることがわかります。</block>
-  <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">mccミラー</block>
-  <block id="e3da9701f96b1d8b1f5544caeddc8585" category="paragraph"><block ref="e3da9701f96b1d8b1f5544caeddc8585" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="eb558bf0915ebb2e189ec8a1ab2f0494" category="paragraph">_Advanced Data-Protect_ パフォーマンス サービス レベルでは、パートナー サイトと同じ収集ポイントのグラフは次のようになります。</block>
-  <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">MCCミラーベース</block>
-  <block id="b922b03e3dcfae7088adb392f0767e0b" category="paragraph"><block ref="b922b03e3dcfae7088adb392f0767e0b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">MetroClusterのデータ保護およびディザスタ リカバリの概要</block>
   <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">MetroClusterがデータを保護する方法については、以下を参照してください。<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block> 。</block>
   <block id="eccd215d2aef918d99c7ac04567a0cdc" category="doc">Keystoneサブスクリプションの現在の消費量を表示します</block>
@@ -1735,8 +1705,6 @@
   <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">いいえ</block>
   <block id="33df2a894b84cf92bf7b059b0628f59d" category="paragraph"><block ref="33df2a894b84cf92bf7b059b0628f59d" category="inline-link-macro-rx"></block></block>
   <block id="57d8e28284aecaa3906b97f010612fcd" category="cell"><block ref="57d8e28284aecaa3906b97f010612fcd" category="inline-link-macro-rx"></block></block>
-  <block id="b938e197dfa8dadbdec004a37e0ef3af" category="inline-link-macro">サブスクリプションを変更する</block>
-  <block id="a7629efe0e47f4108406da4590b98b87" category="paragraph"><block ref="761270557fec89f94924233c726d0e8a" category="inline-link-macro-rx"></block>( Keystone管理者のみ)</block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="inline-link-macro">レポートを生成します</block>
   <block id="f9eade15df63147aad555cc771e3c457" category="inline-link-macro">ボリュームとオブジェクトの詳細を表示する</block>
   <block id="0fbbeb712322bc30085f9aee131d6509" category="paragraph"><block ref="0fbbeb712322bc30085f9aee131d6509" category="inline-link-macro-rx"></block></block>
@@ -1781,16 +1749,6 @@
   <block id="e7a862d1277ff52d64b2b8419fe26d69" category="list-text">*容量使用量*: バーストを超えている、バーストを使用している、および十分に活用されていないサブスクリプションの容量消費状態。各カテゴリには、関連するフィルターが適用された *サブスクリプション* タブに移動するための *表示* ボタンが含まれています。</block>
   <block id="a8ce21fd73a6b04f851be6e1d6d0da63" category="list-text">*容量使用率が最も高い上位 5 つのサブスクリプション*: 容量使用率が最も高い上位 5 つのKeystoneサブスクリプションの表を表示します。  *サブスクリプション*列からサブスクリプション番号をクリックすると、詳細な分析情報を取得できます。</block>
   <block id="edecc7e6feeced1cf533a9de993dd568" category="list-text"><block ref="edecc7e6feeced1cf533a9de993dd568" category="inline-link-macro-rx"></block></block>
-  <block id="2527930ed946837db80b382551b3e30f" category="list-text">サブスクリプションの有効期限が 90 日以上残っている場合は、コミットされた容量を変更できます。</block>
-  <block id="36b20c02b50b952932585493baf0578c" category="paragraph">コミットされた容量を変更するには、次の手順に従います。</block>
-  <block id="0777df37fb2d784be7418d104f1b48c3" category="list-text">変更するサブスクリプションのテーブルから省略記号アイコンをクリックし、[*変更*] を選択します。</block>
-  <block id="7368a9d71827e42ec6d0e30872f2ade8" category="paragraph">*サブスクリプションの変更* ページには、選択したサブスクリプション番号に関連付けられているサブスクライブされたパフォーマンス サービス レベルの詳細が表示されます。</block>
-  <block id="91122b642327c299496bd2cc715f61db" category="admonition">オプションとして、サブスクリプションの詳細セクションで [*サブスクリプションの管理*] をクリックし、[*変更*] を選択して [*サブスクリプションの変更*] ページにアクセスできます。</block>
-  <block id="2bab978071b4f2c42a0cbd4063050bd6" category="inline-image-macro">サブスクリプションリストからの変更オプションを表示するスクリーンショット</block>
-  <block id="2f945ecac337fb632279a3a5c8be5147" category="list-text">*容量の編集* をクリックして、パフォーマンス サービス レベルのコミット容量を変更し、必要な詳細を入力して、*送信* をクリックします。</block>
-  <block id="77d85bf27ff4e86e9c2c0d124a29092e" category="paragraph">リクエストは同じページの*変更*セクションに表示されます。</block>
-  <block id="6174a39a3e1c2618d458d58ece61fe5f" category="list-text">リクエストの詳細を確認し、[*確認*] ボタンをクリックして必要な確認を行い、リクエストを送信します。</block>
-  <block id="0df3f6389fb32c1982ca6a2f3ba9de3c" category="paragraph">*管理*タブでリクエストの進行状況を追跡および監視できます。  *管理*タブの詳細については、以下を参照してください。<block ref="9f3b15d961aa4f93dcc619d13ad818be" category="inline-link-macro-rx"></block> 。</block>
   <block id="4e45fcbdeb65b88a1abb90ed1fe072a6" category="summary">NetApp Keystone STaaS サブスクライバーは、データの検索とフィルタリング、サブスクリプションと使用状況のレポートの生成、タイムスタンプの確認、アラートの表示を行うことができます。</block>
   <block id="20124e162ad63d60b063ff80ef10f3c9" category="doc">Keystoneデータを検索し、レポートを生成し、アラートを表示します</block>
   <block id="3c8389d9d758198177b96da335f3ac07" category="paragraph">データを検索およびフィルタリングしたり、サブスクリプションと使用状況のレポートを生成したり、アラートを表示してストレージ環境に関する最新情報を常に把握したりできます。</block>
@@ -1849,7 +1807,6 @@
   <block id="a7a03de7b430dd390a52a4acaf198ea0" category="summary">Keystoneサブスクリプションの詳細については、「サブスクリプション」タブからすべてのサブスクリプションのリストを表示できます。</block>
   <block id="6e665113a95f128bda94a45125d034c0" category="doc">Keystoneサブスクリプションの詳細を表示する</block>
   <block id="da165360e20e2139a72fd6fadd1175f3" category="inline-image-macro">サブスクリプションタブの詳細を表示する</block>
-  <block id="777a92dd9a9405f5a8f4c89917427c35" category="list-text">*サブスクリプション番号*: NetAppによって割り当てられたKeystoneサブスクリプションのサブスクリプション番号。</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*追跡 ID*: サブスクリプションの有効化時に割り当てられた追跡 ID。これは各サブスクリプションとサイトの一意の ID であり、サブスクリプションを追跡するために使用されます。</block>
   <block id="e6cb8545fbd488c01d2779c3cf2fe308" category="list-text">*顧客名*: Keystoneサブスクリプションに関連付けられている顧客の名前。</block>
   <block id="1785b788275c7de318abca94e5882fe1" category="list-text">*リンクされたサブスクリプション*: プライマリ サブスクリプションにリンクされたセカンダリ サブスクリプションがある場合、この列にはプライマリ サブスクリプションにリンクされたサブスクリプション番号がリストされます。このサブスクリプション番号は、プライマリ サブスクリプションまたはセカンダリ (リンクされた) サブスクリプションの番号になります。</block>
@@ -1869,7 +1826,6 @@
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*サブスクリプション番号*: NetAppによって割り当てられたKeystoneサブスクリプションのサブスクリプション番号。</block>
   <block id="e3db4ac6b95d51ce2a9fc54f2ebc8f17" category="list-text">*リンクされたサブスクリプション*: この列はオプションで使用できます。プライマリ サブスクリプションにリンクされたセカンダリ サブスクリプションがある場合、この列にはプライマリ サブスクリプションにリンクされたサブスクリプション番号が一覧表示されます。このサブスクリプション番号は、プライマリ サブスクリプションまたはセカンダリ (リンクされた) サブスクリプションの番号になります。</block>
   <block id="96293ec1c9ddbb930d39d0f569a22682" category="list-text">*追跡 ID*: サブスクリプションの有効化時に割り当てられた追跡 ID。これは、各サブスクリプションおよびサイトの一意の ID です。</block>
-  <block id="2a21d74f8e43863e1499bedc0b85ce35" category="admonition">高度なデータ保護アドオン サービスに加入している場合は、サブスクリプション番号のツールヒントをクリックして、 MetroClusterセットアップ内のパートナー サブスクリプションの追跡 ID を表示できます。  MetroCluster構成におけるパートナーサブスクリプション別の詳細な消費量を表示するには、<block ref="0e74b0f4cd2655beb5f463b480ef4016" category="inline-link-macro-rx"></block> 。</block>
   <block id="0ad0ea24438b91d60d9457bb9a6ad491" category="list-text">*使用タイプ*: 複数のKeystoneバージョンをサブスクライブしている可能性があります。パフォーマンス サービス レベルの料金プラン ルールは、サブスクリプション バージョンによって異なる場合があります。この列の値を見ると、使用量の種類がプロビジョニングされた使用量、物理的な使用量、論理的な使用量のいずれに基づいて課金されるかがわかります。バージョン1の詳細については、<block ref="d7848503560f6eda6c1c5b670f722092" category="inline-link-rx"></block> 。</block>
   <block id="8a3b6107c8628879030ac592d36c112f" category="list-text">*請求期間*: サブスクリプションの請求期間。</block>
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日*: サブスクリプションの開始日。</block>
@@ -2281,7 +2237,6 @@
   <block id="087e52621b1299752b891e4115749950" category="sidebar">Keystoneサブスクリプション サービス バージョン 1</block>
   <block id="738272188927126099f39cbe7024dbf9" category="section-title">価格を理解する</block>
   <block id="a9defa509a6012981ff7f002dd53d0e6" category="paragraph">高度なデータ保護アドオン サービスは、各サイトでコミットされた容量に基づいて価格設定されます。これにより、高度なデータ保護サービスの実際のコストを $/TiB で決定できます。アドオン料金は、ソース データ、ミラー コピー、ミラー化されていないデータなど、サブスクリプション内のすべての容量に適用されます。</block>
-  <block id="e67211afdd996aa6baa5cb91a4ca596e" category="paragraph">MetroCluster構成の場合、各サイトには独自のサブスクリプションが必要であり、各サイトでコミットされた容量に対して個別に課金されます。請求の詳細については、以下を参照してください。<block ref="1288f3338b647ebdd2ca057939f27a9c" category="inline-link-macro-rx"></block> 。</block>
   <block id="ae4fed5779bc20e71bc742b9b20f3572" category="admonition">階層化アドオン サービスは、Amazon Web Services (AWS) S3、Azure Blob、Google Cloud Platform (GCP)、その他のKeystone STaaS 対応、S3 互換、サードパーティ オブジェクト ストレージなど、 NetApp以外のストレージにデータを階層化する場合にのみ必要です。</block>
   <block id="5a7ddcb67d8774d8c3bdc821152d43f1" category="paragraph">アドオン データ階層化サービスにより、Extreme、Premium、Performance、Standard、Value 層からオブジェクト ストレージ ターゲットへの階層化が可能になります。階層化されるホット データとコールド データの比率は固定されておらず、各階層は個別に計測され、請求されます。</block>
   <block id="f02c5e27d3f80e7755fdb672ca0a6235" category="list-text">Keystone STaaS Value 層、 Keystone STaaS StorageGRID Object 層、または既存のStorageGRID Webscale (SGWS) グリッド (顧客所有) - 追加料金はかかりません。これは標準サービスの一部です。</block>
@@ -2290,7 +2245,6 @@
   <block id="aefe5d691bbfd5f85d52918fd2b8748f" category="list-text">*GiB、TiB、PiB での容量測定*: 1024 を基数としたデータ ストレージ容量の測定 (1 GiB = 1024^3^ バイト、1 TiB = 1024^4^ バイト、1 PiB = 1024^5^ バイト)。</block>
   <block id="d4017514ab5a420c895a9fc731b4b395" category="paragraph">各MetroClusterサイトには独自のサブスクリプションと課金があります。 MetroCluster構成の場合、使用率測定では、両方のサイト間でのストレージの使用状況が考慮されます。サイトあたり 100 TiB のMetroClusterセットアップがある場合、各サイトでアクティブに使用されるのは 50 TiB のみで、各サイトの残りの 50 TiB はミラー バックアップとして機能します。高度なデータ保護アドオン料金は、この 100 TiB の合計アクティブ使用量に基づいて計算され、それぞれのサブスクリプションを通じて 50 TiB ずつ両方のサイトに分割されます。</block>
   <block id="541d21d5ff884f1d0b139f95e569de26" category="paragraph">サイト A とサイト B はMetroCluster構成でセットアップされています。ユーザーがサイト A に 10 TB のボリュームを作成すると、サイト B にも同一の 10 TB のボリュームが作成されます。Keystoneは各サイトで 10 TB の消費量を識別し、合計で 20 TB の増加となります。System Manager と Unified Manager は、サイト A に 10 TB のボリュームが作成されたことを報告しますが、サイト B に 10 TB のボリュームが作成されたことを報告しません。</block>
-  <block id="079da252ccc5dbccc8de73980b3d636d" category="paragraph">表示される消費量 94.21 TiB は、プライマリ サブスクリプションの使用量を表します。高度なデータ保護により、消費量が個別のサブスクリプションを持つパートナー サイト間で分割されるため、このグラフにはプライマリ サイトの使用状況のみが表示されます。高度なデータ保護アドオンサービスの価格については、以下を参照してください。<block ref="e4b4611bcff3f9744cb4aede487c4fc5" category="inline-link-macro-rx"></block> 。</block>
   <block id="7e8fe67b005603b496012796735f2d36" category="doc">新しい列による論理使用状況の追跡の強化</block>
   <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">FabricPoolボリュームのKeystone消費量追跡を強化するために、新しい列「合計フットプリント」が追加されました。</block>
   <block id="729a65ff91860ad65935d125d788f643" category="list-text">* BlueXPのKeystoneダッシュボード *: *Assets* タブ内の *Volumes in clusters* タブに *Total footnotes* 列が表示されます。</block>
@@ -2419,8 +2373,6 @@
   <block id="d07b485359c52169277c3ff7aaed95d4" category="paragraph">NetAppコンソールは、オンプレミスおよびクラウド環境全体にわたるエンタープライズ規模のNetAppストレージおよびデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。</block>
   <block id="25873f208d2ff2745f96d86d5a87d7e7" category="paragraph">コンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。</block>
   <block id="e955295a860e893d00951c8233972d56" category="paragraph">詳細はこちら<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block>。</block>
-  <block id="e1a2098926fff2b44e76595b2fab04b4" category="list-text">コンソールとDigital Advisorには独自の機能がいくつか用意されていますが、コンソールはKeystoneの管理機能を提供し、サブスクリプションを管理したり、必要な調整を行ったりすることができます。</block>
-  <block id="5ed613d5969e54b01e0691f040afb027" category="inline-link-macro">NetAppコンソールのアクセスロールについて学ぶ</block>
   <block id="7d0366e10bff9b03e7d1ebe083232ad0" category="inline-link-macro">Digital AdvisorとNetAppコンソールの統合</block>
   <block id="19f702ba317875d05972d4dc2df1d379" category="list-text">Digital Advisorはコンソールに統合されており、 Keystoneダッシュボードを含むすべてのDigital Advisor機能にコンソールから直接アクセスできます。詳細については、<block ref="5983da9102c6398c455221dbbeef93c0" category="inline-link-macro-rx"></block> 。</block>
   <block id="754a3a5b6d930270b1fbfb641c89b440" category="section-title">NetAppコンソールとDigital AdvisorのKeystone機能</block>
@@ -2430,10 +2382,6 @@
   <block id="a8b926e7f40ce1b8a36a0d50c4412766" category="paragraph">*概要* ページを使用すると、リスクのあるワークロードを迅速に特定し、サブスクリプションの容量と有効期限のステータスを表示し、未解決のアラートを識別し、容量使用率が最も高いサブスクリプションを表示できます。また、 Keystoneのさまざまなバージョンにわたるサブスクリプションのステータスを表示して、注意が必要な問題を強調表示することもできます。</block>
   <block id="859167398832678cbae2e0062c6a5136" category="paragraph">*概要* ページを表示するには、コンソールの左側のナビゲーション メニューから、*ストレージ &gt; Keystone &gt; 概要* に移動します。</block>
   <block id="e8325080ad6eca6e402bccdbbcccd2b3" category="paragraph">*概要* ページでは、次の情報を提供します。</block>
-  <block id="b6a17a16f2925f240966aa803c2d67ff" category="summary">NetAppコンソールを通じて、関連するパフォーマンス サービス レベルのコミット済み容量を変更するには、 Keystoneサブスクリプションを変更します。</block>
-  <block id="2227728e15b4a8b218a3533e278cf342" category="doc">NetAppコンソールからKeystoneサブスクリプションを変更する</block>
-  <block id="84b1a13bc7964ae4f7768e4f9c3c8756" category="paragraph">NetAppコンソールを使用して、関連するパフォーマンス サービス レベルのKeystoneサブスクリプションのコミット済み容量を変更できます。</block>
-  <block id="7a91109a620e891743c65eea451a0cf2" category="paragraph"><block ref="7a91109a620e891743c65eea451a0cf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5c32e6c2b4476154d229af70df8cf7a" category="list-text">コンソールの左側のナビゲーション メニューから、*ストレージ &gt; Keystone &gt; モニタリング &gt; アラート モニター*を選択します。</block>
   <block id="187aba3af65d3bb1230dc8604f0acb91" category="paragraph"><block ref="187aba3af65d3bb1230dc8604f0acb91" category="inline-image-macro-rx" type="image"></block></block>
   <block id="293028e42f8edb8a2749fa8fca8130fa" category="paragraph">NetAppコンソールのKeystoneダッシュボードを使用すると、 Keystoneストレージ環境内のアクティブなアラートを表示および管理できます。容量の使用状況とサブスクリプションの有効期限に関するシステム生成アラートとユーザー定義アラートの両方を表示できます。このビューから、アラートの重大度を迅速に評価し、ストレージの問題を特定し、修正アクションを実行できます。このビューはDigital Advisorでは使用できません。</block>
@@ -2508,12 +2456,10 @@
   <block id="c0029d3ed944e8ef4f598481e14db28c" category="paragraph"><block ref="c0029d3ed944e8ef4f598481e14db28c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f9aa673728fdf49de5fd7f4392426fc4" category="paragraph">テーブル ビューでは、消費された最大容量や有効期限までの残り日数などの詳細を確認できます。サブスクリプションの使用状況の監視の一環として、パフォーマンス サービス レベル名、容量の使用状況、コミット済み容量と使用済み容量、プロビジョニング済み容量とバースト容量、使用可能な容量、ボリュームを表示できます。列セレクターを使用してテーブルをカスタマイズできます<block ref="99d8fedf6955beccd7c8c7d45fa452d9" category="inline-image-macro-rx" type="image"></block>アイコン。</block>
   <block id="c8e3290600a931a2c7f5ea26d1268469" category="paragraph"><block ref="c8e3290600a931a2c7f5ea26d1268469" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="65c72fc91b63262452cae6ffc68b5fe8" category="list-text">サブスクリプションを変更するには、* Keystone admin* ロールが割り当てられている必要があります。詳細については、<block ref="d47ae35a0d63c1eadf9e54d8e5017d63" category="inline-link-macro-rx"></block> 。</block>
   <block id="3073adc4a7680cc828c55134467305ae" category="paragraph"><block ref="3073adc4a7680cc828c55134467305ae" category="inline-link-macro-rx"></block></block>
   <block id="34c59df5dc1391d127f6446fad3bcb79" category="paragraph"><block ref="34c59df5dc1391d127f6446fad3bcb79" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3564bb0e09fc76eb6075b25b3c3643e0" category="list-text">*重大度別の未解決アラート*: 重大度 (重大、警告、情報) に基づいて、未解決のアラートの合計数を一覧表示します。各カテゴリには、詳細を確認してさらにアクションを実行するための *表示* ボタンが含まれています。</block>
   <block id="fbdd0ec7256573dce976dc52a2cdad0e" category="list-text">*最も古い未解決のKeystoneアラート*: サブスクリプション全体で最も古い重大な未解決アラートの表を表示します。</block>
-  <block id="9fcb29f9ba41ea80f15f38f0907ab2f0" category="list-text">コミットされた容量を変更するには、* Keystone admin* ロールが割り当てられている必要があります。詳細については、<block ref="d47ae35a0d63c1eadf9e54d8e5017d63" category="inline-link-macro-rx"></block> 。</block>
   <block id="012cc690ee0f390b86e69b7ef941643e" category="list-text">*リソースの選択*: 特定のサブスクリプションまたはすべてのサブスクリプションのモニターを作成するように選択します。選択したモニター タイプに基づいて、容量使用率モニターのサブスクリプション番号やパフォーマンス サービス レベルなど、表示される必須フィールドに入力します。また、サブスクリプション有効期限モニターのサブスクリプション番号のみを入力します。</block>
   <block id="17eb308ea945cce061c4020365ec2ddf" category="paragraph"><block ref="17eb308ea945cce061c4020365ec2ddf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="44758d2951f923446ffff8310f8ac382" category="section-title">2025年10月13日</block>
@@ -2655,4 +2601,69 @@
   <block id="b3aabf2706f0dd29444a14f90b5b670f" category="admonition">テーブルヘッダーの下矢印<block ref="f41a012a2c49083e45aae37ff23f77bc" category="inline-image-macro-rx" type="image"></block>をクリックすると、すべてのサブスクリプションを展開し、各サブスクリプションのパフォーマンスサービスレベル情報を同時に表示できます。これにより、すべてのサブスクリプションの現在の使用状況、コミット済み容量、プロビジョニング済み容量、バースト容量、および使用可能容量を含む詳細な容量情報が表示されます。または、個々のサブスクリプション行の*有効期限*列の横にある下矢印をクリックして、1つずつ展開することもできます。</block>
   <block id="ce767e3edd2ea431ac6813a73951729f" category="paragraph">Keystoneサブスクリプションのコミット済み容量を変更するオプションは、現在NetApp Consoleでは使用できません。この機能は、今後のリリースで再導入される予定です。</block>
   <block id="e6437d0fab94a9cc41e9fc0354b23716" category="section-title">2026年2月2日</block>
+  <block id="13c48d4700ad4af5c8fd956e1cfe906e" category="paragraph">Keystone STaaS サブスクリプションで、高度なデータ保護（ADP）アドオンサービスに加入できます。標準の Keystone サービスには SnapMirror、SnapVault、および Snapshot を使用したデフォルトのデータ保護が含まれていますが、このアドオンサービスは NetApp MetroCluster テクノロジを使用して、リカバリポイント目標（RPO）0 でミッションクリティカルなワークロードの効率的なデータ保護を保証します。</block>
+  <block id="71d3312e0355ab7d413073f4793122fc" category="paragraph">Keystone高度なデータ保護サービスでは、データをセカンダリサイトに同期的にミラーリングできます。プライマリサイトで災害が発生した場合、データを失うことなくセカンダリサイトが引き継ぐことができます。この機能は、2つのサイト間の<block ref="64ff7fce7f50f4f1d4bf30022fac8148" category="inline-link-macro-rx"></block>構成を使用してデータ保護を有効にします。高度なデータ保護アドオンサービスは、ファイルおよびブロックストレージサービスにのみ使用できます。このアドオンサービスの一環として、<block ref="fb78d2349716eae6da0fd092c4f02857" prefix=" " category="inline-code"></block>パフォーマンスサービスレベルがサブスクリプションに割り当てられます。</block>
+  <block id="88447a30bf60d09ff5ebf0642e6380e8" category="inline-link-macro">MetroClusterサブスクリプションの消費量と健全性を表示</block>
+  <block id="e799b5eff99a155a4912e68e26db204f" category="paragraph">MetroCluster構成の消費量とヘルスメトリックを監視できます。詳細については、<block ref="0b2e2940da985e8c5260b9ec964b2073" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="880dc4bb6f99da8936686e254cb50669" category="paragraph">MetroCluster構成では、各サイトに独自のサブスクリプションが必要であり、各サイトでコミットされた容量に対して個別に課金されます。</block>
+  <block id="0b17361973d6dd62103a27ad522a1b4a" category="section-title">サポートされているMetroCluster構成</block>
+  <block id="757a9b494786f22b7b66a8cb11d77505" category="paragraph">Keystoneは以下のMetroCluster導入シナリオをサポートします：</block>
+  <block id="a12f0bc36306f109786a32dcba12cb16" category="list-text">アクティブ/パッシブ構成</block>
+  <block id="6a1b5dfc7ed806f74f0a51d8e7fe82bf" category="list-text">この構成では、1 つのサイトのプライマリデータがセカンダリサイトにミラーリングされます。たとえば、サイト A で 100 TiB の論理データが消費されると、サイト B に複製されます。両方のサイトで同一のサブスクリプションが必要です：</block>
+  <block id="d7941f7e86a71e117ffab47d0f606396" category="list-text">*サブスクリプション1（サイトA）：* 100 TiBストレージサービス+ 100 TiB ADP</block>
+  <block id="483262bd936bc7befb9af3dee5e82599" category="list-text">*サブスクリプション2（サイトB）：* 100 TiB ストレージサービス + 100 TiB ADP</block>
+  <block id="6eb23ae1a2ca85e0ec0e596d79022274" category="list-text">完全ミラーリングによるアクティブ/アクティブ構成</block>
+  <block id="86b67c27aa3a547ae444c6fd52081d2a" category="list-text">この構成では、両方のサイトが双方向にミラーリングされたプライマリデータをホストします。たとえば、サイトAの100TiBのプライマリデータがサイトBにミラーリングされ、サイトBの100TiBのプライマリデータがサイトAにミラーリングされます。両方のサイトで、合計容量に対するサブスクリプションが必要です：</block>
+  <block id="18134e5504718f75aade7e9e5e41220c" category="list-text">*サブスクリプション1（サイトA）：* 200 TiBストレージサービス+ 200 TiB ADP</block>
+  <block id="06e569558b9aa9e52d6ea3b626499fa8" category="list-text">*サブスクリプション2（サイトB）：* 200 TiB ストレージサービス + 200 TiB ADP</block>
+  <block id="49a70182977d0efde0901be0cf3f7101" category="list-text">部分的なミラーリングを使用したアクティブ/アクティブ構成</block>
+  <block id="6cffd5c40a8669b47c08c961f08738d7" category="list-text">この構成では、一方のサイトがミラー化されたデータをホストし、もう一方のサイトがミラー化されたデータとミラー化されていないデータの両方をホストします。たとえば、サイトAの100TiBのプライマリデータがサイトBにミラーリングされ、サイトBではミラーリングされていない追加の100TiBのデータもホストされます。サブスクリプションは各サイトの容量によって異なります：</block>
+  <block id="dfde62f4169c1a6e0ed4f38055fa2774" category="paragraph">次の図は、サポートされているMetroCluster構成を示しています：</block>
+  <block id="c0ba0a76f531a20bbda6af3c55a46aac" category="inline-image-macro">3つのMetroCluster構成を示す図：対称ミラーリングによるアクティブ/パッシブ、完全な双方向ミラーリングによるアクティブ/アクティブ、部分的なミラーリングによるアクティブ/アクティブ</block>
+  <block id="9675e25ec9f821651df1c740fe778f97" category="paragraph"><block ref="9675e25ec9f821651df1c740fe778f97" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dcf5106043aa7bde76b50aee99982689" category="summary">Keystoneの高度なデータ保護アドオンサービスに登録すると、MetroClusterパートナーサイトの消費データを表示し、健全性ステータスを監視できます。</block>
+  <block id="511c40cd8a486a0e8aa1251baf8515ee" category="doc">Keystone MetroClusterサブスクリプションの消費量と健全性を表示</block>
+  <block id="54cce4aba23f46d3958d61fbb2b10e3a" category="paragraph">高度なデータ保護アドオンサービスに加入すると、MetroClusterパートナーサイトの消費データをNetApp ConsoleまたはDigital Advisorで表示できます。NetApp Consoleでは、MetroClusterセットアップのレプリケーションステータスと健全性を監視することもできます。</block>
+  <block id="f74fc96e874e659d41c34561f30f3fee" category="section-title">MetroClusterサブスクリプションの消費量と健全性ステータスを表示</block>
+  <block id="b49647b9b1e8bc3c8d8768be0c33c9b2" category="paragraph">次の手順を実行します。</block>
+  <block id="1a94b13632bb1f29b09280731ca462ed" category="list-text">*サブスクリプション番号*列でMetroClusterサブスクリプションを選択します。</block>
+  <block id="58d25047c56c5383b6e5607bddacebca" category="inline-image-macro">MetroClusterサブスクリプションシンボル</block>
+  <block id="26546fe0e238d82fb8663584226d1478" category="admonition">MetroClusterサブスクリプションは、<block ref="a865e8e7573241a1da9d2c81b0ca0ac4" category="inline-image-macro-rx" type="image"></block>アイコンで識別されます。</block>
+  <block id="18c635825cb497bac7e5931ccc134aa0" category="paragraph">*Current consumption*タブが開き、サブスクライブした基本パフォーマンス サービス レベルとそれに対応する高度なデータ保護パフォーマンス サービス レベルの消費量分析情報が表示されます。この情報は表形式またはグラフ形式で表示できます。詳細については、<block ref="fad18dbea5fe4d53670ce8b5f31e4228" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="86c03d482bf25fa66342ff23f81a8b8b" category="list-text">*Advanced data protection（ADP）*タブを選択します。</block>
+  <block id="45251127b3bb3ae466aebfd15071b035" category="paragraph">このタブでは、プライマリサイトとミラーサイトの両方での基本パフォーマンスサービスレベルの消費データを表示し、MetroClusterセットアップの健全性ステータスを監視し、同期ステータスを追跡できます。</block>
+  <block id="1c1a142854f6ec09d46068011af3620f" category="list-text">選択した期間の消費分布チャートを表示します。</block>
+  <block id="c5b9cac50bff77d9caef636546a52cc3" category="paragraph">グラフには、プライマリサイトとミラーサイトの両方の消費量が表示されます。グラフの上にマウスを移動すると、各サイトの消費量の内訳がテビバイト（TiB）単位で表示されます。</block>
+  <block id="5e3aabd541f9a8089c9a46b80f9c78e3" category="admonition">基本パフォーマンス サービス レベルでは、各ボリュームはプライマリ サイトとミラー サイトの両方でプロビジョニングされたとおりに課金されます。したがって、グラフは各サイトでの消費量を反映するように分割されます。</block>
+  <block id="886bb30f5882831107de008efbb56e4c" category="paragraph">*例：*ツールヒントには、プライマリサイトの1.15 TiBやミラーサイトの4.22 TiBなどの消費量の値が表示されます。</block>
+  <block id="7d46ce3951e18767710379cf79e92352" category="inline-image-macro">MetroCluster の消費分布を示す折れ線グラフ。ツールチップにプライマリサイトで 1.15 TiB、ミラーサイトで 4.22 TiB と表示されます</block>
+  <block id="1581159ff20524ddc181e539ca73cec9" category="paragraph"><block ref="1581159ff20524ddc181e539ca73cec9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="069a24e74f6fefe228c9ce5d28b7e67b" category="list-text">*ADP トポロジ*ビューでMetroClusterセットアップの健全性ステータスを監視します。</block>
+  <block id="92d375ae13aef349145e8dc2877f3c76" category="inline-link-macro">ONTAP Mediatorについて学ぶ</block>
+  <block id="22273e2e3da5fac4fab6a5af929487f6" category="paragraph">トポロジには、プライマリサイトとミラーサイト間の接続ステータス（正常、劣化、切断、または初期化中）、データ同期ステータス（同期中または非同期）、および設定されている場合はONTAP Mediatorのステータスが表示されます。ONTAP Mediatorの詳細については、<block ref="fa6b7569dc18495dda4bcaf9e0e6d31d" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="c7ce58326ff0d43313f58438432618e4" category="inline-image-macro">プライマリサイト（クラスタA）、ミラーサイト（クラスタB）、接続ステータスインジケータ、同期ステータス、およびONTAP Mediatorを表示するADPトポロジの画像</block>
+  <block id="485a60e9684d6db386d471e94d4f8e6e" category="paragraph"><block ref="485a60e9684d6db386d471e94d4f8e6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7cf2a22df63f7c801c01cfb4ed82fab" category="admonition">ADP トポロジから Cluster B サブスクリプション（ミラー）を選択して、それをプライマリ サイトとして表示できます。</block>
+  <block id="ea463c160b93aefec442f24e23176210" category="admonition">同期ステータスが同期していない、または接続ステータスが低下している場合は、<block ref="da15ada5eca0cf6d8fba09a6cd49576b" category="inline-link-macro-rx"></block>を参照して問題のトラブルシューティングを行います。</block>
+  <block id="8f2ab845f0c2b21de9dce9bacddaabcb" category="list-text">プライマリ サイトまたはミラー サイトの履歴データの消費傾向を表示します。</block>
+  <block id="3427110bee6003dd0893bac8f65d3026" category="paragraph">*容量使用率*の下で、クラスタ A（プライマリ）またはクラスタ B（ミラー）の横にある *表示* を選択します。</block>
+  <block id="d9e6be64cc5e0800433f8124d52098c6" category="inline-link-macro">Keystoneサブスクリプションの消費動向を表示</block>
+  <block id="9f7f2df13fda4f0939a1226559ef20a2" category="paragraph">*消費傾向*タブが開き、指定された日付範囲における選択したクラスターの履歴データが表示されます。基本および高度なデータ保護パフォーマンス サービス レベルの両方について、容量使用傾向を分析できます。詳細については、<block ref="13e6bd514849d88572a566ee4b9ddd86" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="eb4d686858db5ecb37a6bcd33f15cecf" category="paragraph">*例：* 次のグラフは、プライマリサイト（クラスタA）の_Premium_パフォーマンスサービスレベル（ベース）の消費量を示しています：</block>
+  <block id="2828144b465892c01c607f91dadeed2e" category="inline-image-macro">プライマリサイトのPremium パフォーマンス サービス レベル消費チャート</block>
+  <block id="07c6bfc4b60aa098788912c943a00662" category="paragraph"><block ref="07c6bfc4b60aa098788912c943a00662" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9370e72ca2e46a103958448e1d9f3ee1" category="paragraph">_Advanced Data-Protect premium_ パフォーマンスサービスレベルの場合、プライマリサイト（クラスタA）のグラフは次のようになります：</block>
+  <block id="7a68e24df64b887455f230838ea7fff3" category="inline-image-macro">プライマリサイトのAdvanced Data Protection Premium消費チャート</block>
+  <block id="4fa7bd48201c6971cbee583844674499" category="paragraph"><block ref="4fa7bd48201c6971cbee583844674499" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ae2e8d7d9bc83c06878ce05d51920b3e" category="paragraph">_Advanced Data-Protect_ パフォーマンスサービスレベルでは、総消費量はプライマリサイトとミラーサイトの間で分割され、各サイトでの使用量は別々のサブスクリプションに反映され、課金されます。1つのサブスクリプションはプライマリサイト用、もう1つはミラーサイト用です。そのため、*消費傾向*タブでプライマリサイトのサブスクリプション番号を選択すると、高度なデータ保護アドオンサービスの消費チャートにプライマリサイトのみの個別の消費詳細が表示されます。MetroCluster構成の各パートナーサイトはソースとミラーの両方の役割を果たすため、各サイトでの合計消費量には、そのサイトで作成されたソースボリュームとミラーボリュームが含まれます。詳細については、<block ref="37286cb86a09a4920520b9288f4ef230" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="c1fd96e1a86ead5d1ebbf6b0c8bbf088" category="list-text">*General &gt; Keystone Subscriptions &gt; Consumption Trend*を選択します。</block>
+  <block id="9e2d1ddd4dcf430ef709f3cef91bdcb4" category="list-text">MetroClusterサブスクリプションを選択します。</block>
+  <block id="cecfedde5e4474302df84ae302547216" category="list-text">コンソールとDigital Advisorはいくつかの独自の機能を提供していますが、コンソールはKeystoneの管理機能を提供し、サブスクリプションを管理して必要な調整を行うことができます。詳細については、<block ref="c1ba7ab85116b0653b4bddd0a4c0ce29" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="65a2a677ad699a266987a973a6da5af2" category="inline-link-macro">MetroClusterの消費量と健全性を表示</block>
+  <block id="132051ceb3854fb60e3d9c0fef6e399c" category="paragraph"><block ref="132051ceb3854fb60e3d9c0fef6e399c" category="inline-link-macro-rx"></block></block>
+  <block id="bf93ffdb682e2db2c7c1fde328e362e5" category="cell">はい（ヘルスステータス、トポロジビュー、同期監視を含む）</block>
+  <block id="97e3a227dc9559ee612b1a162bda9b44" category="cell">はい（消費データのみ）</block>
+  <block id="83a7d79d2446fe66f125a9ccf9a54e8d" category="list-text">*サブスクリプション番号*：NetAppによって割り当てられたKeystoneサブスクリプションのサブスクリプション番号。<block ref="a865e8e7573241a1da9d2c81b0ca0ac4" category="inline-image-macro-rx" type="image"></block>アイコンが付いているサブスクリプションは、MetroClusterサブスクリプションです。MetroClusterサブスクリプションの詳細については、<block ref="660e84029d4c47136198fc3e50dbcb48" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="ac2952bbdeeadb1f8bfdc6205fabd389" category="inline-link-macro">MetroClusterサブスクリプションの消費量と健全性を表示</block>
+  <block id="4a7f7741f21f5bce37e9f63b42306f0d" category="admonition">高度なデータ保護アドオンサービスに加入している場合は、サブスクリプション番号のツールチップをクリックすると、MetroClusterセットアップでパートナーサブスクリプションの追跡IDを表示できます。MetroCluster構成でパートナーサブスクリプションの詳細な消費量を表示するには、<block ref="e4adcd4141f4b2debb9433709079a138" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>

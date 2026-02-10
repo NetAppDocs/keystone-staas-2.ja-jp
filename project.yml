@@ -117,6 +117,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: サブスクリプションのタイムラインを表示する
         url: "/integrations/subscription-timeline.html"
+      - title: MetroClusterサブスクリプションの消費量と健全性を表示
+        url: "/integrations/adp-tab.html"
     - title: アセットを表示
       entries:
       - title: サブスクリプションに関連付けられたアセットを表示する
@@ -129,8 +131,6 @@ sidebar:
         url: "/integrations/monitoring-alerts.html"
       - title: アラートモニターの表示と作成
         url: "/integrations/monitoring-alert-monitors.html"
-    - title: サブスクリプションを変更する
-      url: "/integrations/modify-subscription.html"
     - title: サービスリクエストを表示
       url: "/integrations/administration-tab.html"
     - title: ボリュームとオブジェクトストレージの詳細を表示する
