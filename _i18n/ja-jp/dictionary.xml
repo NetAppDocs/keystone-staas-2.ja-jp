@@ -2487,7 +2487,6 @@
   <block id="a91bb8801531bd0f94f5726293b87485" category="paragraph"><block ref="a91bb8801531bd0f94f5726293b87485" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa37f1bdab27c9577ff178edf4ff4fef" category="admonition">*レポート* タブは現在、 Keystoneサブスクリプションでは利用できません。</block>
   <block id="2193640916b96caede95ed8f42c339e8" category="paragraph"><block ref="2193640916b96caede95ed8f42c339e8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bfad9751c60f0a457fcc252ae1a203b7" category="paragraph">これらのメッセージの詳細については、 NetApp Keystoneサポートにお問い合わせください。サービスリクエストの提出については、以下を参照してください。 <block ref="f97d063259ee0af881752dffb06b5bc4" category="inline-link-macro-rx"></block>。</block>
   <block id="3a51c5c35df88316b8d012c010e340f7" category="section-title">2025年11月24日</block>
   <block id="236430e108e8394ac19913076b10fb55" category="doc">累積バースト容量ラベルの名前を変更しました</block>
   <block id="73ba7647571e18c30e8b5b930b7d7ffb" category="paragraph">ラベル *Accrued burst capacity* の名前が *Accrued burst* に変更されます。</block>
@@ -2737,4 +2736,5 @@
   <block id="9678bc25baa5d4e1d8060e89e70f72fc" category="list-text"><block ref="9678bc25baa5d4e1d8060e89e70f72fc" category="inline-link-macro-rx"></block></block>
   <block id="843e615119fedf23ac503dbdf746f02a" category="inline-link-macro">StorageGRID テクニカルサポートケースの作成時に使用するシリアル番号</block>
   <block id="ce9d93de629e2074412aaee90a3a8db2" category="list-text"><block ref="ce9d93de629e2074412aaee90a3a8db2" category="inline-link-macro-rx"></block></block>
+  <block id="4923c6e833cc1911c8344d01efacf0cd" category="paragraph">NetApp Keystoneサポートに連絡して、これらのメッセージの詳細を確認してください。サービスリクエストの提出方法については、<block ref="fa4c1fe482109028db7ac27dab34833d" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
