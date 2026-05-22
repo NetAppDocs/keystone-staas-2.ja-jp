@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concepts/operational-models.html 
-keywords: Operational models, partner operations, customer operations, roles and responsibilities, r&r 
+keywords: Operational models, partner operations, customer operations, roles and responsibilities, r and r 
 summary: NetApp Keystone STaaS は、サービス提供のための 2 つの運用モデルを提供します。  Keystoneを使い始める前に、これらのオプションを理解しておく必要があります。 
 ---
 = Keystoneの運用モデル
