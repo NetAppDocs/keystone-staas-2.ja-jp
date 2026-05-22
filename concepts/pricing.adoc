@@ -5,15 +5,13 @@ keywords: pricing, billing introduction, Keystone billing
 summary: Keystone は、柔軟で拡張可能な消費ニーズに合わせて、成長に応じた支払いモデルを提供します。 
 ---
 = Keystoneの請求について学ぶ
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
-
-'''
-sidebar: sidebar permalink: concepts/pricing.html keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules summary: NetApp Keystone STaaSでは、コミットした容量に対して料金を支払い、それを超えて使用した分についてのみ追加料金が発生します。このページでは、ストレージコミットメントの価格設定方法、容量の測定と請求方法、請求書の生成時期など、従量課金モデルの仕組みについて説明します。---
-
-
-
-= Keystoneの請求について学ぶ
 
 [role="lead"]
 NetApp Keystone STaaSでは、コミットした分の料金を支払い、それを超えて使用した分についてのみ追加料金が発生します。このページでは、従量課金制モデルの仕組み（ストレージコミットメントの価格設定方法、容量の測定と請求方法、請求書の発行時期など）について説明します。
