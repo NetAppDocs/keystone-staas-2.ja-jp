@@ -42,6 +42,7 @@ NOTE: 推奨されるオペレーティング システムは、Debian 12、Wind
 
 
 
+[[networking-requirements]]
 == ネットワーク要件
 
 ITOM Collector のネットワーク要件を次の表に示します。

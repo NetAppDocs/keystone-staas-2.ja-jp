@@ -18,6 +18,7 @@ summary: '可用性SLOは、Keystone注文を提供するために導入され�
 
 
 
+[[metrics]]
 == メトリクス
 
 * *月間稼働率* = [(1か月間の稼働秒数 - その月にKeystoneの注文を配送するために導入されたすべてのAFFストレージアレイのダウンタイムの秒数の平均) / 1か月間の稼働秒数] x 100%
@@ -27,12 +28,14 @@ summary: '可用性SLOは、Keystone注文を提供するために導入され�
 
 
 
+[[performance-service-levels]]
 == パフォーマンスサービスレベル
 
 ONTAPフラッシュ ストレージ アレイがサポートするすべてのパフォーマンス サービス レベルは、可用性 SLO の対象となります。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Keystoneのパフォーマンスサービスレベル"] 。
 
 
 
+[[service-credits]]
 == サービスクレジット
 
 
@@ -73,6 +76,7 @@ NOTE: SLA と保証は指名ベースで利用可能です。
 |===
 
 
+[[service-credit-calculation]]
 === サービスクレジットの計算
 
 サービス クレジットは次の計算式を使用して決定されます。
@@ -125,6 +129,7 @@ Extreme
 
 
 
+[[service-credit-request]]
 === サービスクレジットリクエスト
 
 SLA 違反が検出された場合は、 NetApp Keystoneサポートで優先度 3 (P3) のサポート チケットを開きます。

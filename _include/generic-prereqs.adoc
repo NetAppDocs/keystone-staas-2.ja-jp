@@ -4,12 +4,14 @@
 
 
 
+[[other-requirements]]
 == その他の要件
 
 次の一般的な要件が満たされていることを確認してください。
 
 
 
+[[networking-requirements]]
 === ネットワーク要件
 
 Keystone Collector のネットワーク要件を次の表に示します。
@@ -177,6 +179,7 @@ NOTE: MySQL のデフォルト ポート 3306 は、Unified Manager の新規イ
 
 
 
+[[url-access]]
 === URLアクセス
 
 Keystone Collector は次のインターネット ホストにアクセスする必要があります。

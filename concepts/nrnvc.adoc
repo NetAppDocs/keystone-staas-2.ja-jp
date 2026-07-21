@@ -32,6 +32,7 @@ NetApp は、サービス提供に使用されたすべての物理資産をNetA
 
 
 
+[[snaplock-compliance]]
 == SnapLock Compliance
 
 SnapLockテクノロジーは、ボリュームに設定された有効期限が過ぎるとドライブを使用不可にすることで、NRNVC 機能を有効にします。ボリュームでSnapLockテクノロジーを使用するには、NRNVC に加入する必要があります。これはファイルおよびブロック サービスにのみ適用されます。

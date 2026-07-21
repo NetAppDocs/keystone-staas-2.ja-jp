@@ -18,6 +18,7 @@ Keystone STaaS システムのデータは、 Keystone Collector と、関連す
 
 
 
+[[keystone-collector-data-flow]]
 == Keystone Collector のデータフロー
 
 Keystone Collector は、次のフロー図に示すように、ストレージ コントローラへの REST API 呼び出しを開始し、コントローラの使用状況の詳細を定期的に取得します。
@@ -33,6 +34,7 @@ image:data-collector-flow.png["コレクターコンポーネント内のデー�
 
 
 
+[[monitoring-data-flows]]
 == データフローの監視
 
 ストレージ インフラストラクチャの健全性を継続的に監視することは、 Keystoneサービスの最も重要な機能の 1 つです。監視とレポートのために、 Keystone はITOM 監視ソリューションを使用します。次の図は、ITOM 監視ソリューションによって顧客の場所へのリモート アクセスがどのように保護されるかを示しています。お客様はリモート セッション機能を有効にすることを選択できます。これにより、 Keystoneサポート チームは監視対象のデバイスに接続してトラブルシューティングを行うことができます。
@@ -50,6 +52,7 @@ image:monitoring-flow-2.png["データフロー"]
 
 
 
+[[compliance-standards]]
 == コンプライアンス基準
 
 Keystone ITOM 監視ソリューションは、欧州連合一般データ保護規則 (GDPR) およびカリフォルニア州消費者プライバシー法 (CCPA) に準拠しています。また、link:https://www.logicmonitor.com/legal/data-processing-addendum["データ保護補足条項（DPA）"^]これらのコミットメントを文書化します。  ITOM 監視ソリューションは、個人データを収集または保存しません。

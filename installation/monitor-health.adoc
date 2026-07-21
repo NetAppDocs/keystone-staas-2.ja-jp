@@ -36,6 +36,7 @@ NOTE: *問題の説明*: Keystone Collector は、使用量計測システムの
 
 
 
+[[view-system-logs]]
 == システムログを表示する
 
 Keystone Collector システム ログを表示してシステム情報を確認したり、それらのログを使用してトラブルシューティングを実行したりできます。 Keystone Collector はホストの _journald_ ログ システムを使用し、システム ログは標準の _journalctl_ システム ユーティリティを通じて確認できます。ログを調べるには、次の主要なサービスを利用できます。
@@ -94,6 +95,7 @@ Keystone Collector システム ログを表示してシステム情報を確認
 ----
 
 
+[[generate-and-collect-support-bundles]]
 == サポートバンドルを生成して収集する
 
 Keystone Collector TUI を使用すると、サポート バンドルを生成し、サポートの問題を解決するためにサービス リクエストに追加できます。次の手順に従ってください。

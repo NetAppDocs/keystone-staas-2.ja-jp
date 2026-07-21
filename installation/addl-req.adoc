@@ -22,7 +22,7 @@ Keystoneを使い始める前に、 ONTAPクラスタとStorageGRIDシステム�
 --
 .ソフトウェアバージョン
 . ONTAP 9.8 以降
-. Active IQ Unified Manager (Unified Manager) 9.10 以降
+. Active IQ Unified Manager (Unified Manager) 9.10以降9.16P2未満
 
 
 .開始する前に
@@ -54,7 +54,7 @@ ONTAPを通じてのみ使用状況データを収集する場合は、次の要
 
 Active IQ Unified Managerを通じて使用状況データを収集する場合は、次の要件を満たしてください。
 
-. Unified Manager 9.10 以降が設定されていることを確認します。  Unified Manager のインストールについては、次のリンクを参照してください。
+. Unified Managerのバージョンが9.10以降9.16P2より前のバージョンに設定されていることを確認してください。Unified Managerのインストール方法については、以下のリンクを参照してください。
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["VMware vSphere システムへの Unified Manager のインストール"^]
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-linux/concept_requirements_for_install_unified_manager.html["LinuxシステムへのUnified Managerのインストール"^]

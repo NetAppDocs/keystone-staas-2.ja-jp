@@ -18,30 +18,51 @@ Keystone STaaS サービスの最新機能と拡張機能について学びま�
 
 
 
+[[20-july-2026]]
+== 2026年7月20日
+
+NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
+
+
+
+[[view-subscription-expiry-and-auto-renewal-status]]
+=== 購読期限と自動更新状況を確認する
+
+サブスクリプション テーブル（*ストレージ > Keystone > サブスクリプション*）の「*サブスクリプション有効期限までの日数*」列に、有効期限の横にアイコンが表示されるようになりました。自動更新がオフの場合、アイコンの色は有効期限の近さを示します：緑（120日超）、オレンジ（91～120日）、赤（90日未満）、灰色（期限切れ）。自動更新が有効になっているサブスクリプションの場合、自動更新アイコンが表示され、現在の契約期間終了時にサブスクリプションが自動的に更新されることを示します。このステータスは読み取り専用であり、お客様の契約条件を反映しています。サブスクリプションを開くと、これらのアイコンがサブスクリプション詳細ヘッダーの「*現在の消費量*」、「*消費量の傾向*」、「*サブスクリプションのタイムライン*」、「*資産*」タブに表示され、ナビゲーション中に有効期限と更新状況を確認できます。
+
+詳細については、 https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"]を参照してください。
+
+
+
+[[29-june-2026]]
 == 2026年6月29日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[view-adp-license-distribution-for-metrocluster-subscriptions]]
 === MetroCluster サブスクリプションの ADP ライセンス配布状況を確認する
 
 「高度なデータ保護 (ADP)」タブに新しい「ライセンス配布」サブタブが追加され、MetroCluster パートナークラスター全体の ADP ライセンスの使用状況を可視化できるようになりました。詳細については、link:./integrations/adp-tab.html["Keystone MetroClusterサブスクリプションの消費量と健全性を表示"] を参照してください。
 
 
 
+[[view-ransomware-protection-status-for-your-volumes]]
 === ボリュームのランサムウェア対策状況を確認する
 
 「アセット」の「クラスター内のボリューム」タブに「ARPステータス」列が追加されました。この列には、各ボリュームで自律型ランサムウェア対策（ARP）が有効になっているか無効になっているかが表示され、管理対象アセット全体におけるランサムウェア対策の状況を可視化できます。ARP の詳細については、link:https://docs.netapp.com/us-en/ontap/anti-ransomware/["ONTAPにおける自律型ランサムウェアプロテクション（ARP）"]を参照してください。
 
 
 
+[[share-feedback-using-the-feedback-tab]]
 === フィードバックタブを使用してフィードバックを共有する
 
 Keystoneダッシュボードのどの画面からでも、画面右下隅に固定された新しい「フィードバック」タブを使用してフィードバックを送信できるようになりました。タブをクリックすると、ご意見を共有し、コメントを直接 NetApp に送信できるパネルが開きます。
 
 
 
+[[improve-alerting-for-capacity-usage-and-subscription-expiration]]
 === 容量使用量とサブスクリプション期限切れに関するアラート機能を改善する
 
 システム生成の監視機能により、容量使用状況とサブスクリプションの有効期限切れに関する、より詳細なアラートが提供されるようになりました。
@@ -54,84 +75,98 @@ Keystoneダッシュボードのどの画面からでも、画面右下隅に固
 
 
 
+[[25-may-2026]]
 == 2026年5月25日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[improved-display-of-multiple-updates-on-the-same-day-in-the-subscription-timeline]]
 === 購読タイムラインにおける同日の複数の更新の表示を改善しました
 
 購読状況を示すタイムラインチャートでは、異なる種類の購読更新が同日に複数発生した場合、個別のアイコンではなく数値が表示されるようになりました。その数字にカーソルを合わせると、その日のすべての更新の種類が表示されます。ダウンロードしたレポートには、更新内容ごとに個別の行が含まれており、すべての変更履歴を完全に確認できます。詳細については、link:./integrations/subscription-timeline.html["Keystoneサブスクリプションのタイムラインを表示する"]を参照してください。
 
 
 
+[[27-april-2026]]
 == 2026年4月27日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[renamed-provisioned-capacity-label]]
 === プロビジョニング済み容量ラベルの名前を変更しました
 
 *Provisioned capacity* というラベルが *Provisioned volume capacity* に名称変更されました。更新されたラベルは、関連する CSV および Excel レポートにも反映されています。
 
 
 
+[[forecast-toggle-for-accrued-burst]]
 === 累積バーストの予測切り替え
 
 *消費傾向*タブの*累積バースト*ビューにある*予測*トグルを使用すると、現在の日付から今後120日間の累積バースト使用量を予測できるようになりました。詳細については、link:./integrations/consumption-tab.html#view-forecast-data["予測データを表示する"]を参照してください。
 
 
 
+[[30-march-2026]]
 == 2026年3月30日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[above-burst-capacity-on-the-historical-consumption-chart]]
 === 履歴データ消費量チャートにおける最大許容量を超える
 
 *消費動向*タブの履歴データ消費量グラフで、バースト制限を超える使用量が強調表示されるようになりました。詳細については、link:./integrations/consumption-tab.html["Keystoneサブスクリプションの消費傾向を表示する"]を参照してください。
 
 
 
+[[forecast-for-capacity-usage]]
 === 容量使用量の予測
 
 *消費傾向*タブの*履歴データ*ビューにある*予測*トグルを使用すると、現在の日付から今後120日間の容量使用量を予測できます。詳細については、link:./integrations/consumption-tab.html#view-forecast-data["予測データを表示する"]を参照してください。
 
 
 
+[[tracking-id-in-subscription-export]]
 === サブスクリプションのエクスポートにおけるトラッキング ID
 
 * Subscriptions *ページからダウンロードされたサブスクリプションレポートには、ExcelおよびCSV形式の両方のパフォーマンスサービスレベルデータに* Tracking ID *が含まれるようになりました。
 
 
 
+[[subscriptions-page-column-visibility-updates]]
 === サブスクリプションページの列の表示設定の更新
 
 *Subscriptions*ページでは、*Keystone version*列はデフォルトで非表示になり、リンクされたサブスクリプションが利用可能な場合にのみ*Linked subscriptions*列が表示されます。
 
 
 
+[[march-02-2026]]
 == 2026年3月2日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[new-columns-in-the-volumes-in-clusters-tab]]
 === クラスター内のボリュームタブの新しい列
 
 *アセット*の*クラスター内のボリューム*タブに、*ホット データ*、*コールド ティア (%)*、*ホット ティア (%)*の 3 つの新しい列が追加されました。詳細については、link:./integrations/assets-tab.html["Keystoneサブスクリプションに関連付けられた資産を表示する"]およびlink:./integrations/assets.html["Keystoneサブスクリプション全体の資産を表示する"]を参照してください。
 
 
 
+[[invoiced-uninvoiced-and-provisional-burst-usage-in-consumption-trend]]
 === 消費傾向における請求済み、未請求、および暫定的なバースト使用量
 
 *消費傾向*タブの累積バースト課金グラフに、請求済み、未請求、暫定的なバースト使用量が表示されるようになりました。詳細については、link:./integrations/consumption-tab.html#view-accrued-burst["蓄積されたバーストを表示"]を参照してください。
 
 
 
+[[enhancements-to-the-monitoring-view]]
 === 監視ビューの機能強化
 
 *Monitoring* ビューには次の更新が含まれています：
@@ -144,90 +179,105 @@ NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[16-february-2026]]
 == 2026年2月16日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[dii-add-on-consumption-display]]
 === Data Infrastructure Insightsアドオン消費量表示
 
 Data Infrastructure Insights（DII）アドオンの消費量が*現在の消費量*および*消費傾向*タブに表示されるようになりました。詳細については、link:./concepts/data-infra-insights.html#view-dii-consumption["Data Infrastructure Insights消費量を表示"]を参照してください。
 
 
 
+[[02-february-2026]]
 == 2026年2月2日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[interactive-filtering-for-daily-accrued-burst-data]]
 === 毎日蓄積されるバーストデータのインタラクティブフィルタリング
 
 *消費傾向*タブの*日数別の累積バースト*テーブルで、インタラクティブなフィルタリングがサポートされるようになりました。発生したバースト請求グラフ内の任意のバーを選択すると、その請求期間内の日数のみが表示されます。詳細については、link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["毎日の累積バーストデータ使用量を表示する"]を参照してください。
 
 
 
+[[enhanced-date-range-display-in-accrued-burst-graph]]
 === 累積バーストグラフの日付範囲表示の強化
 
 *消費傾向*タブの累積バースト課金グラフに、月と年だけでなく、2025年10月1日から2025年10月31日までなど、各課金期間の完全な日付範囲が表示されるようになりました。
 
 
 
+[[expandable-subscription-details-view]]
 === 拡張可能なサブスクリプション詳細ビュー
 
 *Subscriptions* タブには、すべてのサブスクリプションを展開し、各サブスクリプションのパフォーマンスサービスレベル情報を同時に表示するオプションが含まれています。詳細については、link:./integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"]を参照してください。
 
 
 
+[[new-usage-type-column]]
 === 新しい使用タイプ列
 
 *サブスクリプション*タブには、プロビジョニングされた使用量、物理的な使用量、論理的な使用量のいずれに基づいてサブスクリプションが課金されるかを表示する*使用状況タイプ*列が含まれています。詳細については、link:./integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"]を参照してください。
 
 
 
+[[08-december-2025]]
 == 2025年12月8日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[renamed-accrued-burst-capacity-label]]
 === 累積バースト容量ラベルの名前を変更しました
 
 ラベル *Accrued burst capacity* の名前が *Accrued burst* に変更されます。
 
 
 
+[[24-november-2025]]
 == 2025年11月24日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[tracking-id-for-coverage-gap-subscriptions]]
 === カバレッジギャップサブスクリプションの追跡ID
 
 *モニタリング > アラート モニター* の *カバレッジの完了* 通知ボックスで、各サブスクリプションのサブスクリプション番号の横に追跡 ID が表示されるようになりました。
 
 
 
+[[10-november-2025]]
 == 2025年11月10日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[complete-your-coverage-notification-box]]
 === 補償通知ボックスを入力してください
 
 *監視*ページの*アラート モニター*タブには、カバレッジ ギャップが存在する場合に表示される*カバレッジの完了*通知ボックスが含まれています。このボックスには、容量または有効期限モニターが不足しているサブスクリプションと、サブスクリプションのないモニターがリストされます。ギャップに対処するには、既存のモニターにサブスクリプションを追加したり、新しいモニターを作成したり、使用されていないモニターを削除したりします。詳細については、 link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alert-monitors.html#manage-coverage-gaps["アラートモニターのカバレッジギャップを管理する"]。
 
 
 
+[[13-october-2025]]
 == 2025年10月13日
 
 NetApp ConsoleのKeystoneダッシュボードの新しい機能強化:
 
 
 
+[[qos-policy-override-column-in-assets-tab]]
 === 資産タブの QoS ポリシーオーバーライド列
 
 *アセット* タブ内の *クラスター内のボリューム* タブに、バックアップ ボリュームとミラー ボリュームに対して QoS ルールがバイパスされるかどうかを示す *QoS ポリシー オーバーライド* 列が追加され、*true* (ルールは無視)、*false* (ルールは適用)、または *N/A* (ミラー ボリュームの場合) が表示されます。
@@ -237,16 +287,19 @@ NOTE: Keystone v3 サブスクリプションの場合、QoS ポリシーは v3 
 
 
 
+[[enhanced-alerts-visibility-in-overview-page]]
 === 概要ページでのアラートの可視性が向上
 
 *概要* ページに、*重大度別の未解決アラート* と *最も古い未解決Keystoneアラート* という 2 つの新しいアラート セクションが含まれるようになりました。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/keystone-console.html["NetAppコンソールのKeystoneダッシュボード"] 。
 
 
 
+[[06-october-2025]]
 == 2025年10月6日
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXPはNetAppコンソールになりました
 
 NetAppコンソールは、強化され再構築されたBlueXP基盤上に構築され、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとNetAppデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、および高度なセキュリティとコンプライアンスを備えた簡素化された管理を実現します。
@@ -255,10 +308,12 @@ NetAppコンソールは、強化され再構築されたBlueXP基盤上に構�
 
 
 
+[[22-september-2025]]
 == 2025年9月22日
 
 
 
+[[addition-of-alert-monitoring]]
 === アラート監視の追加
 
 BlueXPのKeystoneダッシュボードには、サブスクリプション全体のアラートとモニターを管理するための *監視* タブが追加されました。この新しいタブでは次のことが可能になります。
@@ -271,16 +326,19 @@ BlueXPのKeystoneダッシュボードには、サブスクリプション全体
 
 
 
+[[streamlined-performance-service-levels-viewing]]
 === 合理化されたパフォーマンス サービス レベルの表示
 
 パフォーマンス サービス レベル情報は、別のタブから展開可能なビューに移動され、[*サブスクリプション*] タブ内で表示できます。各サブスクリプションの有効期限を表示するには、「*有効期限*」列の横にある下矢印をクリックします。詳細については、link:https://docs.netapp.com/us-en/keystone-staas-2/integrations/subscriptions-tab.html["Keystoneサブスクリプションの詳細を表示する"] 。
 
 
 
+[[28-august-2025]]
 == 2025年8月28日
 
 
 
+[[enhanced-logical-usage-tracking-with-a-new-column]]
 === 新しい列による論理使用状況の追跡の強化
 
 FabricPoolボリュームのKeystone消費量追跡を強化するために、新しい列「合計フットプリント」が追加されました。
@@ -293,20 +351,24 @@ FabricPoolボリュームのKeystone消費量追跡を強化するために、�
 
 
 
+[[05-august-2025]]
 == 2025年8月5日
 
 
 
+[[view-instance-level-consumption-data]]
 === インスタンスレベルの消費データを表示する
 
 BlueXPのKeystoneダッシュボードを通じて、各パフォーマンス サービス レベル インスタンスの現在の消費量と履歴データを表示できます。この機能は、 Keystoneバージョン 3 (v3) サブスクリプションをお持ちの場合、複数のインスタンスのパフォーマンス サービス レベルで利用できます。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Keystoneサブスクリプションの消費量を表示する"] 。
 
 
 
+[[30-june-2025]]
 == 2025年6月30日
 
 
 
+[[keystone-version-3-v3-release]]
 === Keystoneバージョン 3 (v3) リリース
 
 NetApp Keystone STaaS オファリングの最新リリースであるKeystoneバージョン 3 (v3) をサブスクライブできるようになりました。このバージョンでは、簡素化されたパフォーマンス サービス レベル、追加のバースト容量オプション、柔軟な課金頻度など、いくつかの機能強化が導入されています。これらの改善により、ストレージ ソリューションの管理、最適化、スケーリングが簡素化されます。詳細については、link:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["v3 のKeystone STaaS サービス"] 。
@@ -315,10 +377,12 @@ Keystoneバージョン 3 (v3) をサブスクライブするには、 Keystone�
 
 
 
+[[19-june-2025]]
 == 2025年6月19日
 
 
 
+[[keystone-dashboard-in-bluexp]]
 === BlueXPのKeystoneダッシュボード
 
 BlueXPから直接Keystoneダッシュボードにアクセスできるようになりました。この統合により、すべてのKeystoneサブスクリプションとその他のNetAppサービスを 1 か所で監視、管理、追跡できるようになります。
@@ -334,48 +398,57 @@ BlueXPのKeystoneダッシュボードを使用すると、次のことが可能
 
 
 
+[[08-january-2025]]
 == 2025年1月8日
 
 
 
+[[addition-of-daily-accrued-data-usage-viewing-options]]
 === 毎日の累積データ使用量の表示オプションの追加
 
 請求データを表示するバーをクリックすると、月次または四半期の請求期間における毎日の累積バースト データ使用量をグラフまたは表の形式で表示できるようになりました。詳細については、link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["毎日の累積バーストデータ使用量を表示する"] 。
 
 
 
+[[12-december-2024]]
 == 2024年12月12日
 
 
 
+[[renamed-logical-used-column]]
 === 論理使用列の名前を変更しました
 
 *ボリュームとオブジェクト* 内の *ボリュームの詳細* タブの *論理使用* 列の名前が * Keystone論理使用* に変更されました。
 
 
 
+[[enhanced-assets-tab]]
 === 拡張アセットタブ
 
 * Keystoneサブスクリプション* 画面の *資産* タブに、* ONTAP* と * StorageGRID* という 2 つの新しいサブタブが追加されました。これらのサブタブには、サブスクリプションに基づいて、 ONTAPの詳細なクラスター レベルの分析情報とStorageGRIDのグリッド レベルの情報が提供されます。詳細については、link:./integrations/assets-tab.html["資産タブ"^] 。
 
 
 
+[[new-hideshow-columns-option]]
 === 新しい列の表示/非表示オプション
 
 *ボリュームとオブジェクト*内の*ボリュームの詳細*タブに、*列の非表示/表示*オプションが追加されました。このオプションを使用すると、列を選択または選択解除して、好みに応じてボリュームの表形式のリストをカスタマイズできます。詳細については、link:./integrations/volumes-objects-tab.html["ボリュームとオブジェクトタブ"^] 。
 
 
 
+[[21-november-2024]]
 == 2024年11月21日
 
 
 
+[[enhanced-invoiced-accrued-burst]]
 === 拡張された請求書未払いバースト
 
 四半期ごとの請求期間を選択した場合は、*請求済み累積バースト* オプションを使用して、四半期ごとに累積バースト使用量データを表示できるようになりました。詳細については、link:./integrations/consumption-tab.html#view-accrued-burst["請求済みの未払いバーストを表示"^] 。
 
 
 
+[[new-columns-in-the-volumes-details-tab]]
 === ボリューム詳細タブの新しい列
 
 論理使用量の計算の明確さを向上させるために、[ボリュームとオブジェクト] タブ内の [ボリュームの詳細] タブに 2 つの新しい列が追加されました。
@@ -388,36 +461,43 @@ BlueXPのKeystoneダッシュボードを使用すると、次のことが可能
 
 
 
+[[11-november-2024]]
 == 2024年11月11日
 
 
 
+[[enhanced-report-generation]]
 === 強化されたレポート生成
 
 Digital Advisorのレポート機能を使用して、 Keystoneデータの詳細を表示する統合レポートを生成できるようになりました。詳細については、link:./integrations/options.html#generate-consolidated-report-from-digital-advisor["統合レポートを生成する"^] 。
 
 
 
+[[10-july-2024]]
 == 2024年7月10日
 
 
 
+[[label-modifications]]
 === ラベルの変更
 
 ラベル *現在の使用量* が *現在の消費量* に変更され、 *容量の傾向* が *消費量の傾向* に変更されます。
 
 
 
+[[search-bar-for-subscriptions]]
 === サブスクリプションの検索バー
 
 * Keystoneサブスクリプション* 画面内のすべてのタブの *サブスクリプション* ドロップダウンに検索バーが追加されました。  *サブスクリプション*ドロップダウンにリストされている特定のサブスクリプションを検索できます。
 
 
 
+[[27-june-2024]]
 == 2024年6月27日
 
 
 
+[[consistent-display-of-subscription]]
 === サブスクリプションの一貫した表示
 
 * Keystoneサブスクリプション* 画面が更新され、選択したサブスクリプション番号がすべてのタブに表示されます。
@@ -428,16 +508,19 @@ Digital Advisorのレポート機能を使用して、 Keystoneデータの詳�
 
 
 
+[[29-may-2024]]
 == 2024年5月29日
 
 
 
+[[enhanced-burst-indicator]]
 === 強化されたバーストインジケーター
 
 使用状況グラフ インデックスの *バースト* インジケーターが強化され、バースト制限のパーセンテージ値が表示されるようになりました。この値は、サブスクリプションの合意されたバースト制限に応じて変化します。  *使用状況*列の*バースト使用量*インジケーターにマウスを合わせると、*サブスクリプション*タブでバースト制限値を確認することもできます。
 
 
 
+[[addition-of-service-levels]]
 === サービスレベルの追加
 
 サービス レベル *CVO Primary* および *CVO Secondary* は、コミット容量がゼロの料金プランを持つサブスクリプション、またはメトロ クラスターで構成されたサブスクリプションに対してCloud Volumes ONTAP をサポートするために含まれています。
@@ -448,56 +531,66 @@ Digital Advisorのレポート機能を使用して、 Keystoneデータの詳�
 
 
 
+[[zoom-in-feature-for-short-term-bursts]]
 === 短時間のバーストのためのズームイン機能
 
 *容量トレンド*タブには、使用状況チャートの短期バーストの詳細を表示するためのズームイン機能が追加されました。詳細については、以下を参照してください。 link:./integrations/consumption-tab.html["容量トレンドタブ"^] 。
 
 
 
+[[enhanced-display-of-subscriptions]]
 === サブスクリプションの表示強化
 
 サブスクリプションのデフォルトの表示が強化され、追跡 ID で並べ替えられるようになりました。  *サブスクリプション* タブのサブスクリプション (*サブスクリプション* ドロップダウンと CSV レポートを含む) は、トラッキング ID のアルファベット順 (a、A、b、B の順) に基づいて表示されるようになります。
 
 
 
+[[enhanced-accrued-burst-display]]
 === 蓄積バースト表示の強化
 
 *容量トレンド* タブの容量使用率の棒グラフにマウスを移動したときに表示されるツールヒントに、コミットされた容量に基づいて発生したバーストの種類が表示されるようになりました。暫定発生バーストと請求済み発生バーストを区別し、コミット容量がゼロの料金プランのサブスクリプションの場合は *暫定発生消費量* と *請求済み発生消費量* を表示し、コミット容量がゼロ以外のサブスクリプションの場合は *暫定発生バースト* と *請求済み発生バースト* を表示します。
 
 
 
+[[09-may-2024]]
 == 2024年5月9日
 
 
 
+[[new-columns-in-csv-reports]]
 === CSVレポートの新しい列
 
 *容量トレンド* タブの CSV レポートに、詳細を向上させるために *サブスクリプション番号* 列と *アカウント名* 列が含まれるようになりました。
 
 
 
+[[enhanced-usage-type-column]]
 === 拡張使用タイプ列
 
 *サブスクリプション* タブ内の *使用タイプ* 列が拡張され、ファイルとオブジェクトの両方のサービス レベルをカバーするサブスクリプションの論理使用状況と物理使用状況がコンマ区切りの値として表示されるようになりました。
 
 
 
+[[access-object-storage-details-from-volume-details-tab]]
 === ボリューム詳細タブからオブジェクトストレージの詳細にアクセスします
 
 *ボリュームとオブジェクト* タブ内の *ボリュームの詳細* タブには、ファイルとオブジェクトの両方のサービス レベルを含むサブスクリプションのボリューム情報とともに、オブジェクト ストレージの詳細が表示されるようになりました。詳細を表示するには、「ボリュームの詳細」タブ内の「オブジェクト ストレージの詳細」ボタンをクリックします。
 
 
 
+[[28-march-2024]]
 == 2024年3月28日
 
 
 
+[[improvement-to-qos-policy-compliance-display-in-the-volume-details-tab]]
 === ボリューム詳細タブの QoS ポリシーコンプライアンス表示の改善
 
 *ボリュームとオブジェクト* タブ内の *ボリュームの詳細* タブでは、サービス品質 (QoS) ポリシーのコンプライアンスがより明確に表示されるようになりました。以前は *AQoS* と呼ばれていた列の名前が *Compliant* に変更され、QoS ポリシーが準拠しているかどうかが示されます。さらに、ポリシーが固定か適応型かを指定する新しい列「QoS ポリシー タイプ」が追加されました。どちらにも該当しない場合は、列に「_利用不可_」と表示されます。詳細については、以下を参照してください。 link:./integrations/volumes-objects-tab.html["ボリュームとオブジェクトタブ"^] 。
 
 
 
+[[new-column-and-simplified-subscription-display-in-the-volume-summary-tab]]
 === ボリューム概要タブに新しい列と簡素化されたサブスクリプション表示を追加しました
 
 * *ボリュームとオブジェクト* タブ内の *ボリュームの概要* タブに、*保護済み* という新しい列が追加されました。この列には、サブスクライブしたサービス レベルに関連付けられている保護されたボリュームの数が表示されます。保護されているボリュームの数をクリックすると、「ボリュームの詳細」タブに移動し、保護されているボリュームのフィルタリングされたリストを表示できます。
@@ -506,12 +599,14 @@ Digital Advisorのレポート機能を使用して、 Keystoneデータの詳�
 
 
 
+[[change-to-accrued-burst-detail-display-in-the-capacity-trend-tab]]
 === キャパシティトレンドタブの累積バースト詳細表示に変更
 
 *容量トレンド*タブの容量使用率の棒グラフにマウスを移動したときに表示されるツールヒントには、当月の累積バーストの詳細が表示されます。過去数か月分の詳細は入手できません。
 
 
 
+[[enhanced-access-to-view-historical-data-for-keystone-subscriptions]]
 === Keystoneサブスクリプションの履歴データを表示するためのアクセスが強化されました
 
 Keystoneサブスクリプションが変更または更新された場合に、履歴データを表示できるようになりました。サブスクリプションの開始日を以前の日付に設定して、以下を表示できます。
@@ -524,70 +619,83 @@ Keystoneサブスクリプションが変更または更新された場合に、
 
 
 
+[[29-february-2024]]
 == 2024年2月29日
 
 
 
+[[addition-of-the-assets-tab]]
 === 資産タブの追加
 
 * Keystoneサブスクリプション* 画面に *資産* タブが追加されました。この新しいタブには、サブスクリプションに基づいてクラスター レベルの情報が提供されます。詳細については、以下を参照してください。 link:./integrations/assets-tab.html["資産タブ"^] 。
 
 
 
+[[improvements-to-the-volumes-objects-tab]]
 === ボリュームとオブジェクトタブの改善
 
 ONTAPシステム ボリュームをより明確にするために、*ボリューム* タブに *ボリューム サマリー* と *ボリューム詳細* の 2 つの新しいタブ ボタンが追加されました。  *ボリューム サマリー* タブには、サブスクライブしたサービス レベルに関連付けられているボリュームの総数 (AQoS コンプライアンス ステータスや容量情報など) が表示されます。 *ボリュームの詳細*タブには、すべてのボリュームとその詳細が一覧表示されます。詳細については、以下を参照してください。 link:./integrations/volumes-objects-tab.html["ボリュームとオブジェクトタブ"^] 。
 
 
 
+[[enhanced-search-experience-on-digital-advisor]]
 === Digital Advisorでの検索エクスペリエンスの強化
 
 * Digital Advisor* 画面の検索パラメータに、 Keystoneサブスクリプション番号とKeystoneサブスクリプション用に作成されたウォッチリストが含まれるようになりました。サブスクリプション番号またはウォッチリスト名の最初の 3 文字を入力できます。詳細については、以下を参照してください。 link:./integrations/keystone-aiq.html["Active IQ Digital AdvisorでKeystoneダッシュボードを表示する"^] 。
 
 
 
+[[view-timestamp-of-the-consumption-data]]
 === 消費データのタイムスタンプを表示する
 
 * Keystoneサブスクリプション* ウィジェットの古いダッシュボードで、消費データのタイムスタンプ (UTC) を表示できます。
 
 
 
+[[13-february-2024]]
 == 2024年2月13日
 
 
 
+[[ability-to-view-subscriptions-linked-to-a-primary-subscription]]
 === プライマリサブスクリプションにリンクされたサブスクリプションを表示する機能
 
 一部のプライマリ サブスクリプションには、リンクされたセカンダリ サブスクリプションを設定できます。その場合、プライマリサブスクリプション番号は引き続き *サブスクリプション番号* 列に表示されますが、リンクされたサブスクリプション番号は *サブスクリプション* タブの新しい列 *リンクされたサブスクリプション* に表示されます。  *リンクされたサブスクリプション* 列は、リンクされたサブスクリプションがある場合にのみ使用可能になり、それらについて通知する情報メッセージが表示されます。
 
 
 
+[[11-january-2024]]
 == 2024年1月11日
 
 
 
+[[invoiced-data-returned-for-accrued-burst]]
 === 発生したバーストに対して返された請求データ
 
 *キャパシティトレンド*タブで、*Accrued Burst*のラベルが*Invoiced Accrued Burst*に変更されました。このオプションを選択すると、課金された累積バースト データの月次チャートを表示できます。詳細については、以下を参照してください。 link:./integrations/consumption-tab.html#view-accrued-burst["請求済みの未払いバーストを表示"^] 。
 
 
 
+[[accrued-consumption-details-for-specific-rate-plans]]
 === 特定の料金プランの累積消費量の詳細
 
 コミット容量が _ゼロ_ の料金プランがあるサブスクリプションがある場合は、[容量の傾向] タブで累積消費量の詳細を表示できます。  *請求済み未払い消費量*オプションを選択すると、請求済み未払い消費量データの月次チャートを表示できます。
 
 
 
+[[15-december-2023]]
 == 2023年12月15日
 
 
 
+[[ability-to-search-by-watchlists]]
 === ウォッチリストによる検索機能
 
 Digital AdvisorのウォッチリストのサポートがKeystoneシステムまで拡張されました。ウォッチリストで検索することで、複数の顧客のサブスクリプションの詳細を表示できるようになりました。  Keystone STaaSでのウォッチリストの使用に関する詳細については、以下を参照してください。link:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Keystoneウォッチリストで検索"^] 。
 
 
 
+[[date-converted-to-utc-timezone]]
 === UTCタイムゾーンに変換された日付
 
 Digital Advisorの * Keystoneサブスクリプション* 画面のタブに返されるデータは、UTC 時間 (サーバータイムゾーン) で表示されます。クエリの日付を入力すると、自動的に UTC 時間として扱われます。詳細については、以下を参照してください。 link:./integrations/keystone-aiq.html["Keystoneサブスクリプションダッシュボードとレポート"^] 。

@@ -20,6 +20,7 @@ QoSの詳細については、以下を参照してください。 https://docs.
 
 
 
+[[adaptive-qos]]
 == 適応型QoS
 
 Keystoneサービスでは、アダプティブ QoS (AQoS) を使用して、ボリューム サイズに基づいて IOPS/TiB 比率を動的に維持します。  AQoSポリシーの詳細については、以下を参照してください。 https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["アダプティブQoSについて"^] 。
@@ -33,6 +34,7 @@ NOTE: ボリュームに AQoS ポリシーを適用していない場合、そ�
 
 
 
+[[adaptive-qos-settings]]
 == 適応型QoS設定
 
 アダプティブ QoS (AQoS) 設定はサービス レベルによって異なります。
@@ -59,6 +61,7 @@ NOTE: ボリュームに AQoS ポリシーを適用していない場合、そ�
 |===
 
 
+[[configuration-of-adaptive-qos-policy-group]]
 == 適応型QoSポリシーグループの構成
 
 適応型 QoS (AQoS) ポリシーを構成して、スループットの上限または下限をボリューム サイズに合わせて自動的に調整できます。すべてのKeystoneサービス レベルがデフォルトのONTAP QoS ポリシーと一致しているわけではありません。これらに対してカスタム QoS ポリシーを作成できます。ポリシーを構成する場合は、次の点に注意する必要があります。
@@ -80,12 +83,14 @@ IO密度の詳細については、link:../concepts/metrics.html["Keystone Servi
 
 
 
+[[settings-of-adaptive-qos-policies]]
 == 適応型QoSポリシーの設定
 
 各サービス レベルのアダプティブ QoS (AQoS) ポリシーの設定については、次のセクションで説明します。ここで提供される各サービス レベルの最小および最大ボリューム サイズにより、ボリュームの IOPS とレイテンシ値が最適化されます。これらのガイドラインの範囲外でボリュームを過剰に作成すると、それらのボリュームのパフォーマンスに悪影響が及ぶ可能性があります。
 
 
 
+[[settings-for-extreme-service-level]]
 === エクストリームサービスレベルの設定
 
 Extreme サービス レベルの設定とコマンド:
@@ -102,6 +107,7 @@ qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_
 
 
 
+[[settings-for-premium-service-level]]
 === プレミアムサービスレベルの設定
 
 プレミアム サービス レベルの設定とコマンド:
@@ -118,6 +124,7 @@ qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_
 
 
 
+[[settings-for-performance-service-level]]
 === パフォーマンスサービスレベルの設定
 
 パフォーマンス サービス レベルの設定とコマンド:
@@ -134,6 +141,7 @@ qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <
 
 
 
+[[settings-for-standard-service-level]]
 === 標準サービスレベルの設定
 
 標準サービス レベルの設定とコマンド:
@@ -150,6 +158,7 @@ qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM
 
 
 
+[[settings-for-value-service-level]]
 === バリューサービスレベルの設定
 
 値サービス レベルの設定とコマンド:
@@ -166,6 +175,7 @@ qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_na
 
 
 
+[[block-size-calculation]]
 == ブロックサイズの計算
 
 これらの設定を使用してブロック サイズを計算する前に、次の点に注意してください。

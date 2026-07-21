@@ -20,24 +20,28 @@ United States Protected Support (USPS) は、NetApp Keystoneサブスクリプ�
 
 
 
+[[netapp-usps-monitoring]]
 == NetApp USPS監視
 
 NetApp USPS Keystoneサポート チームは、お客様の製品とサブスクライブされたサービスの健全性を監視し、リモート サポートを提供し、 Keystone Success Manager と連携します。関連するKeystoneサブスクリプション注文に関連する製品を監視する担当者はすべて、米国国内で活動する米国市民です。
 
 
 
+[[keystone-success-manager]]
 == Keystoneサクセスマネージャー
 
 Keystone Success Manager (KSM) は、米国国内で活動する米国市民です。彼らの責任はNetApp Keystone契約に明記されています。
 
 
 
+[[deployment-activities]]
 == 展開活動
 
 可能な場合、オンサイトおよびリモートの展開およびインストール作業は、米国領土内で米国市民によって実施されます。脚注:免責事項[オンサイト作業に適切な人員が利用可能かどうかは、 Keystoneシステムが展開される地理的な場所によって異なります。]
 
 
 
+[[support]]
 == サポート
 
 可能な場合、必要なオンサイトトラブルシューティングおよびサポート活動は、米国領土内で米国市民によって実施されます。脚注:免責事項[]

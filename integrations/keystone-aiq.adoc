@@ -52,6 +52,7 @@ NOTE: Keystoneサブスクリプションの容量消費量はダッシュボー
 
 
 
+[[search-by-keystone-watchlists]]
 == Keystoneウォッチリストで検索
 
 ウォッチリストはDigital Advisorで利用できる機能です。詳細については、 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["ウォッチリストを理解する"^] 。ウォッチリストの作成方法については、以下を参照してください。 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["監視リストを作成"^] 。

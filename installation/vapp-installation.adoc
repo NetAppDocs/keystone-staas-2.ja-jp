@@ -18,6 +18,7 @@ VMware vSphere システムにKeystone Collector をデプロイするには、O
 
 
 
+[[deploying-the-ova-template]]
 == OVAテンプレートのデプロイ
 
 次の手順を実行します。
@@ -59,6 +60,7 @@ VM がテンプレートからデプロイされ、電源がオンになった�
 
 
 
+[[initial-system-configuration]]
 == 初期システム構成
 
 OVA を通じて展開されたKeystone Collector サーバーの初期構成を行うには、VMware vSphere システムで次の手順を実行します。

@@ -26,6 +26,7 @@ Keystone STaaSサービスも同時にご利用いただけます。たとえば
 
 
 
+[[services-for-file-block-and-object-storage]]
 == ファイル、ブロック、オブジェクトストレージ向けサービス
 
 ONTAPファイルおよびブロック ストレージ、 StorageGRIDオブジェクト ストレージ用のKeystone STaaS サービスは、複数の機能とプロトコルをサポートしており、次の表で説明します。
@@ -96,6 +97,7 @@ NOTE: ^1^ ONTAPのランサムウェア保護の詳細については、 https:/
 
 
 
+[[services-for-cloud-storage]]
 == クラウドストレージサービス
 
 Keystone STaaS はクラウド ストレージ サービスを提供します。  Keystone STaaS は、Amazon Web Services (AWS)、Microsoft Azure、Google Cloud Platform 上のCloud Volumes ONTAPデータ管理機能をサポートします。

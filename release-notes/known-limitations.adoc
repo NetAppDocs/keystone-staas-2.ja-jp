@@ -18,10 +18,12 @@ summary: 今回のリリースでサポートされていない、または今�
 
 
 
+[[keystone-collector-limitations]]
 == Keystone Collector の制限
 
 
 
+[[keystone-collector-authentication-failure-with-storagegrid-sso-enabled]]
 === StorageGRID SSO が有効になっている場合のKeystone Collector の認証失敗
 
 StorageGRIDシステムでシングル サインオン (SSO) が有効になっている場合、 Keystone Collector は計測をサポートしません。ログに次のエラー メッセージが表示されます。
@@ -32,6 +34,7 @@ StorageGRIDシステムでシングル サインオン (SSO) が有効になっ�
 
 
 
+[[keystone-collector-cannot-start-on-vsphere-8-0-update-1]]
 === Keystone Collector が vSphere 8.0 Update 1 で起動できない
 
 VMware vSphere バージョン 8.0 Update 1 を搭載したKeystone Collector 仮想マシン (VM) をオンにすることができず、次のエラー メッセージが表示されます。
@@ -42,6 +45,7 @@ VMware vSphere バージョン 8.0 Update 1 を搭載したKeystone Collector �
 
 
 
+[[support-bundle-cannot-be-generated-over-kerberos]]
 === サポートバンドルはKerberos経由では生成できません
 
 Keystone Collector ホーム ディレクトリが Kerberos を使用して NFSv4 経由でマウントされている場合、サポート バンドルは生成されず、次のエラー メッセージが表示されます。
@@ -52,12 +56,14 @@ Keystone Collector ホーム ディレクトリが Kerberos を使用して NFSv
 
 
 
+[[keystone-collector-cannot-communicate-with-hosts-within-specific-network-range]]
 === Keystone Collector は特定のネットワーク範囲内のホストと通信できません
 
 Keystone Collectorは、10.88.0.0/16ネットワーク範囲内のデバイスと通信できません。 `ks-collector`サービスは実行中です。ナレッジベースの記事を参照link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_container_conflict_with_customer_network["Keystone Collector コンテナと顧客ネットワークの競合"^]情報と解決策を得るために。
 
 
 
+[[keystone-collector-cannot-verify-customer-root-ssl-ca-certificate]]
 === Keystone Collector は顧客のルート SSL CA 証明書を検証できません
 
 SSL/TLS トラフィックを検査する環境の境界ファイアウォールで SSL/TLS 検査が有効になっている場合、顧客のルート CA 証明書が信頼されていないため、 Keystone Collector は HTTPS 接続を確立できません。

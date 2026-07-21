@@ -25,6 +25,7 @@ Keystoneダッシュボードは、 Keystoneサブスクリプションを効率
 
 
 
+[[access-the-keystone-dashboard]]
 == Keystoneダッシュボードにアクセスする
 
 Keystoneダッシュボードには次の方法でアクセスできます。
@@ -35,6 +36,7 @@ Keystoneダッシュボードには次の方法でアクセスできます。
 
 
 
+[[about-netapp-console]]
 == NetAppコンソールについて
 
 KeystoneにはNetAppコンソールからアクセスできます。
@@ -53,6 +55,7 @@ NetAppコンソールは、オンプレミスおよびクラウド環境全体�
 
 
 
+[[keystone-features-in-netapp-console-and-digital-advisor]]
 == NetAppコンソールとDigital AdvisorのKeystone機能
 
 次の表は、 NetAppコンソールとDigital Advisorで利用可能な機能を示しており、ニーズに合った適切なプラットフォームを迅速に特定するのに役立ちます。

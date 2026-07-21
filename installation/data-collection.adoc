@@ -18,6 +18,7 @@ Keystone は、 Keystone ONTAPおよびKeystone StorageGRIDサブスクリプシ
 
 
 
+[[ontap-data-collection]]
 == ONTAPデータ収集
 
 .<strong> ONTAPで収集される使用状況データ: 詳細はこちら</strong>
@@ -325,6 +326,7 @@ Keystone Collector で *プライベート データの削除* オプション�
 ====
 
 
+[[storagegrid-data-collection]]
 == StorageGRIDデータ収集
 
 .<strong> StorageGRIDで収集される使用状況データ: 詳細はこちら</strong>
@@ -372,6 +374,7 @@ Keystone Collector で *プライベート データの削除* オプション�
 ====
 
 
+[[telemetry-data-collection]]
 == テレメトリデータ収集
 
 .<strong> Keystone Collector VM から収集されたテレメトリ データ: 詳細はこちら</strong>

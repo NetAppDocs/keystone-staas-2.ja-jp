@@ -25,6 +25,7 @@ Keystone Collector の機能は、次のセキュリティ原則に基づいて�
 
 
 
+[[security-hardening]]
 == セキュリティ強化
 
 デフォルトでは、 Keystone Collector はセキュリティが強化された構成を使用するように設定されています。推奨されるセキュリティ構成は次のとおりです。

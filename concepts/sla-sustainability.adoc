@@ -18,6 +18,7 @@ NetApp Keystone は、Sustainability SLO を備えたONTAPフラッシュ スト
 
 
 
+[[metrics]]
 == メトリクス
 
 * *ワット*: コントローラーおよび接続されたディスク シェルフによる使用量を含む、毎日のAutoSupportから報告された電力消費量。
@@ -34,6 +35,7 @@ NetApp Keystone は、Sustainability SLO を備えたONTAPフラッシュ スト
 
 
 
+[[performance-service-levels]]
 == パフォーマンスサービスレベル
 
 持続可能性 SLO は、次の消費基準に基づいています。
@@ -62,6 +64,7 @@ Premium
 
 
 
+[[service-credits]]
 == サービスクレジット
 
 
@@ -95,6 +98,7 @@ NOTE: SLA と保証は指名ベースで利用可能です。
 |===
 
 
+[[service-credit-request]]
 === サービスクレジットリクエスト
 
 SLA 違反が検出された場合は、 NetApp Keystoneサポートで優先度 3 (P3) のサポート チケットを開き、以下に示すように Excel シートに要求された詳細を入力します。

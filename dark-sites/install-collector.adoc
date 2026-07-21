@@ -20,6 +20,7 @@ summary: 'インターネットにアクセスできない環境 (_ダーク サ
 
 
 
+[[deploy-on-vmware-vsphere]]
 == VMware vSphere にデプロイ
 
 次の手順を実行します。
@@ -30,6 +31,7 @@ summary: 'インターネットにアクセスできない環境 (_ダーク サ
 
 
 
+[[install-on-linux]]
 == Linuxにインストールする
 
 Keystone Collector ソフトウェアは、Linux ディストリビューションに基づいて提供された .deb または .rpm ファイルを使用して Linux サーバーにインストールされます。

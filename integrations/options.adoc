@@ -18,6 +18,7 @@ summary: NetApp Keystone STaaS サブスクライバーは、データの検索�
 
 
 
+[[search-and-filter-data-from-netapp-console]]
 == NetAppコンソールからのデータの検索とフィルタリング
 
 コンソールでは、タブ内のテーブルで使用可能な列パラメータに基づいて、 Keystoneデータを検索およびフィルタリングできます。たとえば、「*サブスクリプション*」ページの「*サブスクリプション*」タブでは、検索ボックスにKeystone のバージョンを入力してデータをフィルタリングできます。同様に、「アセット」ページの「クラスター内のボリューム」タブでは、検索ボックスにボリューム名を入力してボリュームをフィルタリングできます。
@@ -26,6 +27,7 @@ summary: NetApp Keystone STaaS サブスクライバーは、データの検索�
 
 
 
+[[generate-reports-from-netapp-console-or-digital-advisor]]
 == NetAppコンソールまたはDigital Advisorからレポートを生成する
 
 ダウンロードボタンを使用して、 Keystoneデータのレポートを生成および表示できます。image:bluexp-download-report-2.png["コンソールのレポートダウンロードアイコン2"]コンソールまたはDigital Advisor内のタブで利用できます。これらのタブを使用すると、サブスクリプション、使用状況履歴、バースト使用状況、パフォーマンス、アセット、ボリューム、オブジェクトに関するレポートを生成できます。
@@ -34,6 +36,7 @@ summary: NetApp Keystone STaaS サブスクライバーは、データの検索�
 
 
 
+[[generate-consolidated-report-from-digital-advisor]]
 == Digital Advisorから統合レポートを生成する
 
 Digital Advisorでは、サブスクリプション、使用状況履歴、バースト使用状況、パフォーマンス、アセット、ボリュームとオブジェクトの統合レポートを生成して表示できます。これを行うには、 Digital Advisorのレポート機能からレポート タイプとして * Keystoneサブスクリプション* を選択します。これらのレポートは、顧客、クラスター、ウォッチリスト、またはサブスクリプション レベルで生成できます。
@@ -46,6 +49,7 @@ image:report-generation.png["レポートを作成する"]
 
 
 
+[[view-alerts-from-digital-advisor]]
 == Digital Advisorからのアラートを表示する
 
 Digital Advisorでは、 Keystoneダッシュボードにアラート通知が提供され、ストレージ環境で発生している問題を把握できるようになります。これらの通知は、情報アラートまたは警告として表示される場合があります。たとえば、管理対象クラスター内にアダプティブ QoS (AQoS) ポリシーがアタッチされていないボリュームがある場合は、警告メッセージが表示されます。警告メッセージを選択すると、*ボリュームとオブジェクト*タブで非準拠ボリュームのリストが表示されます。

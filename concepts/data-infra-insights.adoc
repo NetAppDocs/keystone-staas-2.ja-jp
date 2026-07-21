@@ -20,6 +20,7 @@ Data Infrastructure Insightsの詳細については、以下を参照してく�
 
 
 
+[[about-dii-for-keystone-subscriptions]]
 == Keystoneサブスクリプション向けのDIIについて
 
 DII は新規サブスクリプションと既存サブスクリプションの両方でご利用いただけます。コミット容量のアドオンとして Keystone サブスクリプションに統合できます。
@@ -28,6 +29,7 @@ Data Infrastructure InsightsがKeystoneサブスクリプションに統合さ�
 
 
 
+[[deployment-of-dii-for-keystone]]
 == Keystone向けDIIの展開
 
 お客様は、 Keystone用の DII を 2 つの方法で統合できます。他の非 Keystone 環境を監視する既存のインスタンスの一部として統合するか、新しいインスタンスの一部として統合するかのいずれかです。 DII を設定するのはお客様の責任となります。複雑な環境でDIIを設定するためにサポートが必要な場合は、アカウントチームが対応します。link:https://www.netapp.com/services/["NetAppプロフェッショナルサービス"^] 。
@@ -62,6 +64,7 @@ NOTE: DII は、導入されたハードウェアに対する広範な監視機�
 
 
 
+[[view-dii-consumption]]
 == Data Infrastructure Insights消費量を表示
 
 DIIアドオンサービスの消費状況は、NetApp ConsoleまたはDigital Advisorで確認できます。DIIパフォーマンスサービスレベル（DII Extreme、DII Premium、DII Performanceなど）の消費データは、現在の消費状況および消費傾向ビューで、ベースのパフォーマンスサービスレベルと並んで表示されます。
@@ -82,6 +85,7 @@ image:keystone-widget-dii.png["Keystone サブスクリプションウィジェ�
 
 
 
+[[billing-and-metering]]
 == 課金と計測
 
 DII アドオン サービスの課金および計測の詳細は次のとおりです。
@@ -94,6 +98,7 @@ DII アドオン サービスの課金および計測の詳細は次のとおり
 
 
 
+[[support-and-user-access]]
 == サポートとユーザーアクセス
 
 顧客が * NetAppにData Infrastructure Insights環境へのアクセスを許可する* オプションを有効にしている場合、承認されたNetAppサポート チーム メンバーは顧客の DII インスタンスにアクセスできます。これを行うには、*ヘルプ > サポート* に移動して、オプションを有効にします。
