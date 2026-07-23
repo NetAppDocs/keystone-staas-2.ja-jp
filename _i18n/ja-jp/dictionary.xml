@@ -691,7 +691,6 @@
   <block id="1c8da55ed1bb51aa2c1e766474b9b2bc" category="summary">NetApp Keystone STaaS サービス バージョン 2 でサポートされるストレージ容量の種類について説明します。</block>
   <block id="e561d7dfcd6620325c8edbb7b2c1d749" category="paragraph">NetApp Keystone STaaS サービスは、いくつかの種類のストレージ容量をサポートしています。これらのさまざまな容量用語を理解しておくと、 Keystoneを使用するときに役立ちます。</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">論理容量</block>
-  <block id="dfafb0db4cb7ff50434d65c4ee640f1a" category="paragraph">これは、顧客によってKeystoneインフラストラクチャに配置されたデータです。すべてのKeystone容量は論理容量を参照します。たとえば、1 TiB のファイルがKeystoneインフラストラクチャに保存される場合は、少なくとも 1 TiB の容量を購入する必要があります。</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">コミット済み容量</block>
   <block id="6695ab4bfa1eb6d5122189f790f27577" category="paragraph">サブスクリプション期間中に毎月課金される最小論理容量:</block>
   <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">期間中にコミット容量と追加のサービス レベルを追加できます。</block>
@@ -2791,4 +2790,5 @@
   <block id="ec9f6b08367a17a666713d93adc74fa6" category="list-text">*グレー*：サブスクリプションの有効期限が切れています。</block>
   <block id="9a43c87c7a255c40ac13d4fd963633ae" category="paragraph">自動更新が有効になっているサブスクリプションの場合、自動更新アイコンが表示され、現在の契約期間終了時にサブスクリプションが自動的に更新されることを示します。</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">2026年7月20日</block>
+  <block id="d0178ba7ef0d480555c11a8e0e008358" category="paragraph">これは、ストレージアレイによって提供されるデータ効率化を適用する前の、ユーザーデータを保存するために必要なストレージ容量です。</block>
 </blocks>
