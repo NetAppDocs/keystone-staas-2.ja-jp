@@ -181,21 +181,21 @@ sidebar:
         url: "/concepts/pricing.html"
       - title: 特定のボリュームタイプに対するKeystone課金
         url: "/concepts/misc-volume-billing.html"
-  - title: Digital Advisor REST API からKeystoneにアクセスする
+  - title: KeystoneのDigital Advisor REST API
     entries:
-    - title: Digital Advisor REST APIを使用してKeystoneデータを取得する
+    - title: Digital Advisor REST API の使用を開始する
       url: "/rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html"
     - title: リフレッシュトークンとアクセストークンを生成する
       url: "/rest-api/generate-tokens.html"
-    - title: Digital Advisor REST API を使用してすべての顧客のリストを取得します
+    - title: Keystone顧客のリストを取得する
       url: "/rest-api/get-customer-list.html"
-    - title: Digital Advisor REST API を使用して顧客のサブスクリプションを取得する
+    - title: Keystone の顧客サブスクリプションを取得する
       url: "/rest-api/get-customer-subscriptions.html"
-    - title: Digital Advisor REST API を使用して顧客の消費詳細を取得します
+    - title: Keystone の顧客消費詳細を取得する
       url: "/rest-api/get-customer-consumption.html"
   - title: Keystoneサブスクリプション サービス バージョン 1
     url: "/subscription-services-v1.html"
-  - title: Keystoneのサポートを受ける
+  - title: Keystoneのサポートサービス
     url: "/concepts/support-services.html"
   - title: 法律上の表示
     url: "/legal-notices.html"

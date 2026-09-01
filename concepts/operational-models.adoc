@@ -80,4 +80,4 @@ NetApp Keystone STaaS は、サービス提供のためにパートナー運用�
 
 | image:check.png["チェックマーク"] | なし 
 |===
-展開の詳細については、以下を参照してください。link:../concepts/infra.html["Keystoneインフラストラクチャ"]そしてlink:..//concepts/components.html["展開のためのコンポーネント"]。
+展開の詳細については、link:../concepts/infra.html["Keystoneインフラストラクチャーについて"]およびlink:..//concepts/components.html["Keystoneサービスに必要なコンポーネント"]を参照してください。
