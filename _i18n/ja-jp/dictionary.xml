@@ -2799,4 +2799,56 @@
   <block id="d23d8e4208389cdbfa05c473cb8410ad" category="sidebar">Keystone顧客のリストを取得する</block>
   <block id="7544c020cb246587d47ad73d1598a7e4" category="sidebar">Keystone の顧客サブスクリプションを取得する</block>
   <block id="0fb6871a30d0a0891c81661a4c790079" category="sidebar">Keystone の顧客消費詳細を取得する</block>
+  <block id="73c20ad627e7f815932cb8837d70e1e8" category="doc">Keystoneサブスクリプションのヘルスインサイトを生成する</block>
+  <block id="ae638b3203053916360a0f228b8b54d7" category="paragraph">このKeystone STaaSリリースには、NetApp ConsoleのKeystoneダッシュボードにおける以下の更新が含まれています。</block>
+  <block id="a0c062a66e58943547f514904ae51daa" category="inline-link">Keystoneサブスクリプションのヘルスレポートを生成およびスケジュール設定する</block>
+  <block id="6da38bfefa907461e0fc0e4cbf32c236" category="paragraph">NetApp Console の *Storage &gt; Keystone &gt; Monitoring &gt; Health reports* から、オンデマンド PowerPoint レポートをダウンロードするか、1 回限り、毎週、毎月、または四半期ごとの配信をスケジュールできます。各レポートは、選択したサブスクリプション全体のサブスクリプション使用状況、運用上の正常性、リスク、および脆弱性をまとめたもので、懸念事項を特定し、実用的なインサイトを受信者と共有するのに役立ちます。詳細については、<block ref="d2f756b41ddff582298cd4e997cfe66a" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="d9488e4902ac8163ee538f8e5bfe01c8" category="inline-link-macro">ヘルスレポートの生成とスケジュール設定</block>
+  <block id="ea034e7c3ada4fd5285144ae8a2f1ec3" category="list-text"><block ref="ea034e7c3ada4fd5285144ae8a2f1ec3" category="inline-link-macro-rx"></block></block>
+  <block id="6cceac6cd41854fc33cca3191e462847" category="list-text">*ヘルスレポートの生成*：サブスクリプションの使用状況、運用状況、リスク、脆弱性を確認するための、オンデマンドまたはスケジュールされたヘルス評価レポートを作成します。</block>
+  <block id="bcd6194438a86161f86a66b169dcae08" category="summary">NetApp ConsoleでKeystoneの健全性評価レポートを使用すると、サブスクリプションの詳細を表示したり、健全性を評価したり、使用傾向を分析したり、1つまたは複数のサブスクリプション全体のリスクと脆弱性を特定したりできます。レポートはオンデマンドで生成することも、スケジュール設定して生成することもでき、関係者と正確な運用情報やコンプライアンス情報を共有できます。</block>
+  <block id="43c438a5f171a0070565c9a3ce412632" category="paragraph">NetApp ConsoleのKeystoneダッシュボードから、1つ以上のKeystoneサブスクリプションのヘルスレポートを生成またはスケジュールします。これらのレポートは、サブスクリプションの使用状況、運用の健全性、リスク、脆弱性の統合ビューを提供し、目的の受信者と共有できます。この機能はDigital Advisorでは利用できません。</block>
+  <block id="ed90fab979b1c2338f266823f485f606" category="paragraph">ヘルスレポートでは、選択したサブスクリプション全体の利用状況、運用状況、および特定されたリスクを確認できます。*新規レポート*ページで、*レポート設定*パネルを使用して、レポートの範囲とオプションを定義します。レポートを作成またはスケジュールする前に、プレビュー領域を使用してスライドの順序とレイアウトを確認してください。プレビューではレポートの構造のみが表示され、実際のサブスクリプションデータは表示されません。</block>
+  <block id="805e040836078c98207014459ce00fe4" category="paragraph">レポートをすぐにダウンロードできるように生成するか、単発または定期的なレポートを後日配信するようにスケジュールするには、以下の手順に従ってください：</block>
+  <block id="8b033bd96006a357396469d2d12002ff" category="list-text">コンソールの左側のナビゲーションメニューから、*「ストレージ」&gt;「Keystone」&gt;「モニタリング」&gt;「レポート」*を選択します。</block>
+  <block id="bc32ee3dafd98cfab55839d1a1ad173d" category="list-text">「新規レポート」を選択してください。</block>
+  <block id="db73c44d8bba03212ad21e123d47d5dd" category="list-text">*レポート設定パネル*で、*レポート名*フィールドに名前を入力します。</block>
+  <block id="d99d4ce092a8b9f4aff4e17d7603bfe2" category="list-text">*時間範囲* ドロップダウンから時間範囲を選択します。</block>
+  <block id="6a03b07232e58a0d22244bd78e9ee309" category="paragraph">「過去60日間」などのプリセット範囲を選択するか、「カスタム」を選択して独自の日付を入力してください。選択された範囲によって、「消費動向」セクションおよびその他の時間ベースのセクションに表示される履歴データが決まります。「カスタム」を選択した場合、レポートのスケジュール設定はできません。</block>
+  <block id="b9b414179e1f9c10b9cf39dc76d45554" category="inline-image-macro">カスタム日付範囲を選択した場合、スケジュール設定が無効になっていることを示すヘルスレポート構成</block>
+  <block id="e84931d18314142b08f9bd586d2d273d" category="paragraph"><block ref="e84931d18314142b08f9bd586d2d273d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="55c22e502f5cfc9d2f8d74e22b0c8e98" category="list-text">*サブスクリプション*ドロップダウンから、1つ以上のサブスクリプションを選択します。</block>
+  <block id="de710d1f96079b8408fcc93a084d21ca" category="admonition">NetAppパートナーは、管理しているKeystone顧客アカウントのうち、1つまたは複数のアカウントでサブスクリプションを選択できます。</block>
+  <block id="2494369c3bace34f8d03d3b0f6b35714" category="list-text">*レポートセクション* で、含めるセクションを選択します。</block>
+  <block id="a23a396c1ad877d36ea36ff279bab746" category="paragraph">選択した各セクションはプレビュー領域に表示され、生成されるレポートに含まれます。例えば、サブスクリプションの概要、現在の容量使用状況、消費傾向、物理容量、システムの状態、リスクと脆弱性などを含めることができます。「消費動向」については、過去の消費量のグラフと、必要に応じて将来の消費量の予測を含めることができます。</block>
+  <block id="73edafd21beaaf25a3c4b463e7301486" category="list-text">プレゼンテーションのテーマを選択してください。</block>
+  <block id="e79541eac81a9b39cbfa8f8f8515ac14" category="list-text">プレビューエリアに表示されている項目を確認し、選択内容と一致していることを確認してください。</block>
+  <block id="c33cd459680d55a97ffee84381838d90" category="list-text">レポートの作成方法を選択してください。</block>
+  <block id="7fb99d2c520fc85b9123d1d2daf9e796" category="list-text">*レポートの生成*</block>
+  <block id="d3cd467451f595793563586a695d9c1c" category="paragraph">レポートをすぐにダウンロードするには、*レポートを生成*を選択します。</block>
+  <block id="8ab8d739fddb8825d819131cf0c36e7a" category="paragraph">レポートが生成のために送信され、*レポート*タブに戻ります。レポートは*実行中*のステータスで表示されます。</block>
+  <block id="9dabac9e7f2d642811e0cf62d3e18002" category="paragraph">ステータスが*生成済み*に変わったら、レポートの行末にある省略記号アイコンを選択し、*ダウンロード*を選択します。</block>
+  <block id="00555bd07173f7d9c242e377dc1e4afe" category="list-text">*スケジュールレポート*</block>
+  <block id="6cebac50d1a7bff739e4a52a8cedaa57" category="paragraph">*スケジュール*を選択して、単発または定期的なレポートを作成し、次の手順を実行します：</block>
+  <block id="8b7ea71302f67c6f0966ac6f0f8efc8f" category="list-text">頻度を選択してください：*1回限り*、*毎週*、*毎月*、または*四半期ごと*。</block>
+  <block id="83fb650baf1f2bfaabf37d0b01f8b198" category="list-text">*開始日*を選択してください。</block>
+  <block id="86b7782bce140b306301378eb75d320f" category="inline-image-macro">スケジュールレポートダイアログには、週次頻度が選択され、開始日と終了日のフィールドが空で、受信者フィールドがあり、PPT形式が選択されていることが表示されます。</block>
+  <block id="65de2e1080fef3c60cec4997218e5994" category="paragraph"><block ref="65de2e1080fef3c60cec4997218e5994" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a65d24447c848fed1b1282d04274bcc" category="paragraph">開始日は、レポートが最初に実行される日時を決定します。定期的な実行の場合、レポートは選択された週次、月次、または四半期ごとのスケジュールに従って再度実行されます。</block>
+  <block id="a4f1fd8e2247116044a0a9ef4e9401ae" category="list-text">必要に応じて、*終了日*を選択してください。</block>
+  <block id="a0e32eed5feb418713b52f7739a1f7de" category="paragraph">終了日を選択しない場合、変更するまでスケジュールは継続されます。</block>
+  <block id="45fdcaf864d7e16c4c277f710fe9214c" category="list-text">「レポートのスケジュール設定」を選択してください。</block>
+  <block id="dda29f572e1f01fb24ef9fbb9567dcae" category="paragraph">スケジュールが作成され、レポートは*レポート*タブに*スケジュール実行*の実行タイプで表示されます。各実行状況を追跡するには、*前回の実行*、*次回の実行*、*ステータス*の各列を使用します。</block>
+  <block id="04091b33f99194409a3e638fb720ccd7" category="paragraph">週次、月次、または四半期ごとのスケジュールを編集するには、レポートの行末にある省略記号アイコンを選択し、次に*スケジュールの編集*を選択します。ステータスが*スケジュール済み*でも*生成済み*でも、この操作は可能です。レポート生成後は、*1回限り*のスケジュールを編集することはできません。</block>
+  <block id="3d8502ba652cf0b8dda71ea1d23775d9" category="paragraph">ステータスが*生成済み*に変わったら、レポートの横にある省略記号アイコンを選択し、*ダウンロード*を選択します。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="cf3e1ddb292882536f57277035f7ccdf" category="paragraph">生成されたレポートは、PowerPointプレゼンテーションとしてダウンロードされます。省略記号メニューから*再生成*を選択すると、同じ設定で新しいレポートを作成できます。</block>
+  <block id="74a2518355991b0460124194339aa262" category="inline-link-macro">現在の使用状況を表示する</block>
+  <block id="05a9cc32ea53864df9d04304930c39b2" category="list-text"><block ref="05a9cc32ea53864df9d04304930c39b2" category="inline-link-macro-rx"></block></block>
+  <block id="ff0355703598e77f5d53ad567098e540" category="inline-link-macro">サブスクリプションに関連付けられたアセットを表示します</block>
+  <block id="122bb916bdbca193871c1c238a8ad494" category="list-text"><block ref="122bb916bdbca193871c1c238a8ad494" category="inline-link-macro-rx"></block></block>
+  <block id="e9585bf2660bfde75b6f0a2b54b179ac" category="section-title">NetApp Consoleからヘルスレポートを生成する</block>
+  <block id="d2fc234fa58b5424fb66e69d6f37ea37" category="paragraph">NetApp Consoleを使用して、1つ以上のサブスクリプションのヘルスレポートを生成またはスケジュール設定します。これらのPowerPointレポートには、サブスクリプションの利用状況、運用上の健全性、リスク、および脆弱性が集約されています。Digital Advisorは、ヘルスアセスメントレポートの生成やスケジュール設定をサポートしていません。</block>
+  <block id="0557e64d44b59ed5a4145771c544da91" category="paragraph">詳細については、<block ref="1f95c525270767ec0581ce04383996f5" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="e019cb225a4644922cdd06575b099710" category="section-title">2026年10月12日</block>
 </blocks>
