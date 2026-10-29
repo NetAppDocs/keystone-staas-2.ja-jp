@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/sla-sustainability.html 
 keywords: sustainability, sla, service level agreement, slo, service level objectives 
-summary: 'Keystone は、Sustainability SLO を備えたONTAPフラッシュ ストレージ アレイに基づくストレージ サービスに対して、1 テビバイトあたりの実際のワット数 (W/TiB) の最大保証測定値を提供します。' 
+summary: Keystone STaaSのサステナビリティSLOで、お客様の環境における消費電力の目標がどのように定義されているか、また、その目標が達成されなかった場合にサービスクレジットを請求する方法について説明します。 
 ---
-= KeystoneのサステナビリティSLO
+= Keystone STaaSの持続可能性SLO
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

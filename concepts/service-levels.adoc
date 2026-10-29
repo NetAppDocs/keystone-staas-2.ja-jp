@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/service-levels.html 
 keywords: service levels, service level, rate plan or service level 
-summary: Keystone STaaS は、事前に定義されたサービス レベルでストレージ容量を提供します。  Keystoneによって管理される各ボリュームは、サービス レベルに関連付けられています。 
+summary: Keystone STaaS バージョン3では、事前に定義されたサービスレベルでストレージ容量を提供します。Keystone STaaSで管理される各ボリュームは、サービスレベルに関連付けられています。 
 ---
-= Keystoneのパフォーマンスサービスレベル
+= Keystone STaaSのパフォーマンスサービスレベル
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

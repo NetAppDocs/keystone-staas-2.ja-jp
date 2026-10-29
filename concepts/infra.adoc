@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/infra.html 
 keywords: keystone infrastructure, infra 
-summary: Keystoneインフラストラクチャ、設計、テクノロジの選択、およびコンポーネント製品は、 NetAppのみが所有します。 
+summary: Keystone STaaSのインフラストラクチャ、設計、テクノロジーの選択、およびコンポーネント製品は、すべてNetAppに帰属します。 
 ---
-= Keystoneインフラストラクチャーについて
+= Keystone STaaSインフラストラクチャについて学ぶ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Keystoneインフラストラクチャ、設計、テクノロジの選
 
 
 [role="lead"]
-NetApp は、 NetAppと顧客が運用する環境の両方に適用されるKeystoneのインフラストラクチャ、設計、テクノロジの選択、およびコンポーネントについて単独で責任を負います。
+NetAppは、Keystone STaaSのインフラストラクチャ、設計、技術の選択、およびコンポーネントについて単独で責任を負います。これは、NetAppが運用する環境とお客様が運用する環境の両方に適用されます。
 
 NetApp は以下の措置を取る権利を留保します。
 
